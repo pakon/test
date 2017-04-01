@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  YourWay
+
+  Created by Valentin Popkov on 01.04.17.
+  Copyright © 2017 MPK. All rights reserved.
+*/
+
+"error-validation-login-password" = "Логин и пароль должны быть больше 5 символов";
+"error-validation-login" = "Логин должен быть больше 5 символов";
+"error-validation-password" = "Пароль должен быть больше 5 символов";
+"error-server-authFailed" = "Неверные логин или пароль";
