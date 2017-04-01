@@ -20,7 +20,7 @@ class CarouselPresenter {
                                           text: "Пробеги по гранд каньену")
         let second = CarouselCardViewModel(image: UIImage(named: "carousel-test-2")!,
                                            backgroundImage: UIImage(named: "carousel-test-blur-2")!,
-                                           text: "Проведи неделю в джунглях амазонки, где никогда не ступала нога человека. Покажи, что ты можешь больше, чем кажется!")
+                                           text: "Проведи неделю в джунглях амазонки")
         
         return [first, second]
     }

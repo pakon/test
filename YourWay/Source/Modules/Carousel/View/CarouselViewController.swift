@@ -14,6 +14,7 @@ class CarouselViewController: UIViewController {
     @IBOutlet weak var carousel: iCarousel!
     @IBOutlet weak var firstBackgroundImageView: UIImageView!
     @IBOutlet weak var secondBackgroundImageView: UIImageView!
+    @IBOutlet weak var chooseButton: UIButton!
     
     // MARK: - Variables
     var output: CarouselViewOutput!
@@ -27,7 +28,7 @@ class CarouselViewController: UIViewController {
         }
     }
     var itemWidth: CGFloat = 298
-    var itemHeight: CGFloat = 420
+    var itemHeight: CGFloat = 429
     
     var radiusIncrease: CGFloat = {
         switch Constants.Screen.actualSize {
@@ -57,7 +58,7 @@ class CarouselViewController: UIViewController {
     }
     
     // MARK: - Private
-    func setupCarousel() {
+    fileprivate func setupCarousel() {
         carousel.type = .rotary
         carousel.isVertical = false
         carousel.isPagingEnabled = true
@@ -67,7 +68,7 @@ class CarouselViewController: UIViewController {
         carousel.bounces = false
     }
     
-    func createViewControllers() {
+    fileprivate func createViewControllers() {
         var viewControllers: [CarouselCardViewController] = [];
         
         for viewModel in viewModels {
@@ -79,7 +80,7 @@ class CarouselViewController: UIViewController {
         self.cardsViewControllers = viewControllers;
     }
     
-    func updateBackgroundColor() {
+    fileprivate func updateBackgroundColor() {
         guard viewModels.count > 0 else {
             return
         }
@@ -100,12 +101,39 @@ class CarouselViewController: UIViewController {
         firstBackgroundImageView.alpha = offset
         secondBackgroundImageView.alpha = 1 - offset
     }
+    
+    fileprivate func setupChooseButton() {
+        chooseButton.layer.cornerRadius = 10
+        chooseButton.layer.shadowColor = UIColor.black.cgColor
+        chooseButton.layer.shadowRadius = 10
+        chooseButton.layer.shadowOpacity = 0.5
+        chooseButton.layer.shadowOffset = CGSize(width: 0, height: 2)
+        chooseButton.layer.shadowPath = UIBezierPath(roundedRect: chooseButton.bounds, cornerRadius: chooseButton.layer.cornerRadius).cgPath
+    }
+    
+    fileprivate func setupNavigationBar() {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.view.backgroundColor = .clear
+        navigationController?.navigationBar.backgroundColor = .clear
+        
+        let leftBarImage = UIImage(named:"back-icon")
+        let leftBarItem = UIBarButtonItem(image: leftBarImage, style: .plain, target: navigationController!, action: #selector(UINavigationController.popViewController(animated:)))
+        leftBarItem.tintColor = UIColor.white
+        navigationItem.setLeftBarButton(leftBarItem, animated: false)
+        
+        navigationItem.title = "Твой выбор"
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+    }
 }
 
 // MARK: - CarouselViewInput
 extension CarouselViewController: CarouselViewInput {
     func setupInitialState() {
         setupCarousel()
+        setupChooseButton()
+        setupNavigationBar()
     }
 
     func setupStateForViewWillAppear() {
