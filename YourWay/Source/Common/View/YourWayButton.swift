@@ -12,8 +12,6 @@ import UIKit
 class YourWayButton: UIButton {
     
     private struct Const {
-        static let verticalContentInset: CGFloat = 12
-        static let horizontalContentInset: CGFloat = 70
         static let cornerRadius: CGFloat = 10
     }
     
@@ -45,10 +43,6 @@ class YourWayButton: UIButton {
             
             if titleColor(for: .normal) == UIButton(type: .custom).titleColor(for: .normal)! {
                 setTitleColor(UIColor.yourWayButtonTitle, for: .normal)
-            }
-            
-            if UIEdgeInsetsEqualToEdgeInsets(contentEdgeInsets, UIEdgeInsetsMake(0, 0, 0, 0)) {
-                contentEdgeInsets = UIEdgeInsetsMake(Const.verticalContentInset, Const.horizontalContentInset, Const.verticalContentInset, Const.horizontalContentInset)
             }
             
             layer.cornerRadius = Const.cornerRadius

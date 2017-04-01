@@ -11,12 +11,18 @@ import Kingfisher
 
 class CarouselCardViewController: UIViewController {
     
+    struct Const {
+        static let cornerRadius: CGFloat = 10
+    }
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cardText: UILabel!
+    @IBOutlet weak var gradientView: UIView!
     
     override func viewDidLoad() {
-        view.layer.cornerRadius = 10
-        imageView.layer.cornerRadius = 10
+        view.layer.cornerRadius = Const.cornerRadius
+        imageView.layer.cornerRadius = Const.cornerRadius
+        gradientView.layer.cornerRadius = Const.cornerRadius
         imageView.clipsToBounds = true
         
         view.layer.shadowColor = UIColor.black.cgColor
@@ -30,6 +36,15 @@ class CarouselCardViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         view.layer.shadowPath = UIBezierPath(roundedRect: view.bounds, cornerRadius: view.layer.cornerRadius).cgPath
+        
+        view.layoutIfNeeded()
+        let gl = CAGradientLayer()
+        gl.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+        gl.frame = gradientView.bounds
+        gl.startPoint = CGPoint(x: 1.0, y: 0.0)
+        gl.endPoint = CGPoint(x: 1.0, y: 1.0)
+//        gl.locations = [0.0, 1.0]
+        gradientView.layer.addSublayer(gl)
     }
     
     func setup(viewModel: CarouselCardViewModel, downloadCompletion: @escaping (UIImage?) -> ()) {
