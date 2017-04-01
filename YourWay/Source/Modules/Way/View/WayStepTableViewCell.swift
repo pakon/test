@@ -10,16 +10,12 @@ import UIKit
 
 class WayStepTableViewCell: UITableViewCell, YourWayTableViewCellProtocol {
     
-    
     @IBOutlet weak var leftIconImageView: UIImageView!
-    
     @IBOutlet weak var stepDescriptionLabel: UILabel!
-    
     @IBOutlet weak var openButton: UIButton!
-    
     @IBOutlet weak var stepStateImageView: UIImageView!
     
-    
+    weak var viewModel: WayStepViewModel?
     
     override func awakeFromNib() {
         self.backgroundColor = UIColor.clear
@@ -32,6 +28,15 @@ class WayStepTableViewCell: UITableViewCell, YourWayTableViewCellProtocol {
         openButton.isHidden = !model.openButtonShowed
         stepDescriptionLabel.text = model.title
         stepStateImageView.image = model.stateIcon
+        
+        self.viewModel = model
+    }
+    
+    @IBAction func openButtonTapped(_ sender: Any) {
+        if let step = viewModel?.step {
+            viewModel?.delegate?.stepChoosed(step)
+        }
+        
     }
 
 }

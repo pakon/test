@@ -26,10 +26,10 @@ class WayPresenter {
         futureModel.leftIcon = #imageLiteral(resourceName: "icon_lock_locked")
         viewModels.append(futureModel)
         
-        let currentModel = WayStepViewModel(currentStep: steps.first!)
+        let currentModel = WayStepViewModel(currentStep: steps.first!, delegate: self)
         viewModels.append(currentModel)
         for i in 1..<steps.count {
-            let viewModel = WayStepViewModel(entity: steps[i])
+            let viewModel = WayStepViewModel(entity: steps[i], delegate: self)
             viewModels.append(viewModel)
         }
     }
@@ -55,6 +55,10 @@ extension WayPresenter: WayViewOutput {
 
     func viewWillDisappear() {
         view.setupStateForViewWillDisappear()
+    }
+    
+    func stepChoosed(_ step: Step) {
+        router.openOpportunities(with: Array(step.opportunities))
     }
 }
 

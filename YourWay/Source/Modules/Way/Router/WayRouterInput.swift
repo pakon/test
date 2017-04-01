@@ -7,5 +7,5 @@
 //
 
 protocol WayRouterInput {
-
+    func openOpportunities(with opportunities: [Opportunity])
 }

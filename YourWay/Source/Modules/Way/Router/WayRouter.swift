@@ -9,4 +9,13 @@
 class WayRouter: WayRouterInput {
 	
 	weak var transitionHandler: ViperModuleTransitionHandler!
+    
+    func openOpportunities(with opportunities: [Opportunity]) {
+        transitionHandler.openModule(with: WayConstants.SegueIdentifier.oportunities).thenChainUsingClosure { input in
+            if let input = input as? CarouselModuleInput {
+                input.setup(opportunities: opportunities)
+            }
+            return nil
+        }
+    }
 }

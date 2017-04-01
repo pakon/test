@@ -7,5 +7,7 @@
 //
 
 struct WayConstants {
-
+    struct SegueIdentifier {
+        static let oportunities = "oportunities"
+    }
 }

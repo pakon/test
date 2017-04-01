@@ -6,9 +6,11 @@
 //  Copyright © 2017 MPK LLC. All rights reserved.
 //
 
-protocol WayViewOutput {
+protocol WayViewOutput: class {
 
     func viewDidLoad()
     func viewWillAppear()
     func viewWillDisappear()
+    
+    func stepChoosed(_ step: Step)
 }
