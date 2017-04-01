@@ -65,14 +65,14 @@ extension OpportunityViewController: OpportunityViewInput {
     
     func setup(viewModel: OpportunityViewModel) {
         if let backgroundImage = viewModel.backgroundImage {
-            self.backgroundImage.image = backgroundImage.blurred(radius: 30)
+            self.backgroundImage.image = backgroundImage.blurred(radius: 10)
         } else {
             ImageDownloader.default.downloadImage(with: viewModel.backgroundUrl, options: [], progressBlock: nil) {
                 (image, _, _, _) in
-                self.backgroundImage.image = image?.blurred(radius: 30)
+                self.backgroundImage.image = image?.blurred(radius: 10)
             }
         }
-        
+    
         iconImage.image = viewModel.iconImage
         titleLabel.text = viewModel.title
         navigationItem.title = viewModel.title

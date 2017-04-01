@@ -84,8 +84,8 @@
 		FF0FD5381E8FC28000A041BD /* OpportunityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD5371E8FC28000A041BD /* OpportunityViewModel.swift */; };
 		FF0FD53A1E8FC5D300A041BD /* YourWayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD5391E8FC5D300A041BD /* YourWayButton.swift */; };
 		FF49CA021E9004AC00DC7E8A /* UINavigationController+YourWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF49CA011E9004AC00DC7E8A /* UINavigationController+YourWay.swift */; };
-		FF49CA0C1E90106800DC7E8A /* UIImage+BlurEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = FF49CA091E90106800DC7E8A /* UIImage+BlurEffects.m */; };
-		FF49CA0D1E90106800DC7E8A /* UIImageView+BlurAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FF49CA0B1E90106800DC7E8A /* UIImageView+BlurAnimation.m */; };
+		FF49CA121E90186600DC7E8A /* UIImage+BlurEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = FF49CA0F1E90186600DC7E8A /* UIImage+BlurEffects.m */; };
+		FF49CA131E90186600DC7E8A /* UIImageView+BlurAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FF49CA111E90186600DC7E8A /* UIImageView+BlurAnimation.m */; };
 		FFD9B8AA1E8FD8D100DD14BD /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FD5411E8FCFF400A041BD /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FFD9B8AC1E8FD8D100DD14BD /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FD5421E8FCFF400A041BD /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FFD9B8AE1E8FD90200DD14BD /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FD5411E8FCFF400A041BD /* Realm.framework */; };
@@ -229,10 +229,10 @@
 		FF0FD5411E8FCFF400A041BD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		FF0FD5421E8FCFF400A041BD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		FF49CA011E9004AC00DC7E8A /* UINavigationController+YourWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+YourWay.swift"; sourceTree = "<group>"; };
-		FF49CA081E90106800DC7E8A /* UIImage+BlurEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+BlurEffects.h"; path = "../../../../../totouchme-game-ios/totouchme-game/Pods/TYBlurImage/TYBlurImage/UIImage+BlurEffects.h"; sourceTree = "<group>"; };
-		FF49CA091E90106800DC7E8A /* UIImage+BlurEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+BlurEffects.m"; path = "../../../../../totouchme-game-ios/totouchme-game/Pods/TYBlurImage/TYBlurImage/UIImage+BlurEffects.m"; sourceTree = "<group>"; };
-		FF49CA0A1E90106800DC7E8A /* UIImageView+BlurAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+BlurAnimation.h"; path = "../../../../../totouchme-game-ios/totouchme-game/Pods/TYBlurImage/TYBlurImage/UIImageView+BlurAnimation.h"; sourceTree = "<group>"; };
-		FF49CA0B1E90106800DC7E8A /* UIImageView+BlurAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+BlurAnimation.m"; path = "../../../../../totouchme-game-ios/totouchme-game/Pods/TYBlurImage/TYBlurImage/UIImageView+BlurAnimation.m"; sourceTree = "<group>"; };
+		FF49CA0E1E90186600DC7E8A /* UIImage+BlurEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BlurEffects.h"; sourceTree = "<group>"; };
+		FF49CA0F1E90186600DC7E8A /* UIImage+BlurEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurEffects.m"; sourceTree = "<group>"; };
+		FF49CA101E90186600DC7E8A /* UIImageView+BlurAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+BlurAnimation.h"; sourceTree = "<group>"; };
+		FF49CA111E90186600DC7E8A /* UIImageView+BlurAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+BlurAnimation.m"; sourceTree = "<group>"; };
 		FFD9B8B01E8FDEF000DD14BD /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		FFD9B8B61E8FF51400DD14BD /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		FFD9B8B81E8FF54000DD14BD /* StepState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepState.swift; sourceTree = "<group>"; };
@@ -687,10 +687,10 @@
 		FF49CA071E90106100DC7E8A /* Blur */ = {
 			isa = PBXGroup;
 			children = (
-				FF49CA081E90106800DC7E8A /* UIImage+BlurEffects.h */,
-				FF49CA091E90106800DC7E8A /* UIImage+BlurEffects.m */,
-				FF49CA0A1E90106800DC7E8A /* UIImageView+BlurAnimation.h */,
-				FF49CA0B1E90106800DC7E8A /* UIImageView+BlurAnimation.m */,
+				FF49CA0E1E90186600DC7E8A /* UIImage+BlurEffects.h */,
+				FF49CA0F1E90186600DC7E8A /* UIImage+BlurEffects.m */,
+				FF49CA101E90186600DC7E8A /* UIImageView+BlurAnimation.h */,
+				FF49CA111E90186600DC7E8A /* UIImageView+BlurAnimation.m */,
 			);
 			name = Blur;
 			sourceTree = "<group>";
@@ -904,8 +904,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF49CA0D1E90106800DC7E8A /* UIImageView+BlurAnimation.m in Sources */,
-				FF49CA0C1E90106800DC7E8A /* UIImage+BlurEffects.m in Sources */,
+				FF49CA131E90186600DC7E8A /* UIImageView+BlurAnimation.m in Sources */,
+				FF49CA121E90186600DC7E8A /* UIImage+BlurEffects.m in Sources */,
 				FFD9B8E51E8FF6CD00DD14BD /* AuthorizationPresenter.swift in Sources */,
 				FF0FD52B1E8F99B000A041BD /* iCarousel.m in Sources */,
 				FF49CA021E9004AC00DC7E8A /* UINavigationController+YourWay.swift in Sources */,
