@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="f2K-mb-p4x">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="BPy-n4-8PP">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joM-Cg-eKV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="f2K-mb-p4x" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PEK-1h-1fi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="593-kx-zHu" kind="relationship" relationship="rootViewController" id="6xo-nQ-bh0"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-694" y="126"/>
+        </scene>
+        <!--Way View Controller-->
+        <scene sceneID="J0d-hh-3ij">
+            <objects>
+                <viewController id="593-kx-zHu" customClass="WayViewController" customModule="YourWay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MZG-rk-PRF"/>
+                        <viewControllerLayoutGuide type="bottom" id="fl6-b5-hFs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5ia-zD-J4t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="fpR-qn-eg2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xN7-rZ-cIl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="wayStepCell" rowHeight="140" id="chU-mM-CLm" customClass="WayStepTableViewCell" customModule="YourWay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="chU-mM-CLm" id="8r0-xO-N7K">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_lock_open" translatesAutoresizingMaskIntoConstraints="NO" id="XVi-mm-Nej" userLabel="Action icon">
+                                                    <rect key="frame" x="37" y="20" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="24" id="4gY-XN-PZj"/>
+                                                        <constraint firstAttribute="height" constant="24" id="rEb-le-aRu"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBB-Mw-hR0">
+                                                    <rect key="frame" x="69" y="20" width="292" height="43"/>
+                                                    <string key="text">Завтра откроется
+что-то совершенно новое</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="way_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="NhD-dU-nH0" userLabel="Arrow">
+                                                    <rect key="frame" x="45" y="59" width="8" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="8" id="SMx-nv-9b0"/>
+                                                        <constraint firstAttribute="height" constant="80" id="xyj-Ye-YR3"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="jBB-Mw-hR0" secondAttribute="trailing" constant="14" id="0T6-DO-tig"/>
+                                                <constraint firstItem="XVi-mm-Nej" firstAttribute="top" secondItem="8r0-xO-N7K" secondAttribute="topMargin" constant="12" id="7uf-hb-6v9"/>
+                                                <constraint firstItem="jBB-Mw-hR0" firstAttribute="leading" secondItem="XVi-mm-Nej" secondAttribute="trailing" constant="8" id="Xta-he-Ce0"/>
+                                                <constraint firstItem="NhD-dU-nH0" firstAttribute="top" secondItem="XVi-mm-Nej" secondAttribute="bottom" constant="15" id="bJm-Hz-Ja2"/>
+                                                <constraint firstItem="jBB-Mw-hR0" firstAttribute="top" secondItem="XVi-mm-Nej" secondAttribute="top" id="hEr-oa-U1f"/>
+                                                <constraint firstItem="XVi-mm-Nej" firstAttribute="centerX" secondItem="NhD-dU-nH0" secondAttribute="centerX" id="kWV-7Q-Nhj"/>
+                                                <constraint firstItem="XVi-mm-Nej" firstAttribute="leading" secondItem="8r0-xO-N7K" secondAttribute="leading" constant="37" id="xWc-fr-vdY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xN7-rZ-cIl" firstAttribute="leading" secondItem="5ia-zD-J4t" secondAttribute="leading" id="GNI-RW-rgg"/>
+                            <constraint firstAttribute="height" secondItem="fpR-qn-eg2" secondAttribute="height" id="W2D-kA-knF"/>
+                            <constraint firstItem="fpR-qn-eg2" firstAttribute="centerY" secondItem="5ia-zD-J4t" secondAttribute="centerY" id="YsG-P2-Jnx"/>
+                            <constraint firstAttribute="width" secondItem="fpR-qn-eg2" secondAttribute="width" id="cgX-Dh-aFT"/>
+                            <constraint firstAttribute="trailing" secondItem="xN7-rZ-cIl" secondAttribute="trailing" id="q9X-Rv-drd"/>
+                            <constraint firstItem="xN7-rZ-cIl" firstAttribute="top" secondItem="MZG-rk-PRF" secondAttribute="bottom" id="rv5-jp-8Om"/>
+                            <constraint firstItem="fl6-b5-hFs" firstAttribute="top" secondItem="xN7-rZ-cIl" secondAttribute="bottom" id="zNk-ed-nGl"/>
+                            <constraint firstItem="fpR-qn-eg2" firstAttribute="centerX" secondItem="5ia-zD-J4t" secondAttribute="centerX" id="zsO-4E-4vQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3wC-m4-SEz"/>
+                    <connections>
+                        <outlet property="wayTableView" destination="xN7-rZ-cIl" id="nso-UT-6nT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sbo-ic-fqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Yqm-h2-TMZ" customClass="WayModuleInitializer" customModule="YourWay" customModuleProvider="target">
+                    <connections>
+                        <outlet property="wayViewController" destination="593-kx-zHu" id="Ymk-54-3pd"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="124" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="375" height="667"/>
+        <image name="icon_lock_open" width="16" height="21"/>
+        <image name="way_arrow" width="8" height="80"/>
+    </resources>
+</document>
