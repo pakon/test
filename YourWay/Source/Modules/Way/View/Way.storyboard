@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="f2K-mb-p4x">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="f2K-mb-p4x">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -38,7 +38,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="fpR-qn-eg2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carousel-test-1" translatesAutoresizingMaskIntoConstraints="NO" id="fpR-qn-eg2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carousel-test-2" translatesAutoresizingMaskIntoConstraints="NO" id="sDk-Ul-3XW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xN7-rZ-cIl">
@@ -49,7 +52,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="chU-mM-CLm" id="8r0-xO-N7K">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_lock_open" translatesAutoresizingMaskIntoConstraints="NO" id="XVi-mm-Nej" userLabel="Action icon">
@@ -125,9 +128,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xN7-rZ-cIl" firstAttribute="leading" secondItem="5ia-zD-J4t" secondAttribute="leading" id="GNI-RW-rgg"/>
+                            <constraint firstItem="sDk-Ul-3XW" firstAttribute="centerX" secondItem="5ia-zD-J4t" secondAttribute="centerX" id="JRt-Bl-Az8"/>
                             <constraint firstAttribute="height" secondItem="fpR-qn-eg2" secondAttribute="height" id="W2D-kA-knF"/>
                             <constraint firstItem="fpR-qn-eg2" firstAttribute="centerY" secondItem="5ia-zD-J4t" secondAttribute="centerY" id="YsG-P2-Jnx"/>
+                            <constraint firstItem="sDk-Ul-3XW" firstAttribute="height" secondItem="5ia-zD-J4t" secondAttribute="height" id="ZYM-fB-TDY"/>
                             <constraint firstAttribute="width" secondItem="fpR-qn-eg2" secondAttribute="width" id="cgX-Dh-aFT"/>
+                            <constraint firstItem="sDk-Ul-3XW" firstAttribute="width" secondItem="5ia-zD-J4t" secondAttribute="width" id="eyb-G6-quA"/>
+                            <constraint firstItem="sDk-Ul-3XW" firstAttribute="centerY" secondItem="5ia-zD-J4t" secondAttribute="centerY" id="f0G-sE-Olm"/>
                             <constraint firstAttribute="trailing" secondItem="xN7-rZ-cIl" secondAttribute="trailing" id="q9X-Rv-drd"/>
                             <constraint firstItem="xN7-rZ-cIl" firstAttribute="top" secondItem="MZG-rk-PRF" secondAttribute="bottom" id="rv5-jp-8Om"/>
                             <constraint firstItem="fl6-b5-hFs" firstAttribute="top" secondItem="xN7-rZ-cIl" secondAttribute="bottom" id="zNk-ed-nGl"/>
@@ -136,6 +143,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="3wC-m4-SEz"/>
                     <connections>
+                        <outlet property="firstBackgroundImageView" destination="fpR-qn-eg2" id="DDK-bi-mn1"/>
+                        <outlet property="secondBackgroundImageView" destination="sDk-Ul-3XW" id="Dil-GX-zpD"/>
                         <outlet property="wayTableView" destination="xN7-rZ-cIl" id="nso-UT-6nT"/>
                         <segue destination="p7O-wX-gjM" kind="show" identifier="oportunities" id="E8X-T6-9xM"/>
                     </connections>
@@ -159,7 +168,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="375" height="667"/>
+        <image name="carousel-test-1" width="206" height="368"/>
+        <image name="carousel-test-2" width="206" height="368"/>
         <image name="icon_lock_open" width="16" height="21"/>
         <image name="way_arrow" width="8" height="80"/>
     </resources>

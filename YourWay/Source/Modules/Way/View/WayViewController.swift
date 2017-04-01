@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class WayViewController: UIViewController {
 
@@ -18,6 +19,10 @@ class WayViewController: UIViewController {
     var viewManager: WayViewManager!
     
     @IBOutlet var wayTableView: UITableView!
+    
+    @IBOutlet var firstBackgroundImageView: UIImageView!
+    
+    @IBOutlet var secondBackgroundImageView: UIImageView!
 
     // MARK: - Life cycle
     override func viewDidLoad() {
@@ -61,8 +66,36 @@ extension WayViewController: WayViewInput {
     func setupStateForViewWillDisappear() {
     }
     
-    func setup(viewModels: [WayStepViewModel]) {
+    func setup(viewModels: [WayStepViewModel], firstImagePath: URL, secondImagePath: URL) {
         viewManager.viewModels = viewModels
+        firstBackgroundImageView.kf.setImage(with: firstImagePath)
+        secondBackgroundImageView.kf.setImage(with: secondImagePath)
         wayTableView.reloadData()
+    }
+    
+    func updateBackgroundColor() {
+        
+//        if firstBackgroundImageView.image != bottomImage {
+//            if firstBackgroundImageView.image == nil {
+//                print("устанавливаю картинку 1 через транзишион")
+//                UIView.transition(with: firstBackgroundImageView, duration: 0.2, options: [.transitionCrossDissolve], animations: {
+//                    self.firstBackgroundImageView.image = bottomImage
+//                })
+//            } else {
+//                print("устанавливаю картинку 1")
+//                firstBackgroundImageView.image = bottomImage
+//            }
+//        }
+//        if secondBackgroundImageView.image != topImage {
+//            if secondBackgroundImageView.image == nil {
+//                print("устанавливаю картинку 2 через транзишион")
+//                UIView.transition(with: secondBackgroundImageView, duration: 0.2, options: [.transitionCrossDissolve], animations: {
+//                    self.secondBackgroundImageView.image = bottomImage
+//                })
+//            } else {
+//                print("устанавливаю картинку 2")
+//                secondBackgroundImageView.image = topImage
+//            }
+//        }
     }
 }

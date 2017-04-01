@@ -12,5 +12,7 @@ protocol WayViewInput: class {
     func setupStateForViewWillAppear()
     func setupStateForViewWillDisappear()
     
-    func setup(viewModels: [WayStepViewModel])
+    func setup(viewModels: [WayStepViewModel], firstImagePath: URL, secondImagePath: URL)
+    
+    func updateBackgroundColor()
 }
