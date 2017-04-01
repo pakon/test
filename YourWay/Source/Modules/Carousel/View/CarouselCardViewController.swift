@@ -14,12 +14,18 @@ class CarouselCardViewController: UIViewController {
     @IBOutlet weak var cardText: UILabel!
     
     override func viewDidLoad() {
-        view.layer.cornerRadius = 5
+        view.layer.cornerRadius = 10
+        imageView.layer.cornerRadius = 10
+        imageView.clipsToBounds = true
         
         view.layer.shadowColor = UIColor.black.cgColor
-        view.layer.shadowRadius = 6
-        view.layer.shadowOpacity = 1
-        view.layer.shadowPath = UIBezierPath(roundedRect: view.layer.bounds, cornerRadius: view.layer.cornerRadius).cgPath
+        view.layer.shadowRadius = 10
+        view.layer.shadowOpacity = 0.5
+        view.layer.shadowOffset = CGSize()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        view.layer.shadowPath = UIBezierPath(roundedRect: view.bounds, cornerRadius: view.layer.cornerRadius).cgPath
     }
     
     func setup(viewModel: CarouselCardViewModel) {
