@@ -9,20 +9,20 @@
 import Foundation
 
 class OpportunityViewModel {
-    let backgroundImage: UIImage
+    let backgroundUrl: URL
     let iconImage: UIImage?
     let title: String
     let description: String
     
-    init(backgroundImage: UIImage, iconImage: UIImage?, title: String, description: String) {
-        self.backgroundImage = backgroundImage
+    init(backgroundUrl: URL, iconImage: UIImage?, title: String, description: String) {
+        self.backgroundUrl = backgroundUrl
         self.iconImage = iconImage
         self.title = title
         self.description = description
     }
     
     convenience init(opportunity: Opportunity) {
-        self.init(backgroundImage: UIImage(named: opportunity.backgroundURL)!,
+        self.init(backgroundUrl: URL(string: opportunity.backgroundURL)!,
                   iconImage: UIImage(named: opportunity.icon),
                   title: opportunity.title,
                   description: opportunity.desc)

@@ -16,18 +16,20 @@ class CarouselPresenter {
     var opportunities: [Opportunity] = [] {
         didSet {
             viewModels = []
+            actualOpportunities = []
             let priorityStep = 1.0 / Float(opportunities.count)
             for i in 0...(opportunities.count - 1) {
                 let viewModel = CarouselCardViewModel(opportunity: opportunities[i],
                                                       priority: Float(opportunities.count - i) * priorityStep)
                 if viewModel != nil {
                     viewModels.append(viewModel!)
+                    actualOpportunities.append(opportunities[i])
                 }
-                
             }
         }
     }
     var viewModels: [CarouselCardViewModel] = []
+    var actualOpportunities: [Opportunity] = []
 
     // MARK: - Private
     fileprivate func createOpportunities() {
@@ -72,6 +74,10 @@ extension CarouselPresenter: CarouselViewOutput {
 
     func viewWillDisappear() {
         view.setupStateForViewWillDisappear()
+    }
+    
+    func cardDidChoose(_ number: Int) {
+        router.open(opportunity: actualOpportunities[number])
     }
 }
 

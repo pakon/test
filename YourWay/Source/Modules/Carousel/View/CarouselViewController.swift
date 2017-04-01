@@ -57,6 +57,12 @@ class CarouselViewController: UIViewController {
         output.viewWillDisappear()
     }
     
+    // MARK: - Actions
+    
+    @IBAction func chooseButtonDidTap(_ sender: Any) {
+        output.cardDidChoose(carousel.currentItemIndex)
+    }
+    
     // MARK: - Private
     fileprivate func setupCarousel() {
         carousel.type = .rotary

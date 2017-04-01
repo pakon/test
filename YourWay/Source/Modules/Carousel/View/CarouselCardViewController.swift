@@ -35,7 +35,7 @@ class CarouselCardViewController: UIViewController {
     func setup(viewModel: CarouselCardViewModel, downloadCompletion: @escaping (UIImage?) -> ()) {
         imageView.kf.setImage(with: viewModel.imageUrl,
                               placeholder: nil,
-                              options: [.transition(.fade(0.2)), .cacheMemoryOnly, .downloadPriority(viewModel.priority)])
+                              options: [.transition(.fade(0.2)), .downloadPriority(viewModel.priority)])
         { (image, _, _, _) in
             downloadCompletion(image)
         }

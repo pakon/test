@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class OpportunityViewController: UIViewController {
 
@@ -63,7 +64,8 @@ extension OpportunityViewController: OpportunityViewInput {
     }
     
     func setup(viewModel: OpportunityViewModel) {
-        backgroundImage.image = viewModel.backgroundImage
+        let blur = BlurImageProcessor(blurRadius: 5)
+        backgroundImage.kf.setImage(with: viewModel.backgroundUrl, options: [.processor(blur)])
         iconImage.image = viewModel.iconImage
         titleLabel.text = viewModel.title
         navigationItem.title = viewModel.title
