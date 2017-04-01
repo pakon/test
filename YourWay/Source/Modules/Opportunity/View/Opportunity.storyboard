@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Opportunity View Controller-->
+        <scene sceneID="S0h-po-3WB">
+            <objects>
+                <viewController id="w02-Sv-cXf" customClass="OpportunityViewController" customModule="YourWay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JtB-3j-v0V"/>
+                        <viewControllerLayoutGuide type="bottom" id="qQj-TV-P4z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GcT-eP-2fh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2dx-qN-lQC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="8yr-RC-6E3" customClass="OpportunityModuleInitializer" customModule="YourWay" customModuleProvider="target">
+                    <connections>
+                        <outlet property="opportunityViewController" destination="w02-Sv-cXf" id="54I-RE-Ktf"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="106" y="137"/>
+        </scene>
+    </scenes>
+</document>
