@@ -27,6 +27,18 @@
 		812C85057F9F07E3090F1E4A /* CarouselModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B66B2C70958697030D215 /* CarouselModuleInput.swift */; };
 		8A63FFDDA060220798A8BD4B /* CarouselViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889172F0285DF881E57D7301 /* CarouselViewInput.swift */; };
 		8C78FFE102EF0ACB218DE60A /* AuthorizationRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB906C37657074CC4292D143 /* AuthorizationRouterTests.swift */; };
+		188539F01E4900E1289F3BF7 /* WayRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3CC020329ED8E14C3594EA /* WayRouterTests.swift */; };
+		19E56B0C6C02E2CFB99C4C4A /* WayConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB2B38D347EFE4B789AB8CE /* WayConfiguratorTests.swift */; };
+		1ECB17145BC6B5884CCFDAFC /* WayInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEF53DC35A92BD766D89AC3 /* WayInteractorInput.swift */; };
+		26459D1E7A23297CD0077C55 /* WayInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A9CAA346AFF71901222CCD /* WayInitializer.swift */; };
+		4E596B141BCBC5669DD4F465 /* WayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8DFFA8E2B2090222AB6F86 /* WayPresenter.swift */; };
+		520FEABDFCE7E6B08FCC8557 /* WayViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F856161EA1C6AE851423B /* WayViewOutput.swift */; };
+		52E05F4D9FFA389ECE9C03B9 /* WayPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66AA3528473C123DEFE4C0 /* WayPresenterTests.swift */; };
+		57E8574C5E9AE862C150BD07 /* WayRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B663156A4C5D6170F2CB5 /* WayRouterInput.swift */; };
+		5DBE4A378078FBA4448A1825 /* WayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53521FE72E324955361262 /* WayInteractor.swift */; };
+		5E6396BD63FFFD81EC297146 /* WayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F0953E6E84438B1C8C209 /* WayViewController.swift */; };
+		62153D0869BC9FE354484E31 /* WayConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D2FAB33CBF1602A722B74A /* WayConfigurator.swift */; };
+		73193F2B799663005065E66B /* WayModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD2B92DEA88EF10AD8EFF7 /* WayModuleInput.swift */; };
 		9A8BD9CF1E8F8C2C00515A66 /* YourWayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8BD9CE1E8F8C2C00515A66 /* YourWayTests.swift */; };
 		9A8BD9F01E8F8CDF00515A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A8BD9EC1E8F8CDF00515A66 /* Assets.xcassets */; };
 		9A8BD9F11E8F8CDF00515A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8BD9ED1E8F8CDF00515A66 /* LaunchScreen.storyboard */; };
@@ -63,6 +75,27 @@
 		FF0FD5301E8F9CB600A041BD /* CarouselCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD52F1E8F9CB600A041BD /* CarouselCardViewController.swift */; };
 		FF0FD5321E8F9EDB00A041BD /* CarouselCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD5311E8F9EDB00A041BD /* CarouselCardViewModel.swift */; };
 		FF0FD5341E8F9F2400A041BD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD5331E8F9F2400A041BD /* Constants.swift */; };
+		9C54083F255105CFA7E52E11 /* WayViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132B5D040340DBC4C9F067BF /* WayViewInput.swift */; };
+		9FC3FFCB4EC62B0BB1F37FA9 /* WayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F24DE63EAFB46406F57CD /* WayRouter.swift */; };
+		B4FB28888FF1EEEC2C84C97F /* WayViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05396CEA73C5999121A56B93 /* WayViewTests.swift */; };
+		B6F85AFD1E8F9E9800F4F791 /* Way.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F85AFC1E8F9E9800F4F791 /* Way.storyboard */; };
+		B6F85AFF1E8FA6FB00F4F791 /* WayViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85AFE1E8FA6FB00F4F791 /* WayViewManager.swift */; };
+		B6F85B011E8FA95500F4F791 /* WayStepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B001E8FA95500F4F791 /* WayStepTableViewCell.swift */; };
+		B6F85B031E8FA97200F4F791 /* YourWayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B021E8FA97200F4F791 /* YourWayCell.swift */; };
+		B6F85B051E8FAA4400F4F791 /* WayStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B041E8FAA4400F4F791 /* WayStepViewModel.swift */; };
+		B6F85B081E8FB85F00F4F791 /* StepsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B071E8FB85F00F4F791 /* StepsDataManager.swift */; };
+		B6F85B101E8FBCA600F4F791 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F85B0B1E8FBBB700F4F791 /* Realm.framework */; };
+		B6F85B121E8FBCC800F4F791 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B111E8FBCC800F4F791 /* Step.swift */; };
+		B6F85B141E8FBDE100F4F791 /* Opportunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B131E8FBDE100F4F791 /* Opportunity.swift */; };
+		B6F85B171E8FBEC400F4F791 /* StepState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B161E8FBEC400F4F791 /* StepState.swift */; };
+		B6F85B1A1E8FC6BC00F4F791 /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B191E8FC6BC00F4F791 /* DataGenerator.swift */; };
+		B6F85B1C1E8FDC9000F4F791 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B1B1E8FDC9000F4F791 /* Category.swift */; };
+		B6F85B1D1E8FE15C00F4F791 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F85B0A1E8FBBB700F4F791 /* RealmSwift.framework */; };
+		B6F85B1E1E8FE15C00F4F791 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6F85B0A1E8FBBB700F4F791 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6F85B201E8FE15C00F4F791 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6F85B0B1E8FBBB700F4F791 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C17E61E7ED63DBD3EF2B3A8C /* WayInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC670454B88116C95BF64D /* WayInteractorTests.swift */; };
+		C1ADF06457AFAAC49645020D /* WayInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348FF0927717BD16D74EF76 /* WayInteractorOutput.swift */; };
+		C59B87B2115DCAF78FC74C57 /* WayConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC692B5A5F24A6309A1BCA7 /* WayConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +107,21 @@
 			remoteInfo = YourWay;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B6F85B211E8FE15C00F4F791 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B6F85B201E8FE15C00F4F791 /* Realm.framework in Embed Frameworks */,
+				B6F85B1E1E8FE15C00F4F791 /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0254C758F42C2B1825A7E728 /* CarouselConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselConstants.swift; sourceTree = "<group>"; };
@@ -101,6 +149,19 @@
 		832355E87D2DD60252FF1404 /* CarouselViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		889172F0285DF881E57D7301 /* CarouselViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselViewInput.swift; sourceTree = "<group>"; };
 		88A2B58FEF0591FB130919D7 /* AuthorizationInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorTests.swift; sourceTree = "<group>"; };
+		05396CEA73C5999121A56B93 /* WayViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayViewTests.swift; sourceTree = "<group>"; };
+		132B5D040340DBC4C9F067BF /* WayViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayViewInput.swift; sourceTree = "<group>"; };
+		2348FF0927717BD16D74EF76 /* WayInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayInteractorOutput.swift; sourceTree = "<group>"; };
+		27DC670454B88116C95BF64D /* WayInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayInteractorTests.swift; sourceTree = "<group>"; };
+		2E66AA3528473C123DEFE4C0 /* WayPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayPresenterTests.swift; sourceTree = "<group>"; };
+		2EAD2B92DEA88EF10AD8EFF7 /* WayModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayModuleInput.swift; sourceTree = "<group>"; };
+		3CB2B38D347EFE4B789AB8CE /* WayConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayConfiguratorTests.swift; sourceTree = "<group>"; };
+		3DC692B5A5F24A6309A1BCA7 /* WayConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayConstants.swift; sourceTree = "<group>"; };
+		4BEF53DC35A92BD766D89AC3 /* WayInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayInteractorInput.swift; sourceTree = "<group>"; };
+		6F3CC020329ED8E14C3594EA /* WayRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayRouterTests.swift; sourceTree = "<group>"; };
+		71D2FAB33CBF1602A722B74A /* WayConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayConfigurator.swift; sourceTree = "<group>"; };
+		7B6B663156A4C5D6170F2CB5 /* WayRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayRouterInput.swift; sourceTree = "<group>"; };
+		869F856161EA1C6AE851423B /* WayViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayViewOutput.swift; sourceTree = "<group>"; };
 		9A8BD9B61E8F8C2C00515A66 /* YourWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8BD9CA1E8F8C2C00515A66 /* YourWayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YourWayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8BD9CE1E8F8C2C00515A66 /* YourWayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourWayTests.swift; sourceTree = "<group>"; };
@@ -137,6 +198,24 @@
 		FF0FD52F1E8F9CB600A041BD /* CarouselCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCardViewController.swift; sourceTree = "<group>"; };
 		FF0FD5311E8F9EDB00A041BD /* CarouselCardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCardViewModel.swift; sourceTree = "<group>"; };
 		FF0FD5331E8F9F2400A041BD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A1A9CAA346AFF71901222CCD /* WayInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayInitializer.swift; sourceTree = "<group>"; };
+		AF8DFFA8E2B2090222AB6F86 /* WayPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayPresenter.swift; sourceTree = "<group>"; };
+		B6F85AFC1E8F9E9800F4F791 /* Way.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Way.storyboard; sourceTree = "<group>"; };
+		B6F85AFE1E8FA6FB00F4F791 /* WayViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WayViewManager.swift; sourceTree = "<group>"; };
+		B6F85B001E8FA95500F4F791 /* WayStepTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WayStepTableViewCell.swift; sourceTree = "<group>"; };
+		B6F85B021E8FA97200F4F791 /* YourWayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourWayCell.swift; sourceTree = "<group>"; };
+		B6F85B041E8FAA4400F4F791 /* WayStepViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WayStepViewModel.swift; sourceTree = "<group>"; };
+		B6F85B071E8FB85F00F4F791 /* StepsDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsDataManager.swift; sourceTree = "<group>"; };
+		B6F85B0A1E8FBBB700F4F791 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		B6F85B0B1E8FBBB700F4F791 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		B6F85B111E8FBCC800F4F791 /* Step.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		B6F85B131E8FBDE100F4F791 /* Opportunity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Opportunity.swift; sourceTree = "<group>"; };
+		B6F85B161E8FBEC400F4F791 /* StepState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepState.swift; sourceTree = "<group>"; };
+		B6F85B191E8FC6BC00F4F791 /* DataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
+		B6F85B1B1E8FDC9000F4F791 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C57F0953E6E84438B1C8C209 /* WayViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayViewController.swift; sourceTree = "<group>"; };
+		EB53521FE72E324955361262 /* WayInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayInteractor.swift; sourceTree = "<group>"; };
+		F99F24DE63EAFB46406F57CD /* WayRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +223,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6F85B101E8FBCA600F4F791 /* Realm.framework in Frameworks */,
+				B6F85B1D1E8FE15C00F4F791 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,12 +391,104 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		0191BCD13677B76CCDF6CAB0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7B6B663156A4C5D6170F2CB5 /* WayRouterInput.swift */,
+				F99F24DE63EAFB46406F57CD /* WayRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		27F0E0748656A2AD5D70EB7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				132B5D040340DBC4C9F067BF /* WayViewInput.swift */,
+				869F856161EA1C6AE851423B /* WayViewOutput.swift */,
+				C57F0953E6E84438B1C8C209 /* WayViewController.swift */,
+				B6F85AFC1E8F9E9800F4F791 /* Way.storyboard */,
+				B6F85AFE1E8FA6FB00F4F791 /* WayViewManager.swift */,
+				B6F85B001E8FA95500F4F791 /* WayStepTableViewCell.swift */,
+				B6F85B041E8FAA4400F4F791 /* WayStepViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D5E394857FF69D197E83236 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2E66AA3528473C123DEFE4C0 /* WayPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		44206147AEABAC9DD9BBB578 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05396CEA73C5999121A56B93 /* WayViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		47382209AABC6E11022BDE19 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4BEF53DC35A92BD766D89AC3 /* WayInteractorInput.swift */,
+				2348FF0927717BD16D74EF76 /* WayInteractorOutput.swift */,
+				EB53521FE72E324955361262 /* WayInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		48D116BAF4A46D5A7D05424D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				3CB2B38D347EFE4B789AB8CE /* WayConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		52B64374910F4D7E19C35BC4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2EAD2B92DEA88EF10AD8EFF7 /* WayModuleInput.swift */,
+				AF8DFFA8E2B2090222AB6F86 /* WayPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5D47D727D1E9FDC0031C9E75 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CE506E456B5898F0DF74E61C /* Unit */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6250A3BDF658972763B738D6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6F3CC020329ED8E14C3594EA /* WayRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8BB5BCC2B6242B94664A7FE1 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				71D2FAB33CBF1602A722B74A /* WayConfigurator.swift */,
+				A1A9CAA346AFF71901222CCD /* WayInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		9A8BD9AD1E8F8C2C00515A66 = {
 			isa = PBXGroup;
 			children = (
 				9A8BD9B81E8F8C2C00515A66 /* YourWay */,
 				9A8BD9CD1E8F8C2C00515A66 /* YourWayTests */,
 				9A8BD9B71E8F8C2C00515A66 /* Products */,
+				B6F85B091E8FBBB300F4F791 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -362,6 +535,7 @@
 		9A8BD9F31E8F8CF700515A66 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				B6F85B181E8FC66300F4F791 /* Generators */,
 				9A8BD9F41E8F8CF700515A66 /* AppDelegate.swift */,
 				9A8BD9F51E8F8CF700515A66 /* Common */,
 				9A8BD9F61E8F8CF700515A66 /* Modules */,
@@ -376,9 +550,13 @@
 				9A8CFD701E8FD1E800B91812 /* Extensions */,
 				9A8CFD611E8FA4FF00B91812 /* Views */,
 				FF0FD5271E8F998300A041BD /* View */,
+				B6F85B151E8FBEB400F4F791 /* Types */,
+				B6F85B0E1E8FBBD100F4F791 /* Entities */,
+				B6F85B061E8FB83600F4F791 /* DataManagers */,
 				9A8BD9F81E8F95F900515A66 /* ViperTransitioning.swift */,
 				9A8CFD691E8FBB1300B91812 /* YourWayError.swift */,
 				FF0FD5331E8F9F2400A041BD /* Constants.swift */,
+				B6F85B021E8FA97200F4F791 /* YourWayCell.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -389,6 +567,7 @@
 				04B6E733E9997804B6CCE931 /* Authorization */,
 				950CD988EA09124FA543E440 /* Carousel */,
 				9A8CFD7B1E8FDA0500B91812 /* TabBar */,
+				BF183BDBE7E27D2A2EED5647 /* Way */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -483,6 +662,90 @@
 			name = Card;
 			sourceTree = "<group>";
 		};
+		B1E87A89EC0FCBD30C58C688 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				27DC670454B88116C95BF64D /* WayInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B6F85B061E8FB83600F4F791 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				B6F85B071E8FB85F00F4F791 /* StepsDataManager.swift */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		B6F85B091E8FBBB300F4F791 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6F85B0A1E8FBBB700F4F791 /* RealmSwift.framework */,
+				B6F85B0B1E8FBBB700F4F791 /* Realm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6F85B0E1E8FBBD100F4F791 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B6F85B111E8FBCC800F4F791 /* Step.swift */,
+				B6F85B131E8FBDE100F4F791 /* Opportunity.swift */,
+				B6F85B1B1E8FDC9000F4F791 /* Category.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B6F85B151E8FBEB400F4F791 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				B6F85B161E8FBEC400F4F791 /* StepState.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		B6F85B181E8FC66300F4F791 /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				B6F85B191E8FC6BC00F4F791 /* DataGenerator.swift */,
+			);
+			path = Generators;
+			sourceTree = "<group>";
+		};
+		BF183BDBE7E27D2A2EED5647 /* Way */ = {
+			isa = PBXGroup;
+			children = (
+				27F0E0748656A2AD5D70EB7C /* View */,
+				52B64374910F4D7E19C35BC4 /* Presenter */,
+				47382209AABC6E11022BDE19 /* Interactor */,
+				0191BCD13677B76CCDF6CAB0 /* Router */,
+				8BB5BCC2B6242B94664A7FE1 /* Configurator */,
+				3DC692B5A5F24A6309A1BCA7 /* WayConstants.swift */,
+			);
+			path = Way;
+			sourceTree = "<group>";
+		};
+		CE506E456B5898F0DF74E61C /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				D80A456F01B96D96788B3FEE /* Way */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		D80A456F01B96D96788B3FEE /* Way */ = {
+			isa = PBXGroup;
+			children = (
+				48D116BAF4A46D5A7D05424D /* Configurator */,
+				44206147AEABAC9DD9BBB578 /* View */,
+				B1E87A89EC0FCBD30C58C688 /* Interactor */,
+				3D5E394857FF69D197E83236 /* Presenter */,
+				6250A3BDF658972763B738D6 /* Router */,
+			);
+			path = Way;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -494,6 +757,7 @@
 				9A8BD9B31E8F8C2C00515A66 /* Frameworks */,
 				9A8BD9B41E8F8C2C00515A66 /* Resources */,
 				9A8CFD681E8FAEC700B91812 /* ShellScript */,
+				B6F85B211E8FE15C00F4F791 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -576,6 +840,7 @@
 				9A8BD9F01E8F8CDF00515A66 /* Assets.xcassets in Resources */,
 				9A8BD9F11E8F8CDF00515A66 /* LaunchScreen.storyboard in Resources */,
 				9A8CFD7D1E8FDA2600B91812 /* TabBar.storyboard in Resources */,
+				B6F85AFD1E8F9E9800F4F791 /* Way.storyboard in Resources */,
 				9A8BD9F21E8F8CDF00515A66 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -648,6 +913,29 @@
 				0EEEBC398195F6997B61DC2E /* CarouselConfigurator.swift in Sources */,
 				D581D27ABC41DDD85B23F6F4 /* CarouselInitializer.swift in Sources */,
 				9F4E8752417B336CDC04DAA7 /* CarouselConstants.swift in Sources */,
+				9C54083F255105CFA7E52E11 /* WayViewInput.swift in Sources */,
+				520FEABDFCE7E6B08FCC8557 /* WayViewOutput.swift in Sources */,
+				5E6396BD63FFFD81EC297146 /* WayViewController.swift in Sources */,
+				B6F85B051E8FAA4400F4F791 /* WayStepViewModel.swift in Sources */,
+				73193F2B799663005065E66B /* WayModuleInput.swift in Sources */,
+				B6F85B141E8FBDE100F4F791 /* Opportunity.swift in Sources */,
+				B6F85AFF1E8FA6FB00F4F791 /* WayViewManager.swift in Sources */,
+				B6F85B011E8FA95500F4F791 /* WayStepTableViewCell.swift in Sources */,
+				B6F85B081E8FB85F00F4F791 /* StepsDataManager.swift in Sources */,
+				4E596B141BCBC5669DD4F465 /* WayPresenter.swift in Sources */,
+				1ECB17145BC6B5884CCFDAFC /* WayInteractorInput.swift in Sources */,
+				C1ADF06457AFAAC49645020D /* WayInteractorOutput.swift in Sources */,
+				5DBE4A378078FBA4448A1825 /* WayInteractor.swift in Sources */,
+				B6F85B1A1E8FC6BC00F4F791 /* DataGenerator.swift in Sources */,
+				B6F85B1C1E8FDC9000F4F791 /* Category.swift in Sources */,
+				B6F85B031E8FA97200F4F791 /* YourWayCell.swift in Sources */,
+				57E8574C5E9AE862C150BD07 /* WayRouterInput.swift in Sources */,
+				9FC3FFCB4EC62B0BB1F37FA9 /* WayRouter.swift in Sources */,
+				B6F85B121E8FBCC800F4F791 /* Step.swift in Sources */,
+				B6F85B171E8FBEC400F4F791 /* StepState.swift in Sources */,
+				62153D0869BC9FE354484E31 /* WayConfigurator.swift in Sources */,
+				26459D1E7A23297CD0077C55 /* WayInitializer.swift in Sources */,
+				C59B87B2115DCAF78FC74C57 /* WayConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +954,11 @@
 				C979B83E87FD7145B181C9B4 /* CarouselInteractorTests.swift in Sources */,
 				4AA5C5947498D7C0671B5581 /* CarouselPresenterTests.swift in Sources */,
 				1AE26E51637F54260AA2B2FA /* CarouselRouterTests.swift in Sources */,
+				19E56B0C6C02E2CFB99C4C4A /* WayConfiguratorTests.swift in Sources */,
+				B4FB28888FF1EEEC2C84C97F /* WayViewTests.swift in Sources */,
+				C17E61E7ED63DBD3EF2B3A8C /* WayInteractorTests.swift in Sources */,
+				52E05F4D9FFA389ECE9C03B9 /* WayPresenterTests.swift in Sources */,
+				188539F01E4900E1289F3BF7 /* WayRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,6 +1081,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 553S8YDWZN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/YourWay/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -808,6 +1105,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 553S8YDWZN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/YourWay/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
