@@ -30,39 +30,39 @@ class DataGenerator {
         
         
         let opportunity1 = Opportunity(title: "Прыжок с парашютом",
-                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/ztu1PG7eKbDFs6t/Bitmap%403x.png",
+                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/b8IP7uouGvuInub/Bitmap%403x.png",
                                        desc: "Посмотри своим страхам прямо в глаза! Сделай всего один шаг вперед, когда под ногами нет твердой опоры.", category: category2)
         
         let opportunity2 = Opportunity(title: "Красавица и чудовище",
-                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/ztu1PG7eKbDFs6t/Bitmap%403x.png",
+                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/BFcRF9hJy6FnXnp/Bitmap%403x.png",
                                        desc: "Обозлённая Волшебница превратила принца Адама в отвратительное чудовище за то, что тот был злым, самовлюблённым и грубым. Чтобы снять чары с себя и слуг своего замка, ему необходимо научиться быть добрым, любить и быть любимым. ", category: category3)
         
         let opportunity3 = Opportunity(title: "Время для шопинга",
-                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/ztu1PG7eKbDFs6t/Bitmap%403x.png",
+                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/lg4pF1hWW8G1eL7/Bitmap%403x.png",
                                        desc: "Сегодня лучший день для покупок! Спешите на распродажу в ЦУМ и получите скидки на все покупки свыше 5 000 руб.", category: category4)
         
         let opportunity4 = Opportunity(title: "Ремонт в своей квартире",
-                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/ztu1PG7eKbDFs6t/Bitmap%403x.png",
+                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/fef6TdZzcNLCo0f/дрель%403x.png",
                                        desc: "Чтобы начать менять свою жизнь в лучшую сторону нужно сделать первый шаг. Отличная возможность начать с ремонта своей любимой комнаты.", category: category1)
         
         let opportunity5 = Opportunity(title: "Прыжок с парашютом",
-                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/ztu1PG7eKbDFs6t/Bitmap%403x.png",
+                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/b8IP7uouGvuInub/Bitmap%403x.png",
                                        desc: "Посмотри своим страхам прямо в глаза! Сделай всего один шаг вперед, когда под ногами нет твердой опоры.", category: category2)
         
         let opportunity6 = Opportunity(title: "Красавица и чудовище",
-                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/ztu1PG7eKbDFs6t/Bitmap%403x.png",
+                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/BFcRF9hJy6FnXnp/Bitmap%403x.png",
                                        desc: "Обозлённая Волшебница превратила принца Адама в отвратительное чудовище за то, что тот был злым, самовлюблённым и грубым. Чтобы снять чары с себя и слуг своего замка, ему необходимо научиться быть добрым, любить и быть любимым. ", category: category3)
         
         let opportunity7 = Opportunity(title: "Время для шопинга",
-                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/ztu1PG7eKbDFs6t/Bitmap%403x.png",
+                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/lg4pF1hWW8G1eL7/Bitmap%403x.png",
                                        desc: "Сегодня лучший день для покупок! Спешите на распродажу в ЦУМ и получите скидки на все покупки свыше 5 000 руб.", category: category4)
         
         let opportunity8 = Opportunity(title: "Ремонт в своей квартире",
-                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/ztu1PG7eKbDFs6t/Bitmap%403x.png",
+                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/fef6TdZzcNLCo0f/дрель%403x.png",
                                        desc: "Чтобы начать менять свою жизнь в лучшую сторону нужно сделать первый шаг. Отличная возможность начать с ремонта своей любимой комнаты.", category: category1)
         
         let opportunity9 = Opportunity(title: "Ремонт в своей квартире",
-                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/ztu1PG7eKbDFs6t/Bitmap%403x.png",
+                                       backgroundURL: "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/fef6TdZzcNLCo0f/дрель%403x.png",
                                        desc: "Чтобы начать менять свою жизнь в лучшую сторону нужно сделать первый шаг. Отличная возможность начать с ремонта своей любимой комнаты.", category: category1)
         
         
