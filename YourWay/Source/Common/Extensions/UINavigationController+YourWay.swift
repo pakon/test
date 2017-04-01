@@ -1,5 +1,5 @@
 //
-//  BlurredNavigationBar.swift
+//  UINavigationController+YourWay.swift
 //  YourWay
 //
 //  Created by Vasiliy on 01.04.17.

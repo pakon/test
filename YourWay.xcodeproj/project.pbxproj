@@ -83,14 +83,13 @@
 		FF0FD5361E8FBF3200A041BD /* Opportunity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF0FD5351E8FBF3200A041BD /* Opportunity.storyboard */; };
 		FF0FD5381E8FC28000A041BD /* OpportunityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD5371E8FC28000A041BD /* OpportunityViewModel.swift */; };
 		FF0FD53A1E8FC5D300A041BD /* YourWayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD5391E8FC5D300A041BD /* YourWayButton.swift */; };
-		FF0FD53C1E8FC6C800A041BD /* BlurredNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD53B1E8FC6C800A041BD /* BlurredNavigationBar.swift */; };
+		FF49CA021E9004AC00DC7E8A /* UINavigationController+YourWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF49CA011E9004AC00DC7E8A /* UINavigationController+YourWay.swift */; };
 		FFD9B8AA1E8FD8D100DD14BD /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FD5411E8FCFF400A041BD /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FFD9B8AC1E8FD8D100DD14BD /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FD5421E8FCFF400A041BD /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FFD9B8AE1E8FD90200DD14BD /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FD5411E8FCFF400A041BD /* Realm.framework */; };
 		FFD9B8AF1E8FD90200DD14BD /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FD5421E8FCFF400A041BD /* RealmSwift.framework */; };
 		FFD9B8B21E8FDEF700DD14BD /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD9B8B01E8FDEF000DD14BD /* Kingfisher.framework */; };
 		FFD9B8B31E8FDEF700DD14BD /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFD9B8B01E8FDEF000DD14BD /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FFD9B8B51E8FE70100DD14BD /* BlurredImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8B41E8FE70100DD14BD /* BlurredImage.swift */; };
 		FFD9B8B71E8FF51400DD14BD /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8B61E8FF51400DD14BD /* Category.swift */; };
 		FFD9B8B91E8FF54000DD14BD /* StepState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8B81E8FF54000DD14BD /* StepState.swift */; };
 		FFD9B8BF1E8FF64400DD14BD /* UIColor+YourWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8BC1E8FF64400DD14BD /* UIColor+YourWay.swift */; };
@@ -225,11 +224,10 @@
 		FF0FD5351E8FBF3200A041BD /* Opportunity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Opportunity.storyboard; sourceTree = "<group>"; };
 		FF0FD5371E8FC28000A041BD /* OpportunityViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpportunityViewModel.swift; sourceTree = "<group>"; };
 		FF0FD5391E8FC5D300A041BD /* YourWayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourWayButton.swift; sourceTree = "<group>"; };
-		FF0FD53B1E8FC6C800A041BD /* BlurredNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredNavigationBar.swift; sourceTree = "<group>"; };
 		FF0FD5411E8FCFF400A041BD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		FF0FD5421E8FCFF400A041BD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		FF49CA011E9004AC00DC7E8A /* UINavigationController+YourWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+YourWay.swift"; sourceTree = "<group>"; };
 		FFD9B8B01E8FDEF000DD14BD /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
-		FFD9B8B41E8FE70100DD14BD /* BlurredImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredImage.swift; sourceTree = "<group>"; };
 		FFD9B8B61E8FF51400DD14BD /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		FFD9B8B81E8FF54000DD14BD /* StepState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepState.swift; sourceTree = "<group>"; };
 		FFD9B8BC1E8FF64400DD14BD /* UIColor+YourWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+YourWay.swift"; sourceTree = "<group>"; };
@@ -666,8 +664,6 @@
 				FF0FD5291E8F99B000A041BD /* iCarousel.h */,
 				FF0FD52A1E8F99B000A041BD /* iCarousel.m */,
 				FF0FD5391E8FC5D300A041BD /* YourWayButton.swift */,
-				FF0FD53B1E8FC6C800A041BD /* BlurredNavigationBar.swift */,
-				FFD9B8B41E8FE70100DD14BD /* BlurredImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -694,6 +690,7 @@
 				FFD9B8BC1E8FF64400DD14BD /* UIColor+YourWay.swift */,
 				FFD9B8BD1E8FF64400DD14BD /* UIFont+YourWay.swift */,
 				FFD9B8BE1E8FF64400DD14BD /* UIImage+YourWay.swift */,
+				FF49CA011E9004AC00DC7E8A /* UINavigationController+YourWay.swift */,
 			);
 			name = Extentions;
 			path = Extensions;
@@ -891,13 +888,13 @@
 			files = (
 				FFD9B8E51E8FF6CD00DD14BD /* AuthorizationPresenter.swift in Sources */,
 				FF0FD52B1E8F99B000A041BD /* iCarousel.m in Sources */,
+				FF49CA021E9004AC00DC7E8A /* UINavigationController+YourWay.swift in Sources */,
 				FF0FD5341E8F9F2400A041BD /* Constants.swift in Sources */,
 				FFD9B8E61E8FF6CD00DD14BD /* AuthorizationRouter.swift in Sources */,
 				FFD9B8E41E8FF6CD00DD14BD /* AuthorizationModuleInput.swift in Sources */,
 				FFD9B8C11E8FF64400DD14BD /* UIImage+YourWay.swift in Sources */,
 				FF0FD5381E8FC28000A041BD /* OpportunityViewModel.swift in Sources */,
 				9A8BD9F91E8F95F900515A66 /* ViperTransitioning.swift in Sources */,
-				FF0FD53C1E8FC6C800A041BD /* BlurredNavigationBar.swift in Sources */,
 				FFD9B8DF1E8FF6CD00DD14BD /* AuthorizationConfigurator.swift in Sources */,
 				FF0FD5301E8F9CB600A041BD /* CarouselCardViewController.swift in Sources */,
 				9A8BD9F71E8F8CF700515A66 /* AppDelegate.swift in Sources */,
@@ -959,7 +956,6 @@
 				5DBE4A378078FBA4448A1825 /* WayInteractor.swift in Sources */,
 				B6F85B031E8FA97200F4F791 /* YourWayCell.swift in Sources */,
 				FFD9B8E11E8FF6CD00DD14BD /* AuthorizationInteractor.swift in Sources */,
-				FFD9B8B51E8FE70100DD14BD /* BlurredImage.swift in Sources */,
 				57E8574C5E9AE862C150BD07 /* WayRouterInput.swift in Sources */,
 				9FC3FFCB4EC62B0BB1F37FA9 /* WayRouter.swift in Sources */,
 				B6F85B121E8FBCC800F4F791 /* Step.swift in Sources */,
