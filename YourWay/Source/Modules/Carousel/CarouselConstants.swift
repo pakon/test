@@ -7,5 +7,7 @@
 //
 
 struct CarouselConstants {
-
+    struct SegueIdentifier {
+        static let opportunity = "opportunity"
+    }
 }

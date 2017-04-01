@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="w02-Sv-cXf">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Opportunity View Controller-->
+        <scene sceneID="S0h-po-3WB">
+            <objects>
+                <viewController id="w02-Sv-cXf" customClass="OpportunityViewController" customModule="YourWay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JtB-3j-v0V"/>
+                        <viewControllerLayoutGuide type="bottom" id="qQj-TV-P4z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GcT-eP-2fh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xLL-jY-pX6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cii-tH-S1K">
+                                <rect key="frame" x="171" y="192" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="Nb0-ZT-aE7"/>
+                                    <constraint firstAttribute="width" constant="72" id="Yj9-3a-seg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время для шопинга" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zQ-33-aLz">
+                                <rect key="frame" x="121.66666666666669" y="454" width="171" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJr-Hi-THt" customClass="YourWayButton" customModule="YourWay" customModuleProvider="target">
+                                <rect key="frame" x="108" y="612" width="198" height="44"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="198" id="fAe-qC-2aT"/>
+                                    <constraint firstAttribute="height" constant="44" id="rsr-8s-Ap7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Начать">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сегодня лучший день для покупок! Спешите на распродажу в ЦУМ и получите скидки на все покупки свыше 5 000 руб." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfH-HG-tvs">
+                                <rect key="frame" x="80" y="490" width="254" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CJr-Hi-THt" firstAttribute="centerX" secondItem="GcT-eP-2fh" secondAttribute="centerX" id="1Sh-G9-0qt"/>
+                            <constraint firstItem="yfH-HG-tvs" firstAttribute="leading" secondItem="GcT-eP-2fh" secondAttribute="leading" constant="80" id="2Rc-7t-Xs5"/>
+                            <constraint firstItem="cii-tH-S1K" firstAttribute="centerX" secondItem="GcT-eP-2fh" secondAttribute="centerX" id="R5L-pC-3Le"/>
+                            <constraint firstAttribute="trailing" secondItem="xLL-jY-pX6" secondAttribute="trailing" id="SQl-xp-9wx"/>
+                            <constraint firstItem="qQj-TV-P4z" firstAttribute="top" secondItem="xLL-jY-pX6" secondAttribute="bottom" id="Vgf-3k-ncM"/>
+                            <constraint firstAttribute="trailing" secondItem="yfH-HG-tvs" secondAttribute="trailing" constant="80" id="akK-vf-l1B"/>
+                            <constraint firstItem="xLL-jY-pX6" firstAttribute="leading" secondItem="GcT-eP-2fh" secondAttribute="leading" id="bdl-al-o1E"/>
+                            <constraint firstItem="yfH-HG-tvs" firstAttribute="top" secondItem="5zQ-33-aLz" secondAttribute="bottom" constant="15" id="c3O-YT-FYR"/>
+                            <constraint firstItem="5zQ-33-aLz" firstAttribute="centerX" secondItem="GcT-eP-2fh" secondAttribute="centerX" id="eI1-il-7Oy"/>
+                            <constraint firstItem="5zQ-33-aLz" firstAttribute="top" secondItem="JtB-3j-v0V" secondAttribute="bottom" constant="390" id="jDJ-wv-ulg"/>
+                            <constraint firstItem="cii-tH-S1K" firstAttribute="top" secondItem="JtB-3j-v0V" secondAttribute="bottom" constant="128" id="jHt-Ac-cBk"/>
+                            <constraint firstItem="xLL-jY-pX6" firstAttribute="top" secondItem="GcT-eP-2fh" secondAttribute="top" id="tgY-7P-e2b"/>
+                            <constraint firstItem="qQj-TV-P4z" firstAttribute="top" secondItem="CJr-Hi-THt" secondAttribute="bottom" constant="80" id="wab-Ha-l88"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VL1-rn-Mts"/>
+                    <connections>
+                        <outlet property="backgroundImage" destination="xLL-jY-pX6" id="Uip-Yg-UwK"/>
+                        <outlet property="descriptionLabel" destination="yfH-HG-tvs" id="7fH-KI-DHM"/>
+                        <outlet property="iconImage" destination="cii-tH-S1K" id="AVs-uA-DFQ"/>
+                        <outlet property="startButton" destination="CJr-Hi-THt" id="LgX-Gg-hF3"/>
+                        <outlet property="titleLabel" destination="5zQ-33-aLz" id="qHD-JH-nec"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2dx-qN-lQC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="8yr-RC-6E3" customClass="OpportunityModuleInitializer" customModule="YourWay" customModuleProvider="target">
+                    <connections>
+                        <outlet property="opportunityViewController" destination="w02-Sv-cXf" id="54I-RE-Ktf"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="1044" y="136.28185907046478"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CIf-0e-DdJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HoE-ff-3Ec" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HBN-kp-p9L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="w02-Sv-cXf" kind="relationship" relationship="rootViewController" id="f5t-Rr-ixz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Uo-aD-Nug" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+</document>

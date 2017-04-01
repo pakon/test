@@ -7,5 +7,5 @@
 //
 
 protocol CarouselModuleInput: ViperModuleInput {
-
+    func setup(opportunities: [Opportunity])
 }

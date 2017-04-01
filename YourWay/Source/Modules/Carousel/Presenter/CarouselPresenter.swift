@@ -12,32 +12,60 @@ class CarouselPresenter {
     weak var view: CarouselViewInput!
     var interactor: CarouselInteractorInput!
     var router: CarouselRouterInput!
+    
+    var opportunities: [Opportunity] = [] {
+        didSet {
+            viewModels = []
+            actualOpportunities = []
+            let priorityStep = 1.0 / Float(opportunities.count)
+            for i in 0...(opportunities.count - 1) {
+                let viewModel = CarouselCardViewModel(opportunity: opportunities[i],
+                                                      priority: Float(opportunities.count - i) * priorityStep)
+                if viewModel != nil {
+                    viewModels.append(viewModel!)
+                    actualOpportunities.append(opportunities[i])
+                }
+            }
+        }
+    }
+    var viewModels: [CarouselCardViewModel] = []
+    var actualOpportunities: [Opportunity] = []
 
     // MARK: - Private
-    fileprivate func createViewModels() -> [CarouselCardViewModel] {
-        let first = CarouselCardViewModel(image: UIImage(named: "carousel-test-1")!,
-                                          backgroundImage: UIImage(named: "carousel-test-blur-1")!,
-                                          text: "Пробеги по гранд каньену")
-        let second = CarouselCardViewModel(image: UIImage(named: "carousel-test-2")!,
-                                           backgroundImage: UIImage(named: "carousel-test-blur-2")!,
-                                           text: "Проведи неделю в джунглях амазонки")
+    fileprivate func createOpportunities() {
+        let first = Opportunity()
+        first.backgroundURL = "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/Nc5TR50D2kVVpq9/upload.png"
+        first.desc = "Пробеги по гранд каньену ОПИСАНИЕ"
+        first.category = Category(title: "test", iconAssetName: "icon_lock_open")
+        first.title = "Пробеги по гранд каньену"
         
-        return [first, second]
+        let second = Opportunity()
+        second.backgroundURL = "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/AjCempxi16caVRX/upload.png"
+        second.desc = "Проведи неделю в джунглях амазонки ОПИСАНИЕ"
+        second.category = Category(title: "test", iconAssetName: "icon_lock_open")
+        second.title = "Проведи неделю в джунглях амазонки"
+        
+        setup(opportunities: [first, second])
     }
 }
 
 // MARK: - CarouselModuleInput
 
 extension CarouselPresenter: CarouselModuleInput {
-    
+    func setup(opportunities: [Opportunity]) {
+        self.opportunities = opportunities
+    }
 }
 
 // MARK: - CarouselViewOutput
     
 extension CarouselPresenter: CarouselViewOutput {
     func viewDidLoad() {
+        //TODO: debug!
+        createOpportunities()
+        
         view.setupInitialState()
-        view.show(viewModels: createViewModels())
+        view.show(viewModels: viewModels)
     }
 
     func viewWillAppear() {
@@ -46,6 +74,10 @@ extension CarouselPresenter: CarouselViewOutput {
 
     func viewWillDisappear() {
         view.setupStateForViewWillDisappear()
+    }
+    
+    func cardDidChoose(_ number: Int) {
+        router.open(opportunity: actualOpportunities[number])
     }
 }
 

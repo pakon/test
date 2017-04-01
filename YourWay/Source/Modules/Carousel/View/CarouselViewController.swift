@@ -57,6 +57,12 @@ class CarouselViewController: UIViewController {
         output.viewWillDisappear()
     }
     
+    // MARK: - Actions
+    
+    @IBAction func chooseButtonDidTap(_ sender: Any) {
+        output.cardDidChoose(carousel.currentItemIndex)
+    }
+    
     // MARK: - Private
     fileprivate func setupCarousel() {
         carousel.type = .rotary
@@ -74,7 +80,16 @@ class CarouselViewController: UIViewController {
         for viewModel in viewModels {
             let card = UIStoryboard(name: "Carousel", bundle: nil).instantiateViewController(withIdentifier: "Card") as! CarouselCardViewController
             card.view.frame = CGRect(x: 0, y: 0, width: itemWidth, height: itemHeight);
-            card.setup(viewModel: viewModel)
+            card.setup(viewModel: viewModel) { image in
+                DispatchQueue.main.async {
+                    if let image = image {
+                        print("Начинаю блюрить")
+                        viewModel.backgroundImage = image//.blurred(radius: 50)
+                        print("Кончаю блюрить")
+                        self.updateBackgroundColor()
+                    }
+                }
+            }
             viewControllers.append(card)
         }
         self.cardsViewControllers = viewControllers;
@@ -92,31 +107,34 @@ class CarouselViewController: UIViewController {
         let bottomImage = viewModels[min(Int(higher), viewModels.count - 1)].backgroundImage
         
         if firstBackgroundImageView.image != bottomImage {
-            firstBackgroundImageView.image = bottomImage
+            if firstBackgroundImageView.image == nil {
+                print("устанавливаю картинку 1 через транзишион")
+                UIView.transition(with: firstBackgroundImageView, duration: 0.2, options: [.transitionCrossDissolve], animations: { 
+                    self.firstBackgroundImageView.image = bottomImage
+                })
+            } else {
+                print("устанавливаю картинку 1")
+                firstBackgroundImageView.image = bottomImage
+            }
         }
         if secondBackgroundImageView.image != topImage {
-            secondBackgroundImageView.image = topImage
+            if secondBackgroundImageView.image == nil {
+                print("устанавливаю картинку 2 через транзишион")
+                UIView.transition(with: secondBackgroundImageView, duration: 0.2, options: [.transitionCrossDissolve], animations: {
+                    self.secondBackgroundImageView.image = bottomImage
+                })
+            } else {
+                print("устанавливаю картинку 2")
+                secondBackgroundImageView.image = topImage
+            }
         }
         
         firstBackgroundImageView.alpha = offset
         secondBackgroundImageView.alpha = 1 - offset
     }
     
-    fileprivate func setupChooseButton() {
-        chooseButton.layer.cornerRadius = 10
-        chooseButton.layer.shadowColor = UIColor.black.cgColor
-        chooseButton.layer.shadowRadius = 10
-        chooseButton.layer.shadowOpacity = 0.5
-        chooseButton.layer.shadowOffset = CGSize(width: 0, height: 2)
-        chooseButton.layer.shadowPath = UIBezierPath(roundedRect: chooseButton.bounds, cornerRadius: chooseButton.layer.cornerRadius).cgPath
-    }
-    
     fileprivate func setupNavigationBar() {
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.isTranslucent = true
-        navigationController?.view.backgroundColor = .clear
-        navigationController?.navigationBar.backgroundColor = .clear
+        setBlurNavigationBar()
         
         let leftBarImage = UIImage(named:"back-icon")
         let leftBarItem = UIBarButtonItem(image: leftBarImage, style: .plain, target: navigationController!, action: #selector(UINavigationController.popViewController(animated:)))
@@ -132,7 +150,6 @@ class CarouselViewController: UIViewController {
 extension CarouselViewController: CarouselViewInput {
     func setupInitialState() {
         setupCarousel()
-        setupChooseButton()
         setupNavigationBar()
     }
 

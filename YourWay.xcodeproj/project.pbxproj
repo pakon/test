@@ -7,75 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01E94CE87880FF76BBCFC628 /* AuthorizationConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68638B936B8C0193E621E93 /* AuthorizationConfiguratorTests.swift */; };
+		018CAFAE50FC38678F725065 /* OpportunityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE98B841C09B9B804ACD1B3 /* OpportunityInteractor.swift */; };
 		0EEEBC398195F6997B61DC2E /* CarouselConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48086BE30D5A1C48C901E1 /* CarouselConfigurator.swift */; };
-		12F18689D292567EFF9081FC /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B98851F5AABC5479416AA /* AuthorizationPresenter.swift */; };
-		1A82A2F08FA81C759305E979 /* AuthorizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BE17F6612C0D9C4CC57D9 /* AuthorizationInteractor.swift */; };
-		1AE26E51637F54260AA2B2FA /* CarouselRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E9534EAF7D0EE07AB0AF40 /* CarouselRouterTests.swift */; };
-		22C7DA73D668955372F74E18 /* AuthorizationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D141C2D76546815BF1349B1 /* AuthorizationViewTests.swift */; };
-		2FE115AFDE35ED2DED949BA1 /* AuthorizationModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ADAE776B93E833494DF2D2 /* AuthorizationModuleInput.swift */; };
-		3097D8AF97F4C8D27EEC7219 /* AuthorizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46345B39CF6A0DE0D85964 /* AuthorizationConstants.swift */; };
-		38733F587A1836F5F54F13C9 /* AuthorizationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46667A59A31E1FC8332A4662 /* AuthorizationViewInput.swift */; };
-		3AA633699C30D72641FEF06E /* AuthorizationInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F51055840DF28257595E021 /* AuthorizationInitializer.swift */; };
-		3DF434A8C750D6666F83D5F9 /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372B2178A273CC69FA3020A1 /* AuthorizationRouter.swift */; };
-		3E5E85A9FB04EEC82D4D4676 /* AuthorizationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0646B6330DB098FE825F41ED /* AuthorizationConfigurator.swift */; };
-		4A36EE3E8A681D8460DAC0FF /* CarouselInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1B7D5D542C6280F3E937F6 /* CarouselInteractor.swift */; };
-		4AA5C5947498D7C0671B5581 /* CarouselPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2330703DDA3758B513C89B2 /* CarouselPresenterTests.swift */; };
-		541F5FC44523B6D7344AE268 /* AuthorizationInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CD0253320F72C9B56E87E8 /* AuthorizationInteractorOutput.swift */; };
-		65218B7F318ED1D26FB5635E /* CarouselInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4398F75B0836C67E31BE6434 /* CarouselInteractorInput.swift */; };
-		764E3D5FC8DE8D64B85BB55A /* CarouselPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBA5DC8B4B54214F853E28E /* CarouselPresenter.swift */; };
-		812C85057F9F07E3090F1E4A /* CarouselModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B66B2C70958697030D215 /* CarouselModuleInput.swift */; };
-		8A63FFDDA060220798A8BD4B /* CarouselViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889172F0285DF881E57D7301 /* CarouselViewInput.swift */; };
-		8C78FFE102EF0ACB218DE60A /* AuthorizationRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB906C37657074CC4292D143 /* AuthorizationRouterTests.swift */; };
 		188539F01E4900E1289F3BF7 /* WayRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3CC020329ED8E14C3594EA /* WayRouterTests.swift */; };
 		19E56B0C6C02E2CFB99C4C4A /* WayConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB2B38D347EFE4B789AB8CE /* WayConfiguratorTests.swift */; };
+		1AE26E51637F54260AA2B2FA /* CarouselRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E9534EAF7D0EE07AB0AF40 /* CarouselRouterTests.swift */; };
+		1D5C8C50B49FD43FA037E785 /* OpportunityRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372D7E1F8427A875A0AE3B44 /* OpportunityRouterTests.swift */; };
 		1ECB17145BC6B5884CCFDAFC /* WayInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEF53DC35A92BD766D89AC3 /* WayInteractorInput.swift */; };
 		26459D1E7A23297CD0077C55 /* WayInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A9CAA346AFF71901222CCD /* WayInitializer.swift */; };
+		277C690C392EED9CA046CA5D /* OpportunityViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2F3045AB013962F8C6B8E6 /* OpportunityViewInput.swift */; };
+		2CFA7ECA1C8F2758DFC1B07C /* OpportunityViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F47CDB430BB9BFFC5285F45 /* OpportunityViewTests.swift */; };
+		3EC0D94FA15883907A1A3441 /* OpportunityInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396CF68A632EDAD3816F48FE /* OpportunityInteractorInput.swift */; };
+		475387E3AB0DBEBE6BF543EA /* OpportunityViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E49FF4DAFD5637E09AA543 /* OpportunityViewOutput.swift */; };
+		4A36EE3E8A681D8460DAC0FF /* CarouselInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1B7D5D542C6280F3E937F6 /* CarouselInteractor.swift */; };
+		4AA5C5947498D7C0671B5581 /* CarouselPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2330703DDA3758B513C89B2 /* CarouselPresenterTests.swift */; };
 		4E596B141BCBC5669DD4F465 /* WayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8DFFA8E2B2090222AB6F86 /* WayPresenter.swift */; };
+		4EDB6D92F52E96579801A735 /* OpportunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221C16A381EBC1B31C2F91A /* OpportunityViewController.swift */; };
 		520FEABDFCE7E6B08FCC8557 /* WayViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869F856161EA1C6AE851423B /* WayViewOutput.swift */; };
 		52E05F4D9FFA389ECE9C03B9 /* WayPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E66AA3528473C123DEFE4C0 /* WayPresenterTests.swift */; };
 		57E8574C5E9AE862C150BD07 /* WayRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B663156A4C5D6170F2CB5 /* WayRouterInput.swift */; };
+		5D3E041C72249C2B7F84EA37 /* OpportunityRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09503B1D9EFBCD825CA9332 /* OpportunityRouterInput.swift */; };
 		5DBE4A378078FBA4448A1825 /* WayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53521FE72E324955361262 /* WayInteractor.swift */; };
 		5E6396BD63FFFD81EC297146 /* WayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F0953E6E84438B1C8C209 /* WayViewController.swift */; };
 		62153D0869BC9FE354484E31 /* WayConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D2FAB33CBF1602A722B74A /* WayConfigurator.swift */; };
+		65218B7F318ED1D26FB5635E /* CarouselInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4398F75B0836C67E31BE6434 /* CarouselInteractorInput.swift */; };
+		6CA5C3DB662A1A9F4C7F4011 /* OpportunityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B90C0A8C10915374FC5A00E /* OpportunityConstants.swift */; };
 		73193F2B799663005065E66B /* WayModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD2B92DEA88EF10AD8EFF7 /* WayModuleInput.swift */; };
+		764E3D5FC8DE8D64B85BB55A /* CarouselPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBA5DC8B4B54214F853E28E /* CarouselPresenter.swift */; };
+		7BA296683815679BD6B8DB85 /* OpportunityPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C4E7D0A494D1F65AEF87CF /* OpportunityPresenterTests.swift */; };
+		812C85057F9F07E3090F1E4A /* CarouselModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B66B2C70958697030D215 /* CarouselModuleInput.swift */; };
+		879B3041E6D788B88C972BAC /* OpportunityInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A86FD2D1EEAFAB2BCD48D50 /* OpportunityInteractorOutput.swift */; };
+		88375A1CA11E85E57C35DFA5 /* OpportunityInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914945AEB657313C5C223E0 /* OpportunityInitializer.swift */; };
+		8A63FFDDA060220798A8BD4B /* CarouselViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889172F0285DF881E57D7301 /* CarouselViewInput.swift */; };
 		9A8BD9CF1E8F8C2C00515A66 /* YourWayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8BD9CE1E8F8C2C00515A66 /* YourWayTests.swift */; };
 		9A8BD9F01E8F8CDF00515A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A8BD9EC1E8F8CDF00515A66 /* Assets.xcassets */; };
 		9A8BD9F11E8F8CDF00515A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8BD9ED1E8F8CDF00515A66 /* LaunchScreen.storyboard */; };
 		9A8BD9F21E8F8CDF00515A66 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A8BD9EF1E8F8CDF00515A66 /* Info.plist */; };
 		9A8BD9F71E8F8CF700515A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8BD9F41E8F8CF700515A66 /* AppDelegate.swift */; };
 		9A8BD9F91E8F95F900515A66 /* ViperTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8BD9F81E8F95F900515A66 /* ViperTransitioning.swift */; };
-		9A8CFD601E8FA1AA00B91812 /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8CFD5F1E8FA1AA00B91812 /* Authorization.storyboard */; };
-		9A8CFD631E8FA52900B91812 /* YourWayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CFD621E8FA52900B91812 /* YourWayButton.swift */; };
-		9A8CFD6A1E8FBB1300B91812 /* YourWayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CFD691E8FBB1300B91812 /* YourWayError.swift */; };
-		9A8CFD6C1E8FBC3200B91812 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A8CFD6B1E8FBC3200B91812 /* Localizable.strings */; };
-		9A8CFD741E8FD1E800B91812 /* UIColor+YourWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CFD711E8FD1E800B91812 /* UIColor+YourWay.swift */; };
-		9A8CFD751E8FD1E800B91812 /* UIFont+YourWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CFD721E8FD1E800B91812 /* UIFont+YourWay.swift */; };
-		9A8CFD761E8FD1E800B91812 /* UIImage+YourWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CFD731E8FD1E800B91812 /* UIImage+YourWay.swift */; };
-		9A8CFD7A1E8FD37B00B91812 /* AuthorizationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CFD791E8FD37B00B91812 /* AuthorizationDataManager.swift */; };
-		9A8CFD7D1E8FDA2600B91812 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8CFD7C1E8FDA2600B91812 /* TabBar.storyboard */; };
-		9F4E8752417B336CDC04DAA7 /* CarouselConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254C758F42C2B1825A7E728 /* CarouselConstants.swift */; };
-		9F807A7FF8BD766541CD3BD6 /* AuthorizationPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540E017BAD4C306CCB9C0E19 /* AuthorizationPresenterTests.swift */; };
-		A77E0DE15E9FCB3D0FAEAF0F /* AuthorizationRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DE298AAFB089403D33A7DF /* AuthorizationRouterInput.swift */; };
-		ABA1478A53595FAB8798F286 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE4D670CD9BD892D03B7ED2 /* AuthorizationViewController.swift */; };
-		C979B83E87FD7145B181C9B4 /* CarouselInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402ABA3EC919A9EC4938236 /* CarouselInteractorTests.swift */; };
-		D581D27ABC41DDD85B23F6F4 /* CarouselInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21956D0C4C84BC16FCB1268C /* CarouselInitializer.swift */; };
-		D7273C8035C716E20927B59D /* CarouselRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC44C0340861D7ACB5C9A39 /* CarouselRouterInput.swift */; };
-		D79A30C0DDD4097042DDA270 /* CarouselViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA087F1EC5BF4639FF138576 /* CarouselViewTests.swift */; };
-		D89704544E405343674FEC4D /* CarouselRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48AC5F3CFD351705AC6BA0 /* CarouselRouter.swift */; };
-		DEB86C897789C59B74233F94 /* AuthorizationInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A2B58FEF0591FB130919D7 /* AuthorizationInteractorTests.swift */; };
-		DEEB67CF2EB4EA7AB0561598 /* AuthorizationInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4606DE9D54B3A285EF00425 /* AuthorizationInteractorInput.swift */; };
-		DEF4488F25C1554FC9525DBE /* AuthorizationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E6CE0C211535C3CC5B0B60 /* AuthorizationViewOutput.swift */; };
-		DFB43F0F76CABDCFB11DBBA0 /* CarouselViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B690A05BE252DCEED459FF6 /* CarouselViewOutput.swift */; };
-		EE6C67A303B0E3EBD3926199 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832355E87D2DD60252FF1404 /* CarouselViewController.swift */; };
-		F0646D89D8CF6B4C333E67B2 /* CarouselInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F82293BB4607733CDF9A215 /* CarouselInteractorOutput.swift */; };
-		FDA1D3B2900938594058D7CE /* CarouselConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2238B9EC1BFA0C72835E2 /* CarouselConfiguratorTests.swift */; };
-		FF0FD52B1E8F99B000A041BD /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD52A1E8F99B000A041BD /* iCarousel.m */; };
-		FF0FD52D1E8F9C9800A041BD /* Carousel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF0FD52C1E8F9C9800A041BD /* Carousel.storyboard */; };
-		FF0FD5301E8F9CB600A041BD /* CarouselCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD52F1E8F9CB600A041BD /* CarouselCardViewController.swift */; };
-		FF0FD5321E8F9EDB00A041BD /* CarouselCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD5311E8F9EDB00A041BD /* CarouselCardViewModel.swift */; };
-		FF0FD5341E8F9F2400A041BD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD5331E8F9F2400A041BD /* Constants.swift */; };
 		9C54083F255105CFA7E52E11 /* WayViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132B5D040340DBC4C9F067BF /* WayViewInput.swift */; };
+		9F4E8752417B336CDC04DAA7 /* CarouselConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254C758F42C2B1825A7E728 /* CarouselConstants.swift */; };
 		9FC3FFCB4EC62B0BB1F37FA9 /* WayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F24DE63EAFB46406F57CD /* WayRouter.swift */; };
 		B4FB28888FF1EEEC2C84C97F /* WayViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05396CEA73C5999121A56B93 /* WayViewTests.swift */; };
 		B6F85AFD1E8F9E9800F4F791 /* Way.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F85AFC1E8F9E9800F4F791 /* Way.storyboard */; };
@@ -84,18 +55,66 @@
 		B6F85B031E8FA97200F4F791 /* YourWayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B021E8FA97200F4F791 /* YourWayCell.swift */; };
 		B6F85B051E8FAA4400F4F791 /* WayStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B041E8FAA4400F4F791 /* WayStepViewModel.swift */; };
 		B6F85B081E8FB85F00F4F791 /* StepsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B071E8FB85F00F4F791 /* StepsDataManager.swift */; };
-		B6F85B101E8FBCA600F4F791 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F85B0B1E8FBBB700F4F791 /* Realm.framework */; };
 		B6F85B121E8FBCC800F4F791 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B111E8FBCC800F4F791 /* Step.swift */; };
 		B6F85B141E8FBDE100F4F791 /* Opportunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B131E8FBDE100F4F791 /* Opportunity.swift */; };
-		B6F85B171E8FBEC400F4F791 /* StepState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B161E8FBEC400F4F791 /* StepState.swift */; };
-		B6F85B1A1E8FC6BC00F4F791 /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B191E8FC6BC00F4F791 /* DataGenerator.swift */; };
-		B6F85B1C1E8FDC9000F4F791 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B1B1E8FDC9000F4F791 /* Category.swift */; };
-		B6F85B1D1E8FE15C00F4F791 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F85B0A1E8FBBB700F4F791 /* RealmSwift.framework */; };
-		B6F85B1E1E8FE15C00F4F791 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6F85B0A1E8FBBB700F4F791 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B6F85B201E8FE15C00F4F791 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6F85B0B1E8FBBB700F4F791 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0D8B9D22E11F8783087CD05 /* OpportunityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987AB886761FE42D79D9B169 /* OpportunityPresenter.swift */; };
 		C17E61E7ED63DBD3EF2B3A8C /* WayInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC670454B88116C95BF64D /* WayInteractorTests.swift */; };
 		C1ADF06457AFAAC49645020D /* WayInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348FF0927717BD16D74EF76 /* WayInteractorOutput.swift */; };
 		C59B87B2115DCAF78FC74C57 /* WayConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC692B5A5F24A6309A1BCA7 /* WayConstants.swift */; };
+		C979B83E87FD7145B181C9B4 /* CarouselInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402ABA3EC919A9EC4938236 /* CarouselInteractorTests.swift */; };
+		D581D27ABC41DDD85B23F6F4 /* CarouselInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21956D0C4C84BC16FCB1268C /* CarouselInitializer.swift */; };
+		D7273C8035C716E20927B59D /* CarouselRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC44C0340861D7ACB5C9A39 /* CarouselRouterInput.swift */; };
+		D79A30C0DDD4097042DDA270 /* CarouselViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA087F1EC5BF4639FF138576 /* CarouselViewTests.swift */; };
+		D880D2EC33986184EDC0B366 /* OpportunityInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911BAE4561E23A8D2C14CE5D /* OpportunityInteractorTests.swift */; };
+		D89704544E405343674FEC4D /* CarouselRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48AC5F3CFD351705AC6BA0 /* CarouselRouter.swift */; };
+		D9A3B2B58DD880D4FBF258B0 /* OpportunityModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCBA716197587D8FCF4EAA6 /* OpportunityModuleInput.swift */; };
+		DFB43F0F76CABDCFB11DBBA0 /* CarouselViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B690A05BE252DCEED459FF6 /* CarouselViewOutput.swift */; };
+		E1315F65DA8A4E3607D7C092 /* OpportunityConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B271A7D0E27765F15067CA /* OpportunityConfiguratorTests.swift */; };
+		EE6C67A303B0E3EBD3926199 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832355E87D2DD60252FF1404 /* CarouselViewController.swift */; };
+		F0646D89D8CF6B4C333E67B2 /* CarouselInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F82293BB4607733CDF9A215 /* CarouselInteractorOutput.swift */; };
+		F12F2AC71880039A81723CBB /* OpportunityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70D7990F536588070EE42A5 /* OpportunityRouter.swift */; };
+		F42DED747E6389BFEEF900F1 /* OpportunityConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4186469A6415089645BFCDB1 /* OpportunityConfigurator.swift */; };
+		FDA1D3B2900938594058D7CE /* CarouselConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2238B9EC1BFA0C72835E2 /* CarouselConfiguratorTests.swift */; };
+		FF0FD52B1E8F99B000A041BD /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD52A1E8F99B000A041BD /* iCarousel.m */; };
+		FF0FD52D1E8F9C9800A041BD /* Carousel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF0FD52C1E8F9C9800A041BD /* Carousel.storyboard */; };
+		FF0FD5301E8F9CB600A041BD /* CarouselCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD52F1E8F9CB600A041BD /* CarouselCardViewController.swift */; };
+		FF0FD5321E8F9EDB00A041BD /* CarouselCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD5311E8F9EDB00A041BD /* CarouselCardViewModel.swift */; };
+		FF0FD5341E8F9F2400A041BD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD5331E8F9F2400A041BD /* Constants.swift */; };
+		FF0FD5361E8FBF3200A041BD /* Opportunity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF0FD5351E8FBF3200A041BD /* Opportunity.storyboard */; };
+		FF0FD5381E8FC28000A041BD /* OpportunityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD5371E8FC28000A041BD /* OpportunityViewModel.swift */; };
+		FF0FD53A1E8FC5D300A041BD /* YourWayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD5391E8FC5D300A041BD /* YourWayButton.swift */; };
+		FF0FD53C1E8FC6C800A041BD /* BlurredNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0FD53B1E8FC6C800A041BD /* BlurredNavigationBar.swift */; };
+		FFD9B8AA1E8FD8D100DD14BD /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FD5411E8FCFF400A041BD /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFD9B8AC1E8FD8D100DD14BD /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FD5421E8FCFF400A041BD /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFD9B8AE1E8FD90200DD14BD /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FD5411E8FCFF400A041BD /* Realm.framework */; };
+		FFD9B8AF1E8FD90200DD14BD /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FD5421E8FCFF400A041BD /* RealmSwift.framework */; };
+		FFD9B8B21E8FDEF700DD14BD /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD9B8B01E8FDEF000DD14BD /* Kingfisher.framework */; };
+		FFD9B8B31E8FDEF700DD14BD /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFD9B8B01E8FDEF000DD14BD /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFD9B8B51E8FE70100DD14BD /* BlurredImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8B41E8FE70100DD14BD /* BlurredImage.swift */; };
+		FFD9B8B71E8FF51400DD14BD /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8B61E8FF51400DD14BD /* Category.swift */; };
+		FFD9B8B91E8FF54000DD14BD /* StepState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8B81E8FF54000DD14BD /* StepState.swift */; };
+		FFD9B8BF1E8FF64400DD14BD /* UIColor+YourWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8BC1E8FF64400DD14BD /* UIColor+YourWay.swift */; };
+		FFD9B8C01E8FF64400DD14BD /* UIFont+YourWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8BD1E8FF64400DD14BD /* UIFont+YourWay.swift */; };
+		FFD9B8C11E8FF64400DD14BD /* UIImage+YourWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8BE1E8FF64400DD14BD /* UIImage+YourWay.swift */; };
+		FFD9B8C41E8FF66700DD14BD /* AuthorizationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8C31E8FF66700DD14BD /* AuthorizationDataManager.swift */; };
+		FFD9B8C61E8FF67200DD14BD /* YourWayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8C51E8FF67200DD14BD /* YourWayError.swift */; };
+		FFD9B8C91E8FF69500DD14BD /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8C81E8FF69500DD14BD /* DataGenerator.swift */; };
+		FFD9B8DE1E8FF6CD00DD14BD /* AuthorizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8CB1E8FF6CD00DD14BD /* AuthorizationConstants.swift */; };
+		FFD9B8DF1E8FF6CD00DD14BD /* AuthorizationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8CD1E8FF6CD00DD14BD /* AuthorizationConfigurator.swift */; };
+		FFD9B8E01E8FF6CD00DD14BD /* AuthorizationInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8CE1E8FF6CD00DD14BD /* AuthorizationInitializer.swift */; };
+		FFD9B8E11E8FF6CD00DD14BD /* AuthorizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8D01E8FF6CD00DD14BD /* AuthorizationInteractor.swift */; };
+		FFD9B8E21E8FF6CD00DD14BD /* AuthorizationInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8D11E8FF6CD00DD14BD /* AuthorizationInteractorInput.swift */; };
+		FFD9B8E31E8FF6CD00DD14BD /* AuthorizationInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8D21E8FF6CD00DD14BD /* AuthorizationInteractorOutput.swift */; };
+		FFD9B8E41E8FF6CD00DD14BD /* AuthorizationModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8D41E8FF6CD00DD14BD /* AuthorizationModuleInput.swift */; };
+		FFD9B8E51E8FF6CD00DD14BD /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8D51E8FF6CD00DD14BD /* AuthorizationPresenter.swift */; };
+		FFD9B8E61E8FF6CD00DD14BD /* AuthorizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8D71E8FF6CD00DD14BD /* AuthorizationRouter.swift */; };
+		FFD9B8E71E8FF6CD00DD14BD /* AuthorizationRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8D81E8FF6CD00DD14BD /* AuthorizationRouterInput.swift */; };
+		FFD9B8E81E8FF6CD00DD14BD /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD9B8DA1E8FF6CD00DD14BD /* Authorization.storyboard */; };
+		FFD9B8E91E8FF6CD00DD14BD /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8DB1E8FF6CD00DD14BD /* AuthorizationViewController.swift */; };
+		FFD9B8EA1E8FF6CD00DD14BD /* AuthorizationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8DC1E8FF6CD00DD14BD /* AuthorizationViewInput.swift */; };
+		FFD9B8EB1E8FF6CD00DD14BD /* AuthorizationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8DD1E8FF6CD00DD14BD /* AuthorizationViewOutput.swift */; };
+		FFD9B8EE1E8FF6D700DD14BD /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD9B8ED1E8FF6D700DD14BD /* TabBar.storyboard */; };
+		FFD9B8F01E8FF81100DD14BD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFD9B8EF1E8FF81100DD14BD /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,14 +128,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B6F85B211E8FE15C00F4F791 /* Embed Frameworks */ = {
+		FFD9B8AD1E8FD8D100DD14BD /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B6F85B201E8FE15C00F4F791 /* Realm.framework in Embed Frameworks */,
-				B6F85B1E1E8FE15C00F4F791 /* RealmSwift.framework in Embed Frameworks */,
+				FFD9B8AC1E8FD8D100DD14BD /* RealmSwift.framework in Embed Frameworks */,
+				FFD9B8B31E8FDEF700DD14BD /* Kingfisher.framework in Embed Frameworks */,
+				FFD9B8AA1E8FD8D100DD14BD /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,43 +145,45 @@
 
 /* Begin PBXFileReference section */
 		0254C758F42C2B1825A7E728 /* CarouselConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselConstants.swift; sourceTree = "<group>"; };
-		0646B6330DB098FE825F41ED /* AuthorizationConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationConfigurator.swift; sourceTree = "<group>"; };
-		1C48086BE30D5A1C48C901E1 /* CarouselConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselConfigurator.swift; sourceTree = "<group>"; };
-		1D141C2D76546815BF1349B1 /* AuthorizationViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationViewTests.swift; sourceTree = "<group>"; };
-		21956D0C4C84BC16FCB1268C /* CarouselInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselInitializer.swift; sourceTree = "<group>"; };
-		29E9534EAF7D0EE07AB0AF40 /* CarouselRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselRouterTests.swift; sourceTree = "<group>"; };
-		2FA2238B9EC1BFA0C72835E2 /* CarouselConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselConfiguratorTests.swift; sourceTree = "<group>"; };
-		3402ABA3EC919A9EC4938236 /* CarouselInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselInteractorTests.swift; sourceTree = "<group>"; };
-		372B2178A273CC69FA3020A1 /* AuthorizationRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
-		3C48AC5F3CFD351705AC6BA0 /* CarouselRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselRouter.swift; sourceTree = "<group>"; };
-		4398F75B0836C67E31BE6434 /* CarouselInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselInteractorInput.swift; sourceTree = "<group>"; };
-		45CD0253320F72C9B56E87E8 /* AuthorizationInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorOutput.swift; sourceTree = "<group>"; };
-		46667A59A31E1FC8332A4662 /* AuthorizationViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationViewInput.swift; sourceTree = "<group>"; };
-		4DC44C0340861D7ACB5C9A39 /* CarouselRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselRouterInput.swift; sourceTree = "<group>"; };
-		540E017BAD4C306CCB9C0E19 /* AuthorizationPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenterTests.swift; sourceTree = "<group>"; };
-		5B46345B39CF6A0DE0D85964 /* AuthorizationConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationConstants.swift; sourceTree = "<group>"; };
-		5F82293BB4607733CDF9A215 /* CarouselInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselInteractorOutput.swift; sourceTree = "<group>"; };
-		64ADAE776B93E833494DF2D2 /* AuthorizationModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationModuleInput.swift; sourceTree = "<group>"; };
-		6B690A05BE252DCEED459FF6 /* CarouselViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselViewOutput.swift; sourceTree = "<group>"; };
-		6D1B7D5D542C6280F3E937F6 /* CarouselInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselInteractor.swift; sourceTree = "<group>"; };
-		70E6CE0C211535C3CC5B0B60 /* AuthorizationViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationViewOutput.swift; sourceTree = "<group>"; };
-		7BBA5DC8B4B54214F853E28E /* CarouselPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselPresenter.swift; sourceTree = "<group>"; };
-		832355E87D2DD60252FF1404 /* CarouselViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
-		889172F0285DF881E57D7301 /* CarouselViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselViewInput.swift; sourceTree = "<group>"; };
-		88A2B58FEF0591FB130919D7 /* AuthorizationInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorTests.swift; sourceTree = "<group>"; };
 		05396CEA73C5999121A56B93 /* WayViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayViewTests.swift; sourceTree = "<group>"; };
 		132B5D040340DBC4C9F067BF /* WayViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayViewInput.swift; sourceTree = "<group>"; };
+		1C48086BE30D5A1C48C901E1 /* CarouselConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselConfigurator.swift; sourceTree = "<group>"; };
+		21956D0C4C84BC16FCB1268C /* CarouselInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselInitializer.swift; sourceTree = "<group>"; };
 		2348FF0927717BD16D74EF76 /* WayInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayInteractorOutput.swift; sourceTree = "<group>"; };
 		27DC670454B88116C95BF64D /* WayInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayInteractorTests.swift; sourceTree = "<group>"; };
+		29E9534EAF7D0EE07AB0AF40 /* CarouselRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselRouterTests.swift; sourceTree = "<group>"; };
+		2B90C0A8C10915374FC5A00E /* OpportunityConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityConstants.swift; sourceTree = "<group>"; };
 		2E66AA3528473C123DEFE4C0 /* WayPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayPresenterTests.swift; sourceTree = "<group>"; };
 		2EAD2B92DEA88EF10AD8EFF7 /* WayModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayModuleInput.swift; sourceTree = "<group>"; };
+		2FA2238B9EC1BFA0C72835E2 /* CarouselConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselConfiguratorTests.swift; sourceTree = "<group>"; };
+		3402ABA3EC919A9EC4938236 /* CarouselInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselInteractorTests.swift; sourceTree = "<group>"; };
+		372D7E1F8427A875A0AE3B44 /* OpportunityRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityRouterTests.swift; sourceTree = "<group>"; };
+		396CF68A632EDAD3816F48FE /* OpportunityInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityInteractorInput.swift; sourceTree = "<group>"; };
+		3C48AC5F3CFD351705AC6BA0 /* CarouselRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselRouter.swift; sourceTree = "<group>"; };
 		3CB2B38D347EFE4B789AB8CE /* WayConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayConfiguratorTests.swift; sourceTree = "<group>"; };
 		3DC692B5A5F24A6309A1BCA7 /* WayConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayConstants.swift; sourceTree = "<group>"; };
+		3EE98B841C09B9B804ACD1B3 /* OpportunityInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityInteractor.swift; sourceTree = "<group>"; };
+		4186469A6415089645BFCDB1 /* OpportunityConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityConfigurator.swift; sourceTree = "<group>"; };
+		4398F75B0836C67E31BE6434 /* CarouselInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselInteractorInput.swift; sourceTree = "<group>"; };
+		48E49FF4DAFD5637E09AA543 /* OpportunityViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityViewOutput.swift; sourceTree = "<group>"; };
 		4BEF53DC35A92BD766D89AC3 /* WayInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayInteractorInput.swift; sourceTree = "<group>"; };
+		4DC44C0340861D7ACB5C9A39 /* CarouselRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselRouterInput.swift; sourceTree = "<group>"; };
+		5F2F3045AB013962F8C6B8E6 /* OpportunityViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityViewInput.swift; sourceTree = "<group>"; };
+		5F47CDB430BB9BFFC5285F45 /* OpportunityViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityViewTests.swift; sourceTree = "<group>"; };
+		5F82293BB4607733CDF9A215 /* CarouselInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselInteractorOutput.swift; sourceTree = "<group>"; };
+		6B690A05BE252DCEED459FF6 /* CarouselViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselViewOutput.swift; sourceTree = "<group>"; };
+		6D1B7D5D542C6280F3E937F6 /* CarouselInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselInteractor.swift; sourceTree = "<group>"; };
 		6F3CC020329ED8E14C3594EA /* WayRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayRouterTests.swift; sourceTree = "<group>"; };
 		71D2FAB33CBF1602A722B74A /* WayConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayConfigurator.swift; sourceTree = "<group>"; };
 		7B6B663156A4C5D6170F2CB5 /* WayRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayRouterInput.swift; sourceTree = "<group>"; };
+		7BBA5DC8B4B54214F853E28E /* CarouselPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselPresenter.swift; sourceTree = "<group>"; };
+		832355E87D2DD60252FF1404 /* CarouselViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		869F856161EA1C6AE851423B /* WayViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayViewOutput.swift; sourceTree = "<group>"; };
+		889172F0285DF881E57D7301 /* CarouselViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselViewInput.swift; sourceTree = "<group>"; };
+		8A86FD2D1EEAFAB2BCD48D50 /* OpportunityInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityInteractorOutput.swift; sourceTree = "<group>"; };
+		911BAE4561E23A8D2C14CE5D /* OpportunityInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityInteractorTests.swift; sourceTree = "<group>"; };
+		96B271A7D0E27765F15067CA /* OpportunityConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityConfiguratorTests.swift; sourceTree = "<group>"; };
+		987AB886761FE42D79D9B169 /* OpportunityPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityPresenter.swift; sourceTree = "<group>"; };
 		9A8BD9B61E8F8C2C00515A66 /* YourWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8BD9CA1E8F8C2C00515A66 /* YourWayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YourWayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8BD9CE1E8F8C2C00515A66 /* YourWayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourWayTests.swift; sourceTree = "<group>"; };
@@ -171,26 +193,28 @@
 		9A8BD9EF1E8F8CDF00515A66 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A8BD9F41E8F8CF700515A66 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A8BD9F81E8F95F900515A66 /* ViperTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperTransitioning.swift; sourceTree = "<group>"; };
-		9A8CFD5F1E8FA1AA00B91812 /* Authorization.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
-		9A8CFD621E8FA52900B91812 /* YourWayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourWayButton.swift; sourceTree = "<group>"; };
-		9A8CFD691E8FBB1300B91812 /* YourWayError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourWayError.swift; sourceTree = "<group>"; };
-		9A8CFD6B1E8FBC3200B91812 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		9A8CFD711E8FD1E800B91812 /* UIColor+YourWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+YourWay.swift"; sourceTree = "<group>"; };
-		9A8CFD721E8FD1E800B91812 /* UIFont+YourWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+YourWay.swift"; sourceTree = "<group>"; };
-		9A8CFD731E8FD1E800B91812 /* UIImage+YourWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+YourWay.swift"; sourceTree = "<group>"; };
-		9A8CFD791E8FD37B00B91812 /* AuthorizationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationDataManager.swift; sourceTree = "<group>"; };
-		9A8CFD7C1E8FDA2600B91812 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
-		9F51055840DF28257595E021 /* AuthorizationInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationInitializer.swift; sourceTree = "<group>"; };
-		A20B98851F5AABC5479416AA /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
-		AF7BE17F6612C0D9C4CC57D9 /* AuthorizationInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractor.swift; sourceTree = "<group>"; };
-		B9DE298AAFB089403D33A7DF /* AuthorizationRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationRouterInput.swift; sourceTree = "<group>"; };
+		A1A9CAA346AFF71901222CCD /* WayInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayInitializer.swift; sourceTree = "<group>"; };
+		AF8DFFA8E2B2090222AB6F86 /* WayPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayPresenter.swift; sourceTree = "<group>"; };
+		B4C4E7D0A494D1F65AEF87CF /* OpportunityPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityPresenterTests.swift; sourceTree = "<group>"; };
+		B6F85AFC1E8F9E9800F4F791 /* Way.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Way.storyboard; sourceTree = "<group>"; };
+		B6F85AFE1E8FA6FB00F4F791 /* WayViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WayViewManager.swift; sourceTree = "<group>"; };
+		B6F85B001E8FA95500F4F791 /* WayStepTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WayStepTableViewCell.swift; sourceTree = "<group>"; };
+		B6F85B021E8FA97200F4F791 /* YourWayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourWayCell.swift; sourceTree = "<group>"; };
+		B6F85B041E8FAA4400F4F791 /* WayStepViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WayStepViewModel.swift; sourceTree = "<group>"; };
+		B6F85B071E8FB85F00F4F791 /* StepsDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsDataManager.swift; sourceTree = "<group>"; };
+		B6F85B111E8FBCC800F4F791 /* Step.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		B6F85B131E8FBDE100F4F791 /* Opportunity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Opportunity.swift; sourceTree = "<group>"; };
 		BC8B66B2C70958697030D215 /* CarouselModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselModuleInput.swift; sourceTree = "<group>"; };
-		D4606DE9D54B3A285EF00425 /* AuthorizationInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorInput.swift; sourceTree = "<group>"; };
+		C57F0953E6E84438B1C8C209 /* WayViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayViewController.swift; sourceTree = "<group>"; };
+		C914945AEB657313C5C223E0 /* OpportunityInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityInitializer.swift; sourceTree = "<group>"; };
+		CBCBA716197587D8FCF4EAA6 /* OpportunityModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityModuleInput.swift; sourceTree = "<group>"; };
+		E09503B1D9EFBCD825CA9332 /* OpportunityRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityRouterInput.swift; sourceTree = "<group>"; };
 		E2330703DDA3758B513C89B2 /* CarouselPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselPresenterTests.swift; sourceTree = "<group>"; };
-		E68638B936B8C0193E621E93 /* AuthorizationConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationConfiguratorTests.swift; sourceTree = "<group>"; };
+		EB53521FE72E324955361262 /* WayInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayInteractor.swift; sourceTree = "<group>"; };
+		F221C16A381EBC1B31C2F91A /* OpportunityViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityViewController.swift; sourceTree = "<group>"; };
+		F70D7990F536588070EE42A5 /* OpportunityRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OpportunityRouter.swift; sourceTree = "<group>"; };
+		F99F24DE63EAFB46406F57CD /* WayRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayRouter.swift; sourceTree = "<group>"; };
 		FA087F1EC5BF4639FF138576 /* CarouselViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarouselViewTests.swift; sourceTree = "<group>"; };
-		FB906C37657074CC4292D143 /* AuthorizationRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationRouterTests.swift; sourceTree = "<group>"; };
-		FDE4D670CD9BD892D03B7ED2 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		FF0FD5281E8F99AF00A041BD /* YourWay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YourWay-Bridging-Header.h"; sourceTree = "<group>"; };
 		FF0FD5291E8F99B000A041BD /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		FF0FD52A1E8F99B000A041BD /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
@@ -198,24 +222,38 @@
 		FF0FD52F1E8F9CB600A041BD /* CarouselCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCardViewController.swift; sourceTree = "<group>"; };
 		FF0FD5311E8F9EDB00A041BD /* CarouselCardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCardViewModel.swift; sourceTree = "<group>"; };
 		FF0FD5331E8F9F2400A041BD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		A1A9CAA346AFF71901222CCD /* WayInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayInitializer.swift; sourceTree = "<group>"; };
-		AF8DFFA8E2B2090222AB6F86 /* WayPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayPresenter.swift; sourceTree = "<group>"; };
-		B6F85AFC1E8F9E9800F4F791 /* Way.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Way.storyboard; sourceTree = "<group>"; };
-		B6F85AFE1E8FA6FB00F4F791 /* WayViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WayViewManager.swift; sourceTree = "<group>"; };
-		B6F85B001E8FA95500F4F791 /* WayStepTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WayStepTableViewCell.swift; sourceTree = "<group>"; };
-		B6F85B021E8FA97200F4F791 /* YourWayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourWayCell.swift; sourceTree = "<group>"; };
-		B6F85B041E8FAA4400F4F791 /* WayStepViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WayStepViewModel.swift; sourceTree = "<group>"; };
-		B6F85B071E8FB85F00F4F791 /* StepsDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsDataManager.swift; sourceTree = "<group>"; };
-		B6F85B0A1E8FBBB700F4F791 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
-		B6F85B0B1E8FBBB700F4F791 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
-		B6F85B111E8FBCC800F4F791 /* Step.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
-		B6F85B131E8FBDE100F4F791 /* Opportunity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Opportunity.swift; sourceTree = "<group>"; };
-		B6F85B161E8FBEC400F4F791 /* StepState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepState.swift; sourceTree = "<group>"; };
-		B6F85B191E8FC6BC00F4F791 /* DataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
-		B6F85B1B1E8FDC9000F4F791 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		C57F0953E6E84438B1C8C209 /* WayViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayViewController.swift; sourceTree = "<group>"; };
-		EB53521FE72E324955361262 /* WayInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayInteractor.swift; sourceTree = "<group>"; };
-		F99F24DE63EAFB46406F57CD /* WayRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayRouter.swift; sourceTree = "<group>"; };
+		FF0FD5351E8FBF3200A041BD /* Opportunity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Opportunity.storyboard; sourceTree = "<group>"; };
+		FF0FD5371E8FC28000A041BD /* OpportunityViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpportunityViewModel.swift; sourceTree = "<group>"; };
+		FF0FD5391E8FC5D300A041BD /* YourWayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourWayButton.swift; sourceTree = "<group>"; };
+		FF0FD53B1E8FC6C800A041BD /* BlurredNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredNavigationBar.swift; sourceTree = "<group>"; };
+		FF0FD5411E8FCFF400A041BD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		FF0FD5421E8FCFF400A041BD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		FFD9B8B01E8FDEF000DD14BD /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		FFD9B8B41E8FE70100DD14BD /* BlurredImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredImage.swift; sourceTree = "<group>"; };
+		FFD9B8B61E8FF51400DD14BD /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		FFD9B8B81E8FF54000DD14BD /* StepState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepState.swift; sourceTree = "<group>"; };
+		FFD9B8BC1E8FF64400DD14BD /* UIColor+YourWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+YourWay.swift"; sourceTree = "<group>"; };
+		FFD9B8BD1E8FF64400DD14BD /* UIFont+YourWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+YourWay.swift"; sourceTree = "<group>"; };
+		FFD9B8BE1E8FF64400DD14BD /* UIImage+YourWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+YourWay.swift"; sourceTree = "<group>"; };
+		FFD9B8C31E8FF66700DD14BD /* AuthorizationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationDataManager.swift; sourceTree = "<group>"; };
+		FFD9B8C51E8FF67200DD14BD /* YourWayError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourWayError.swift; sourceTree = "<group>"; };
+		FFD9B8C81E8FF69500DD14BD /* DataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
+		FFD9B8CB1E8FF6CD00DD14BD /* AuthorizationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationConstants.swift; sourceTree = "<group>"; };
+		FFD9B8CD1E8FF6CD00DD14BD /* AuthorizationConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationConfigurator.swift; sourceTree = "<group>"; };
+		FFD9B8CE1E8FF6CD00DD14BD /* AuthorizationInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationInitializer.swift; sourceTree = "<group>"; };
+		FFD9B8D01E8FF6CD00DD14BD /* AuthorizationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractor.swift; sourceTree = "<group>"; };
+		FFD9B8D11E8FF6CD00DD14BD /* AuthorizationInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorInput.swift; sourceTree = "<group>"; };
+		FFD9B8D21E8FF6CD00DD14BD /* AuthorizationInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorOutput.swift; sourceTree = "<group>"; };
+		FFD9B8D41E8FF6CD00DD14BD /* AuthorizationModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationModuleInput.swift; sourceTree = "<group>"; };
+		FFD9B8D51E8FF6CD00DD14BD /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
+		FFD9B8D71E8FF6CD00DD14BD /* AuthorizationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationRouter.swift; sourceTree = "<group>"; };
+		FFD9B8D81E8FF6CD00DD14BD /* AuthorizationRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationRouterInput.swift; sourceTree = "<group>"; };
+		FFD9B8DA1E8FF6CD00DD14BD /* Authorization.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
+		FFD9B8DB1E8FF6CD00DD14BD /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		FFD9B8DC1E8FF6CD00DD14BD /* AuthorizationViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewInput.swift; sourceTree = "<group>"; };
+		FFD9B8DD1E8FF6CD00DD14BD /* AuthorizationViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewOutput.swift; sourceTree = "<group>"; };
+		FFD9B8ED1E8FF6D700DD14BD /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		FFD9B8EF1E8FF81100DD14BD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,8 +261,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6F85B101E8FBCA600F4F791 /* Realm.framework in Frameworks */,
-				B6F85B1D1E8FE15C00F4F791 /* RealmSwift.framework in Frameworks */,
+				FFD9B8AE1E8FD90200DD14BD /* Realm.framework in Frameworks */,
+				FFD9B8B21E8FDEF700DD14BD /* Kingfisher.framework in Frameworks */,
+				FFD9B8AF1E8FD90200DD14BD /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,159 +277,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02017F9F010C202EAB8CC766 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				29E9534EAF7D0EE07AB0AF40 /* CarouselRouterTests.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		02798559458FEE323D1E7F84 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				D4606DE9D54B3A285EF00425 /* AuthorizationInteractorInput.swift */,
-				45CD0253320F72C9B56E87E8 /* AuthorizationInteractorOutput.swift */,
-				AF7BE17F6612C0D9C4CC57D9 /* AuthorizationInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		04B6E733E9997804B6CCE931 /* Authorization */ = {
-			isa = PBXGroup;
-			children = (
-				1F5C99B72FAE99793DE856A7 /* View */,
-				9125716DA0A328B9612FA23F /* Presenter */,
-				02798559458FEE323D1E7F84 /* Interactor */,
-				4D95D685F08C294169468D36 /* Router */,
-				47068FE2ADA2C19B92635391 /* Configurator */,
-				5B46345B39CF6A0DE0D85964 /* AuthorizationConstants.swift */,
-			);
-			path = Authorization;
-			sourceTree = "<group>";
-		};
-		1675C4F6FD86B0BE008CF155 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				3402ABA3EC919A9EC4938236 /* CarouselInteractorTests.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		1F5C99B72FAE99793DE856A7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				9A8CFD5F1E8FA1AA00B91812 /* Authorization.storyboard */,
-				46667A59A31E1FC8332A4662 /* AuthorizationViewInput.swift */,
-				70E6CE0C211535C3CC5B0B60 /* AuthorizationViewOutput.swift */,
-				FDE4D670CD9BD892D03B7ED2 /* AuthorizationViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		43DB0B94189EB213E6B93F74 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				CA115438D95E47725015FD8D /* Unit */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		47068FE2ADA2C19B92635391 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				0646B6330DB098FE825F41ED /* AuthorizationConfigurator.swift */,
-				9F51055840DF28257595E021 /* AuthorizationInitializer.swift */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
-		4D95D685F08C294169468D36 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				B9DE298AAFB089403D33A7DF /* AuthorizationRouterInput.swift */,
-				372B2178A273CC69FA3020A1 /* AuthorizationRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		53B5B7312DD30903FCF09EC8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FA087F1EC5BF4639FF138576 /* CarouselViewTests.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6D84BAE1B76C6675F21D39BA /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				2FA2238B9EC1BFA0C72835E2 /* CarouselConfiguratorTests.swift */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
-		7881705F28E02A2198FF5C73 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				4398F75B0836C67E31BE6434 /* CarouselInteractorInput.swift */,
-				5F82293BB4607733CDF9A215 /* CarouselInteractorOutput.swift */,
-				6D1B7D5D542C6280F3E937F6 /* CarouselInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		7B62B32226E335E7D9D8C972 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FF0FD52E1E8F9CA600A041BD /* Card */,
-				889172F0285DF881E57D7301 /* CarouselViewInput.swift */,
-				6B690A05BE252DCEED459FF6 /* CarouselViewOutput.swift */,
-				832355E87D2DD60252FF1404 /* CarouselViewController.swift */,
-				FF0FD52C1E8F9C9800A041BD /* Carousel.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		9125716DA0A328B9612FA23F /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				64ADAE776B93E833494DF2D2 /* AuthorizationModuleInput.swift */,
-				A20B98851F5AABC5479416AA /* AuthorizationPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		946917B0D794E9EBDB7422B3 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				BC8B66B2C70958697030D215 /* CarouselModuleInput.swift */,
-				7BBA5DC8B4B54214F853E28E /* CarouselPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		950CD988EA09124FA543E440 /* Carousel */ = {
-			isa = PBXGroup;
-			children = (
-				7B62B32226E335E7D9D8C972 /* View */,
-				946917B0D794E9EBDB7422B3 /* Presenter */,
-				7881705F28E02A2198FF5C73 /* Interactor */,
-				BB45A177CA069CDE3D28CB04 /* Router */,
-				9CB8FBEBAE09803F18C5E236 /* Configurator */,
-				0254C758F42C2B1825A7E728 /* CarouselConstants.swift */,
-			);
-			path = Carousel;
-			sourceTree = "<group>";
-		};
-		95CC0272F6D2A19ADC809739 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				E2330703DDA3758B513C89B2 /* CarouselPresenterTests.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
 		0191BCD13677B76CCDF6CAB0 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +284,27 @@
 				F99F24DE63EAFB46406F57CD /* WayRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		0994330D7726D40F4B618E52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF0FD5371E8FC28000A041BD /* OpportunityViewModel.swift */,
+				5F2F3045AB013962F8C6B8E6 /* OpportunityViewInput.swift */,
+				48E49FF4DAFD5637E09AA543 /* OpportunityViewOutput.swift */,
+				F221C16A381EBC1B31C2F91A /* OpportunityViewController.swift */,
+				FF0FD5351E8FBF3200A041BD /* Opportunity.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21BF46A911D87446A74AAD6E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CBCBA716197587D8FCF4EAA6 /* OpportunityModuleInput.swift */,
+				987AB886761FE42D79D9B169 /* OpportunityPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		27F0E0748656A2AD5D70EB7C /* View */ = {
@@ -412,6 +319,29 @@
 				B6F85B041E8FAA4400F4F791 /* WayStepViewModel.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2E0D4B9A618125B2BA881E49 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				396CF68A632EDAD3816F48FE /* OpportunityInteractorInput.swift */,
+				8A86FD2D1EEAFAB2BCD48D50 /* OpportunityInteractorOutput.swift */,
+				3EE98B841C09B9B804ACD1B3 /* OpportunityInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		33C437A9D3CCBC5D895CAD87 /* Opportunity */ = {
+			isa = PBXGroup;
+			children = (
+				0994330D7726D40F4B618E52 /* View */,
+				21BF46A911D87446A74AAD6E /* Presenter */,
+				2E0D4B9A618125B2BA881E49 /* Interactor */,
+				5B6138F3792C415DF68EBCC8 /* Router */,
+				DFAA7CDA0D9352EB85236F6C /* Configurator */,
+				2B90C0A8C10915374FC5A00E /* OpportunityConstants.swift */,
+			);
+			path = Opportunity;
 			sourceTree = "<group>";
 		};
 		3D5E394857FF69D197E83236 /* Presenter */ = {
@@ -457,6 +387,15 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		5B6138F3792C415DF68EBCC8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E09503B1D9EFBCD825CA9332 /* OpportunityRouterInput.swift */,
+				F70D7990F536588070EE42A5 /* OpportunityRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		5D47D727D1E9FDC0031C9E75 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,6 +412,28 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		7881705F28E02A2198FF5C73 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4398F75B0836C67E31BE6434 /* CarouselInteractorInput.swift */,
+				5F82293BB4607733CDF9A215 /* CarouselInteractorOutput.swift */,
+				6D1B7D5D542C6280F3E937F6 /* CarouselInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7B62B32226E335E7D9D8C972 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF0FD52E1E8F9CA600A041BD /* Card */,
+				889172F0285DF881E57D7301 /* CarouselViewInput.swift */,
+				6B690A05BE252DCEED459FF6 /* CarouselViewOutput.swift */,
+				832355E87D2DD60252FF1404 /* CarouselViewController.swift */,
+				FF0FD52C1E8F9C9800A041BD /* Carousel.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8BB5BCC2B6242B94664A7FE1 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
@@ -480,6 +441,28 @@
 				A1A9CAA346AFF71901222CCD /* WayInitializer.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		946917B0D794E9EBDB7422B3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BC8B66B2C70958697030D215 /* CarouselModuleInput.swift */,
+				7BBA5DC8B4B54214F853E28E /* CarouselPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		950CD988EA09124FA543E440 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				7B62B32226E335E7D9D8C972 /* View */,
+				946917B0D794E9EBDB7422B3 /* Presenter */,
+				7881705F28E02A2198FF5C73 /* Interactor */,
+				BB45A177CA069CDE3D28CB04 /* Router */,
+				9CB8FBEBAE09803F18C5E236 /* Configurator */,
+				0254C758F42C2B1825A7E728 /* CarouselConstants.swift */,
+			);
+			path = Carousel;
 			sourceTree = "<group>";
 		};
 		9A8BD9AD1E8F8C2C00515A66 = {
@@ -506,7 +489,7 @@
 			children = (
 				9A8BD9F31E8F8CF700515A66 /* Source */,
 				9A8BD9EB1E8F8CDF00515A66 /* Resources */,
-				43DB0B94189EB213E6B93F74 /* Tests */,
+				5D47D727D1E9FDC0031C9E75 /* Tests */,
 			);
 			path = YourWay;
 			sourceTree = "<group>";
@@ -523,11 +506,11 @@
 		9A8BD9EB1E8F8CDF00515A66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FFD9B8EF1E8FF81100DD14BD /* Localizable.strings */,
 				FF0FD5281E8F99AF00A041BD /* YourWay-Bridging-Header.h */,
 				9A8BD9EC1E8F8CDF00515A66 /* Assets.xcassets */,
 				9A8BD9ED1E8F8CDF00515A66 /* LaunchScreen.storyboard */,
 				9A8BD9EF1E8F8CDF00515A66 /* Info.plist */,
-				9A8CFD6B1E8FBC3200B91812 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -535,8 +518,8 @@
 		9A8BD9F31E8F8CF700515A66 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				B6F85B181E8FC66300F4F791 /* Generators */,
 				9A8BD9F41E8F8CF700515A66 /* AppDelegate.swift */,
+				FFD9B8C71E8FF68700DD14BD /* Generators */,
 				9A8BD9F51E8F8CF700515A66 /* Common */,
 				9A8BD9F61E8F8CF700515A66 /* Modules */,
 			);
@@ -546,15 +529,14 @@
 		9A8BD9F51E8F8CF700515A66 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				9A8CFD781E8FD36500B91812 /* DataManagers */,
-				9A8CFD701E8FD1E800B91812 /* Extensions */,
-				9A8CFD611E8FA4FF00B91812 /* Views */,
+				FFD9B8C51E8FF67200DD14BD /* YourWayError.swift */,
+				FFD9B8BB1E8FF63200DD14BD /* Extentions */,
+				FFD9B8BA1E8FF60000DD14BD /* Generators */,
 				FF0FD5271E8F998300A041BD /* View */,
 				B6F85B151E8FBEB400F4F791 /* Types */,
 				B6F85B0E1E8FBBD100F4F791 /* Entities */,
 				B6F85B061E8FB83600F4F791 /* DataManagers */,
 				9A8BD9F81E8F95F900515A66 /* ViperTransitioning.swift */,
-				9A8CFD691E8FBB1300B91812 /* YourWayError.swift */,
 				FF0FD5331E8F9F2400A041BD /* Constants.swift */,
 				B6F85B021E8FA97200F4F791 /* YourWayCell.swift */,
 			);
@@ -564,46 +546,13 @@
 		9A8BD9F61E8F8CF700515A66 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				04B6E733E9997804B6CCE931 /* Authorization */,
+				FFD9B8CA1E8FF6CD00DD14BD /* Authorization */,
 				950CD988EA09124FA543E440 /* Carousel */,
-				9A8CFD7B1E8FDA0500B91812 /* TabBar */,
+				33C437A9D3CCBC5D895CAD87 /* Opportunity */,
+				FFD9B8EC1E8FF6D700DD14BD /* TabBar */,
 				BF183BDBE7E27D2A2EED5647 /* Way */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		9A8CFD611E8FA4FF00B91812 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				9A8CFD621E8FA52900B91812 /* YourWayButton.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		9A8CFD701E8FD1E800B91812 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				9A8CFD711E8FD1E800B91812 /* UIColor+YourWay.swift */,
-				9A8CFD721E8FD1E800B91812 /* UIFont+YourWay.swift */,
-				9A8CFD731E8FD1E800B91812 /* UIImage+YourWay.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		9A8CFD781E8FD36500B91812 /* DataManagers */ = {
-			isa = PBXGroup;
-			children = (
-				9A8CFD791E8FD37B00B91812 /* AuthorizationDataManager.swift */,
-			);
-			path = DataManagers;
-			sourceTree = "<group>";
-		};
-		9A8CFD7B1E8FDA0500B91812 /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				9A8CFD7C1E8FDA2600B91812 /* TabBar.storyboard */,
-			);
-			path = TabBar;
 			sourceTree = "<group>";
 		};
 		9CB8FBEBAE09803F18C5E236 /* Configurator */ = {
@@ -613,53 +562,6 @@
 				21956D0C4C84BC16FCB1268C /* CarouselInitializer.swift */,
 			);
 			path = Configurator;
-			sourceTree = "<group>";
-		};
-		BB45A177CA069CDE3D28CB04 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				4DC44C0340861D7ACB5C9A39 /* CarouselRouterInput.swift */,
-				3C48AC5F3CFD351705AC6BA0 /* CarouselRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		CA115438D95E47725015FD8D /* Unit */ = {
-			isa = PBXGroup;
-			children = (
-				F9A72D5A0E3A12AC53E4D2C9 /* Carousel */,
-			);
-			path = Unit;
-			sourceTree = "<group>";
-		};
-		F9A72D5A0E3A12AC53E4D2C9 /* Carousel */ = {
-			isa = PBXGroup;
-			children = (
-				6D84BAE1B76C6675F21D39BA /* Configurator */,
-				53B5B7312DD30903FCF09EC8 /* View */,
-				1675C4F6FD86B0BE008CF155 /* Interactor */,
-				95CC0272F6D2A19ADC809739 /* Presenter */,
-				02017F9F010C202EAB8CC766 /* Router */,
-			);
-			path = Carousel;
-			sourceTree = "<group>";
-		};
-		FF0FD5271E8F998300A041BD /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FF0FD5291E8F99B000A041BD /* iCarousel.h */,
-				FF0FD52A1E8F99B000A041BD /* iCarousel.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		FF0FD52E1E8F9CA600A041BD /* Card */ = {
-			isa = PBXGroup;
-			children = (
-				FF0FD52F1E8F9CB600A041BD /* CarouselCardViewController.swift */,
-				FF0FD5311E8F9EDB00A041BD /* CarouselCardViewModel.swift */,
-			);
-			name = Card;
 			sourceTree = "<group>";
 		};
 		B1E87A89EC0FCBD30C58C688 /* Interactor */ = {
@@ -673,6 +575,7 @@
 		B6F85B061E8FB83600F4F791 /* DataManagers */ = {
 			isa = PBXGroup;
 			children = (
+				FFD9B8C31E8FF66700DD14BD /* AuthorizationDataManager.swift */,
 				B6F85B071E8FB85F00F4F791 /* StepsDataManager.swift */,
 			);
 			path = DataManagers;
@@ -681,8 +584,9 @@
 		B6F85B091E8FBBB300F4F791 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B6F85B0A1E8FBBB700F4F791 /* RealmSwift.framework */,
-				B6F85B0B1E8FBBB700F4F791 /* Realm.framework */,
+				FFD9B8B01E8FDEF000DD14BD /* Kingfisher.framework */,
+				FF0FD5411E8FCFF400A041BD /* Realm.framework */,
+				FF0FD5421E8FCFF400A041BD /* RealmSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -690,9 +594,9 @@
 		B6F85B0E1E8FBBD100F4F791 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				FFD9B8B61E8FF51400DD14BD /* Category.swift */,
 				B6F85B111E8FBCC800F4F791 /* Step.swift */,
 				B6F85B131E8FBDE100F4F791 /* Opportunity.swift */,
-				B6F85B1B1E8FDC9000F4F791 /* Category.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -700,17 +604,18 @@
 		B6F85B151E8FBEB400F4F791 /* Types */ = {
 			isa = PBXGroup;
 			children = (
-				B6F85B161E8FBEC400F4F791 /* StepState.swift */,
+				FFD9B8B81E8FF54000DD14BD /* StepState.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
 		};
-		B6F85B181E8FC66300F4F791 /* Generators */ = {
+		BB45A177CA069CDE3D28CB04 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				B6F85B191E8FC6BC00F4F791 /* DataGenerator.swift */,
+				4DC44C0340861D7ACB5C9A39 /* CarouselRouterInput.swift */,
+				3C48AC5F3CFD351705AC6BA0 /* CarouselRouter.swift */,
 			);
-			path = Generators;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		BF183BDBE7E27D2A2EED5647 /* Way */ = {
@@ -746,6 +651,131 @@
 			path = Way;
 			sourceTree = "<group>";
 		};
+		DFAA7CDA0D9352EB85236F6C /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				4186469A6415089645BFCDB1 /* OpportunityConfigurator.swift */,
+				C914945AEB657313C5C223E0 /* OpportunityInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FF0FD5271E8F998300A041BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF0FD5291E8F99B000A041BD /* iCarousel.h */,
+				FF0FD52A1E8F99B000A041BD /* iCarousel.m */,
+				FF0FD5391E8FC5D300A041BD /* YourWayButton.swift */,
+				FF0FD53B1E8FC6C800A041BD /* BlurredNavigationBar.swift */,
+				FFD9B8B41E8FE70100DD14BD /* BlurredImage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF0FD52E1E8F9CA600A041BD /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				FF0FD52F1E8F9CB600A041BD /* CarouselCardViewController.swift */,
+				FF0FD5311E8F9EDB00A041BD /* CarouselCardViewModel.swift */,
+			);
+			name = Card;
+			sourceTree = "<group>";
+		};
+		FFD9B8BA1E8FF60000DD14BD /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Generators;
+			sourceTree = "<group>";
+		};
+		FFD9B8BB1E8FF63200DD14BD /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				FFD9B8BC1E8FF64400DD14BD /* UIColor+YourWay.swift */,
+				FFD9B8BD1E8FF64400DD14BD /* UIFont+YourWay.swift */,
+				FFD9B8BE1E8FF64400DD14BD /* UIImage+YourWay.swift */,
+			);
+			name = Extentions;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FFD9B8C71E8FF68700DD14BD /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				FFD9B8C81E8FF69500DD14BD /* DataGenerator.swift */,
+			);
+			path = Generators;
+			sourceTree = "<group>";
+		};
+		FFD9B8CA1E8FF6CD00DD14BD /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				FFD9B8CB1E8FF6CD00DD14BD /* AuthorizationConstants.swift */,
+				FFD9B8CC1E8FF6CD00DD14BD /* Configurator */,
+				FFD9B8CF1E8FF6CD00DD14BD /* Interactor */,
+				FFD9B8D31E8FF6CD00DD14BD /* Presenter */,
+				FFD9B8D61E8FF6CD00DD14BD /* Router */,
+				FFD9B8D91E8FF6CD00DD14BD /* View */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		FFD9B8CC1E8FF6CD00DD14BD /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FFD9B8CD1E8FF6CD00DD14BD /* AuthorizationConfigurator.swift */,
+				FFD9B8CE1E8FF6CD00DD14BD /* AuthorizationInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FFD9B8CF1E8FF6CD00DD14BD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FFD9B8D01E8FF6CD00DD14BD /* AuthorizationInteractor.swift */,
+				FFD9B8D11E8FF6CD00DD14BD /* AuthorizationInteractorInput.swift */,
+				FFD9B8D21E8FF6CD00DD14BD /* AuthorizationInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FFD9B8D31E8FF6CD00DD14BD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FFD9B8D41E8FF6CD00DD14BD /* AuthorizationModuleInput.swift */,
+				FFD9B8D51E8FF6CD00DD14BD /* AuthorizationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FFD9B8D61E8FF6CD00DD14BD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FFD9B8D71E8FF6CD00DD14BD /* AuthorizationRouter.swift */,
+				FFD9B8D81E8FF6CD00DD14BD /* AuthorizationRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FFD9B8D91E8FF6CD00DD14BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFD9B8DA1E8FF6CD00DD14BD /* Authorization.storyboard */,
+				FFD9B8DB1E8FF6CD00DD14BD /* AuthorizationViewController.swift */,
+				FFD9B8DC1E8FF6CD00DD14BD /* AuthorizationViewInput.swift */,
+				FFD9B8DD1E8FF6CD00DD14BD /* AuthorizationViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFD9B8EC1E8FF6D700DD14BD /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FFD9B8ED1E8FF6D700DD14BD /* TabBar.storyboard */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -756,8 +786,7 @@
 				9A8BD9B21E8F8C2C00515A66 /* Sources */,
 				9A8BD9B31E8F8C2C00515A66 /* Frameworks */,
 				9A8BD9B41E8F8C2C00515A66 /* Resources */,
-				9A8CFD681E8FAEC700B91812 /* ShellScript */,
-				B6F85B211E8FE15C00F4F791 /* Embed Frameworks */,
+				FFD9B8AD1E8FD8D100DD14BD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -834,14 +863,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A8CFD6C1E8FBC3200B91812 /* Localizable.strings in Resources */,
-				9A8CFD601E8FA1AA00B91812 /* Authorization.storyboard in Resources */,
 				FF0FD52D1E8F9C9800A041BD /* Carousel.storyboard in Resources */,
 				9A8BD9F01E8F8CDF00515A66 /* Assets.xcassets in Resources */,
 				9A8BD9F11E8F8CDF00515A66 /* LaunchScreen.storyboard in Resources */,
-				9A8CFD7D1E8FDA2600B91812 /* TabBar.storyboard in Resources */,
 				B6F85AFD1E8F9E9800F4F791 /* Way.storyboard in Resources */,
+				FFD9B8F01E8FF81100DD14BD /* Localizable.strings in Resources */,
+				FFD9B8EE1E8FF6D700DD14BD /* TabBar.storyboard in Resources */,
+				FFD9B8E81E8FF6CD00DD14BD /* Authorization.storyboard in Resources */,
 				9A8BD9F21E8F8CDF00515A66 /* Info.plist in Resources */,
+				FF0FD5361E8FBF3200A041BD /* Opportunity.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,58 +884,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		9A8CFD681E8FAEC700B91812 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "TAGS=\"TODO:|FIXME:|WARNING:\"\necho \"searching ${SRCROOT}/memento for ${TAGS}\"\nfind \"${SRCROOT}/YourWay\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		9A8BD9B21E8F8C2C00515A66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD9B8E51E8FF6CD00DD14BD /* AuthorizationPresenter.swift in Sources */,
 				FF0FD52B1E8F99B000A041BD /* iCarousel.m in Sources */,
 				FF0FD5341E8F9F2400A041BD /* Constants.swift in Sources */,
+				FFD9B8E61E8FF6CD00DD14BD /* AuthorizationRouter.swift in Sources */,
+				FFD9B8E41E8FF6CD00DD14BD /* AuthorizationModuleInput.swift in Sources */,
+				FFD9B8C11E8FF64400DD14BD /* UIImage+YourWay.swift in Sources */,
+				FF0FD5381E8FC28000A041BD /* OpportunityViewModel.swift in Sources */,
 				9A8BD9F91E8F95F900515A66 /* ViperTransitioning.swift in Sources */,
+				FF0FD53C1E8FC6C800A041BD /* BlurredNavigationBar.swift in Sources */,
+				FFD9B8DF1E8FF6CD00DD14BD /* AuthorizationConfigurator.swift in Sources */,
 				FF0FD5301E8F9CB600A041BD /* CarouselCardViewController.swift in Sources */,
 				9A8BD9F71E8F8CF700515A66 /* AppDelegate.swift in Sources */,
-				9A8CFD6A1E8FBB1300B91812 /* YourWayError.swift in Sources */,
-				38733F587A1836F5F54F13C9 /* AuthorizationViewInput.swift in Sources */,
-				DEF4488F25C1554FC9525DBE /* AuthorizationViewOutput.swift in Sources */,
-				ABA1478A53595FAB8798F286 /* AuthorizationViewController.swift in Sources */,
-				9A8CFD631E8FA52900B91812 /* YourWayButton.swift in Sources */,
-				2FE115AFDE35ED2DED949BA1 /* AuthorizationModuleInput.swift in Sources */,
-				9A8CFD761E8FD1E800B91812 /* UIImage+YourWay.swift in Sources */,
-				12F18689D292567EFF9081FC /* AuthorizationPresenter.swift in Sources */,
-				DEEB67CF2EB4EA7AB0561598 /* AuthorizationInteractorInput.swift in Sources */,
-				541F5FC44523B6D7344AE268 /* AuthorizationInteractorOutput.swift in Sources */,
-				1A82A2F08FA81C759305E979 /* AuthorizationInteractor.swift in Sources */,
-				9A8CFD741E8FD1E800B91812 /* UIColor+YourWay.swift in Sources */,
-				A77E0DE15E9FCB3D0FAEAF0F /* AuthorizationRouterInput.swift in Sources */,
-				3DF434A8C750D6666F83D5F9 /* AuthorizationRouter.swift in Sources */,
-				9A8CFD751E8FD1E800B91812 /* UIFont+YourWay.swift in Sources */,
-				3E5E85A9FB04EEC82D4D4676 /* AuthorizationConfigurator.swift in Sources */,
-				9A8CFD7A1E8FD37B00B91812 /* AuthorizationDataManager.swift in Sources */,
-				3AA633699C30D72641FEF06E /* AuthorizationInitializer.swift in Sources */,
-				3097D8AF97F4C8D27EEC7219 /* AuthorizationConstants.swift in Sources */,
+				FFD9B8EB1E8FF6CD00DD14BD /* AuthorizationViewOutput.swift in Sources */,
 				8A63FFDDA060220798A8BD4B /* CarouselViewInput.swift in Sources */,
 				DFB43F0F76CABDCFB11DBBA0 /* CarouselViewOutput.swift in Sources */,
 				EE6C67A303B0E3EBD3926199 /* CarouselViewController.swift in Sources */,
 				812C85057F9F07E3090F1E4A /* CarouselModuleInput.swift in Sources */,
 				764E3D5FC8DE8D64B85BB55A /* CarouselPresenter.swift in Sources */,
 				65218B7F318ED1D26FB5635E /* CarouselInteractorInput.swift in Sources */,
+				FFD9B8E91E8FF6CD00DD14BD /* AuthorizationViewController.swift in Sources */,
+				FFD9B8EA1E8FF6CD00DD14BD /* AuthorizationViewInput.swift in Sources */,
 				F0646D89D8CF6B4C333E67B2 /* CarouselInteractorOutput.swift in Sources */,
+				FFD9B8E01E8FF6CD00DD14BD /* AuthorizationInitializer.swift in Sources */,
+				FFD9B8C91E8FF69500DD14BD /* DataGenerator.swift in Sources */,
 				4A36EE3E8A681D8460DAC0FF /* CarouselInteractor.swift in Sources */,
 				D7273C8035C716E20927B59D /* CarouselRouterInput.swift in Sources */,
 				D89704544E405343674FEC4D /* CarouselRouter.swift in Sources */,
@@ -913,8 +920,32 @@
 				0EEEBC398195F6997B61DC2E /* CarouselConfigurator.swift in Sources */,
 				D581D27ABC41DDD85B23F6F4 /* CarouselInitializer.swift in Sources */,
 				9F4E8752417B336CDC04DAA7 /* CarouselConstants.swift in Sources */,
+				277C690C392EED9CA046CA5D /* OpportunityViewInput.swift in Sources */,
+				475387E3AB0DBEBE6BF543EA /* OpportunityViewOutput.swift in Sources */,
+				FFD9B8C01E8FF64400DD14BD /* UIFont+YourWay.swift in Sources */,
+				FF0FD53A1E8FC5D300A041BD /* YourWayButton.swift in Sources */,
+				FFD9B8B91E8FF54000DD14BD /* StepState.swift in Sources */,
+				4EDB6D92F52E96579801A735 /* OpportunityViewController.swift in Sources */,
+				FFD9B8B71E8FF51400DD14BD /* Category.swift in Sources */,
+				FFD9B8DE1E8FF6CD00DD14BD /* AuthorizationConstants.swift in Sources */,
+				FFD9B8E21E8FF6CD00DD14BD /* AuthorizationInteractorInput.swift in Sources */,
+				FFD9B8C41E8FF66700DD14BD /* AuthorizationDataManager.swift in Sources */,
+				D9A3B2B58DD880D4FBF258B0 /* OpportunityModuleInput.swift in Sources */,
+				C0D8B9D22E11F8783087CD05 /* OpportunityPresenter.swift in Sources */,
+				FFD9B8E31E8FF6CD00DD14BD /* AuthorizationInteractorOutput.swift in Sources */,
+				3EC0D94FA15883907A1A3441 /* OpportunityInteractorInput.swift in Sources */,
+				879B3041E6D788B88C972BAC /* OpportunityInteractorOutput.swift in Sources */,
+				FFD9B8BF1E8FF64400DD14BD /* UIColor+YourWay.swift in Sources */,
+				018CAFAE50FC38678F725065 /* OpportunityInteractor.swift in Sources */,
+				5D3E041C72249C2B7F84EA37 /* OpportunityRouterInput.swift in Sources */,
+				F12F2AC71880039A81723CBB /* OpportunityRouter.swift in Sources */,
+				F42DED747E6389BFEEF900F1 /* OpportunityConfigurator.swift in Sources */,
+				88375A1CA11E85E57C35DFA5 /* OpportunityInitializer.swift in Sources */,
+				6CA5C3DB662A1A9F4C7F4011 /* OpportunityConstants.swift in Sources */,
+				FFD9B8C61E8FF67200DD14BD /* YourWayError.swift in Sources */,
 				9C54083F255105CFA7E52E11 /* WayViewInput.swift in Sources */,
 				520FEABDFCE7E6B08FCC8557 /* WayViewOutput.swift in Sources */,
+				FFD9B8E71E8FF6CD00DD14BD /* AuthorizationRouterInput.swift in Sources */,
 				5E6396BD63FFFD81EC297146 /* WayViewController.swift in Sources */,
 				B6F85B051E8FAA4400F4F791 /* WayStepViewModel.swift in Sources */,
 				73193F2B799663005065E66B /* WayModuleInput.swift in Sources */,
@@ -926,13 +957,12 @@
 				1ECB17145BC6B5884CCFDAFC /* WayInteractorInput.swift in Sources */,
 				C1ADF06457AFAAC49645020D /* WayInteractorOutput.swift in Sources */,
 				5DBE4A378078FBA4448A1825 /* WayInteractor.swift in Sources */,
-				B6F85B1A1E8FC6BC00F4F791 /* DataGenerator.swift in Sources */,
-				B6F85B1C1E8FDC9000F4F791 /* Category.swift in Sources */,
 				B6F85B031E8FA97200F4F791 /* YourWayCell.swift in Sources */,
+				FFD9B8E11E8FF6CD00DD14BD /* AuthorizationInteractor.swift in Sources */,
+				FFD9B8B51E8FE70100DD14BD /* BlurredImage.swift in Sources */,
 				57E8574C5E9AE862C150BD07 /* WayRouterInput.swift in Sources */,
 				9FC3FFCB4EC62B0BB1F37FA9 /* WayRouter.swift in Sources */,
 				B6F85B121E8FBCC800F4F791 /* Step.swift in Sources */,
-				B6F85B171E8FBEC400F4F791 /* StepState.swift in Sources */,
 				62153D0869BC9FE354484E31 /* WayConfigurator.swift in Sources */,
 				26459D1E7A23297CD0077C55 /* WayInitializer.swift in Sources */,
 				C59B87B2115DCAF78FC74C57 /* WayConstants.swift in Sources */,
@@ -944,16 +974,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A8BD9CF1E8F8C2C00515A66 /* YourWayTests.swift in Sources */,
-				01E94CE87880FF76BBCFC628 /* AuthorizationConfiguratorTests.swift in Sources */,
-				22C7DA73D668955372F74E18 /* AuthorizationViewTests.swift in Sources */,
-				DEB86C897789C59B74233F94 /* AuthorizationInteractorTests.swift in Sources */,
-				9F807A7FF8BD766541CD3BD6 /* AuthorizationPresenterTests.swift in Sources */,
-				8C78FFE102EF0ACB218DE60A /* AuthorizationRouterTests.swift in Sources */,
 				FDA1D3B2900938594058D7CE /* CarouselConfiguratorTests.swift in Sources */,
 				D79A30C0DDD4097042DDA270 /* CarouselViewTests.swift in Sources */,
 				C979B83E87FD7145B181C9B4 /* CarouselInteractorTests.swift in Sources */,
 				4AA5C5947498D7C0671B5581 /* CarouselPresenterTests.swift in Sources */,
 				1AE26E51637F54260AA2B2FA /* CarouselRouterTests.swift in Sources */,
+				E1315F65DA8A4E3607D7C092 /* OpportunityConfiguratorTests.swift in Sources */,
+				2CFA7ECA1C8F2758DFC1B07C /* OpportunityViewTests.swift in Sources */,
+				D880D2EC33986184EDC0B366 /* OpportunityInteractorTests.swift in Sources */,
+				7BA296683815679BD6B8DB85 /* OpportunityPresenterTests.swift in Sources */,
+				1D5C8C50B49FD43FA037E785 /* OpportunityRouterTests.swift in Sources */,
 				19E56B0C6C02E2CFB99C4C4A /* WayConfiguratorTests.swift in Sources */,
 				B4FB28888FF1EEEC2C84C97F /* WayViewTests.swift in Sources */,
 				C17E61E7ED63DBD3EF2B3A8C /* WayInteractorTests.swift in Sources */,
@@ -1080,10 +1110,12 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 553S8YDWZN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/YourWay/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
@@ -1108,6 +1140,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/YourWay/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10;

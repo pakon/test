@@ -20,14 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setupAppearance()
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        
-        let initialViewController = UIStoryboard(name: "Authorization", bundle: nil).instantiateInitialViewController()!
-        
-        window?.backgroundColor = UIColor.white
-        window?.rootViewController = initialViewController
-        window?.makeKeyAndVisible()
-        
         return true
     }
 
