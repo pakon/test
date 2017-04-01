@@ -41,6 +41,7 @@
 		9A8CFD751E8FD1E800B91812 /* UIFont+YourWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CFD721E8FD1E800B91812 /* UIFont+YourWay.swift */; };
 		9A8CFD761E8FD1E800B91812 /* UIImage+YourWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CFD731E8FD1E800B91812 /* UIImage+YourWay.swift */; };
 		9A8CFD7A1E8FD37B00B91812 /* AuthorizationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8CFD791E8FD37B00B91812 /* AuthorizationDataManager.swift */; };
+		9A8CFD7D1E8FDA2600B91812 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A8CFD7C1E8FDA2600B91812 /* TabBar.storyboard */; };
 		9F4E8752417B336CDC04DAA7 /* CarouselConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254C758F42C2B1825A7E728 /* CarouselConstants.swift */; };
 		9F807A7FF8BD766541CD3BD6 /* AuthorizationPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540E017BAD4C306CCB9C0E19 /* AuthorizationPresenterTests.swift */; };
 		A77E0DE15E9FCB3D0FAEAF0F /* AuthorizationRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DE298AAFB089403D33A7DF /* AuthorizationRouterInput.swift */; };
@@ -117,6 +118,7 @@
 		9A8CFD721E8FD1E800B91812 /* UIFont+YourWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+YourWay.swift"; sourceTree = "<group>"; };
 		9A8CFD731E8FD1E800B91812 /* UIImage+YourWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+YourWay.swift"; sourceTree = "<group>"; };
 		9A8CFD791E8FD37B00B91812 /* AuthorizationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationDataManager.swift; sourceTree = "<group>"; };
+		9A8CFD7C1E8FDA2600B91812 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		9F51055840DF28257595E021 /* AuthorizationInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationInitializer.swift; sourceTree = "<group>"; };
 		A20B98851F5AABC5479416AA /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
 		AF7BE17F6612C0D9C4CC57D9 /* AuthorizationInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractor.swift; sourceTree = "<group>"; };
@@ -386,6 +388,7 @@
 			children = (
 				04B6E733E9997804B6CCE931 /* Authorization */,
 				950CD988EA09124FA543E440 /* Carousel */,
+				9A8CFD7B1E8FDA0500B91812 /* TabBar */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -414,6 +417,14 @@
 				9A8CFD791E8FD37B00B91812 /* AuthorizationDataManager.swift */,
 			);
 			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		9A8CFD7B1E8FDA0500B91812 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				9A8CFD7C1E8FDA2600B91812 /* TabBar.storyboard */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		9CB8FBEBAE09803F18C5E236 /* Configurator */ = {
@@ -564,6 +575,7 @@
 				FF0FD52D1E8F9C9800A041BD /* Carousel.storyboard in Resources */,
 				9A8BD9F01E8F8CDF00515A66 /* Assets.xcassets in Resources */,
 				9A8BD9F11E8F8CDF00515A66 /* LaunchScreen.storyboard in Resources */,
+				9A8CFD7D1E8FDA2600B91812 /* TabBar.storyboard in Resources */,
 				9A8BD9F21E8F8CDF00515A66 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

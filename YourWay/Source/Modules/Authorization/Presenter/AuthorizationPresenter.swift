@@ -69,7 +69,7 @@ extension AuthorizationPresenter: AuthorizationViewOutput {
 
 extension AuthorizationPresenter: AuthorizationInteractorOutput {
     func authorizationCompleted() {
-        
+        router.openTabBar()
     }
     
     func errorOccured(_ error: Error) {

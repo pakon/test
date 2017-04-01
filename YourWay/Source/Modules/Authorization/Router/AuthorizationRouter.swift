@@ -9,4 +9,8 @@
 class AuthorizationRouter: AuthorizationRouterInput {
 	
 	weak var transitionHandler: ViperModuleTransitionHandler!
+    
+    func openTabBar() {
+        _ = transitionHandler.openModule(with: AuthorizationConstants.SegueIdentifiers.openTabBar)
+    }
 }

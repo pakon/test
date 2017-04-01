@@ -7,5 +7,7 @@
 //
 
 struct AuthorizationConstants {
-
+    struct SegueIdentifiers {
+        static let openTabBar = "openTabBar"
+    }
 }

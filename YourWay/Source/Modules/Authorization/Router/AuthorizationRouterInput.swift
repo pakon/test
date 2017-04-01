@@ -7,5 +7,5 @@
 //
 
 protocol AuthorizationRouterInput {
-
+    func openTabBar()
 }
