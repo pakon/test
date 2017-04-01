@@ -23,6 +23,8 @@ class WayViewController: UIViewController {
     @IBOutlet var firstBackgroundImageView: UIImageView!
     
     @IBOutlet var secondBackgroundImageView: UIImageView!
+    
+    @IBOutlet var shadowView: UIView!
 
     // MARK: - Life cycle
     override func viewDidLoad() {
@@ -33,6 +35,16 @@ class WayViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         output.viewWillAppear()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let gl = CAGradientLayer()
+        gl.colors = [UIColor.yourWayShadowGradientColor.cgColor, UIColor.clear.cgColor]
+        gl.frame = shadowView.frame
+        gl.startPoint = CGPoint(x: 1.0, y: 0.0)
+        gl.endPoint = CGPoint(x: 1.0, y: 1.0)
+        shadowView.layer.addSublayer(gl)
     }
 
     override func viewWillDisappear(_ animated: Bool) {

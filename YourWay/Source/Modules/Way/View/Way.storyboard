@@ -44,6 +44,9 @@
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carousel-test-2" translatesAutoresizingMaskIntoConstraints="NO" id="sDk-Ul-3XW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o46-zy-ulf" userLabel="Shadow">
+                                <rect key="frame" x="-0.5" y="-0.5" width="375" height="667"/>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xN7-rZ-cIl">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -126,6 +129,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="o46-zy-ulf" firstAttribute="height" secondItem="5ia-zD-J4t" secondAttribute="height" id="2Cs-WM-rjU"/>
                             <constraint firstItem="xN7-rZ-cIl" firstAttribute="leading" secondItem="5ia-zD-J4t" secondAttribute="leading" id="GNI-RW-rgg"/>
                             <constraint firstItem="sDk-Ul-3XW" firstAttribute="centerX" secondItem="5ia-zD-J4t" secondAttribute="centerX" id="JRt-Bl-Az8"/>
                             <constraint firstAttribute="height" secondItem="fpR-qn-eg2" secondAttribute="height" id="W2D-kA-knF"/>
@@ -135,8 +139,11 @@
                             <constraint firstItem="sDk-Ul-3XW" firstAttribute="width" secondItem="5ia-zD-J4t" secondAttribute="width" id="eyb-G6-quA"/>
                             <constraint firstItem="sDk-Ul-3XW" firstAttribute="centerY" secondItem="5ia-zD-J4t" secondAttribute="centerY" id="f0G-sE-Olm"/>
                             <constraint firstAttribute="trailing" secondItem="xN7-rZ-cIl" secondAttribute="trailing" id="q9X-Rv-drd"/>
+                            <constraint firstItem="o46-zy-ulf" firstAttribute="centerY" secondItem="5ia-zD-J4t" secondAttribute="centerY" id="qXj-Xb-zfh"/>
                             <constraint firstItem="xN7-rZ-cIl" firstAttribute="top" secondItem="MZG-rk-PRF" secondAttribute="bottom" id="rv5-jp-8Om"/>
+                            <constraint firstItem="o46-zy-ulf" firstAttribute="centerX" secondItem="5ia-zD-J4t" secondAttribute="centerX" id="zGf-tL-1R5"/>
                             <constraint firstItem="fl6-b5-hFs" firstAttribute="top" secondItem="xN7-rZ-cIl" secondAttribute="bottom" id="zNk-ed-nGl"/>
+                            <constraint firstItem="o46-zy-ulf" firstAttribute="width" secondItem="5ia-zD-J4t" secondAttribute="width" id="zPi-MH-Oxt"/>
                             <constraint firstItem="fpR-qn-eg2" firstAttribute="centerX" secondItem="5ia-zD-J4t" secondAttribute="centerX" id="zsO-4E-4vQ"/>
                         </constraints>
                     </view>
@@ -144,6 +151,7 @@
                     <connections>
                         <outlet property="firstBackgroundImageView" destination="fpR-qn-eg2" id="DDK-bi-mn1"/>
                         <outlet property="secondBackgroundImageView" destination="sDk-Ul-3XW" id="Dil-GX-zpD"/>
+                        <outlet property="shadowView" destination="o46-zy-ulf" id="rFI-SP-t2g"/>
                         <outlet property="wayTableView" destination="xN7-rZ-cIl" id="nso-UT-6nT"/>
                         <segue destination="p7O-wX-gjM" kind="show" identifier="oportunities" id="E8X-T6-9xM"/>
                     </connections>
