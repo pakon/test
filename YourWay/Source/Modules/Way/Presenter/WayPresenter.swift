@@ -35,7 +35,7 @@ extension WayPresenter: WayModuleInput {
 extension WayPresenter: WayViewOutput {
     func viewDidLoad() {
         view.setupInitialState()
-        createViewModels()
+        interactor.obtainSteps()
         view.setup(viewModels: viewModels)
     }
 
@@ -51,5 +51,7 @@ extension WayPresenter: WayViewOutput {
 // MARK: - WayInteractorOutput
 
 extension WayPresenter: WayInteractorOutput {
-    
+    func received(steps: [Step]) {
+        createViewModels()
+    }
 }

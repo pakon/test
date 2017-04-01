@@ -7,13 +7,22 @@
 //
 
 import UIKit
+import RealmSwift
+
+protocol StepsDataManagerOutput {
+    func received(steps: Results<Step>)
+}
 
 class StepsDataManager: NSObject {
+    
+    var output: StepsDataManagerOutput?
     
     // MARK: Public interface
     
     func getAllSteps() {
-        
+        let realm = try! Realm()
+        let steps = realm.objects(Step.self)
+        output?.received(steps: steps)
     }
     
 }

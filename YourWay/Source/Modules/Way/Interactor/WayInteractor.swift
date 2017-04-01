@@ -6,7 +6,23 @@
 //  Copyright © 2017 MPK LLC. All rights reserved.
 //
 
-class WayInteractor: WayInteractorInput {
+import RealmSwift
+
+class WayInteractor: WayInteractorInput, StepsDataManagerOutput {
 
     weak var output: WayInteractorOutput!
+    weak var stepsDataManager: StepsDataManager!
+    
+    // MARK: WayInteractorInput
+    
+    func obtainSteps() {
+        stepsDataManager.getAllSteps()
+    }
+    
+    // MARK: StepsDataManagerOutput
+    
+    func received(steps: Results<Step>) {
+        output.received(steps: Array(steps))
+    }
+    
 }

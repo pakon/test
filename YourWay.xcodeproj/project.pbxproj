@@ -34,6 +34,11 @@
 		B6F85B031E8FA97200F4F791 /* YourWayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B021E8FA97200F4F791 /* YourWayCell.swift */; };
 		B6F85B051E8FAA4400F4F791 /* WayStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B041E8FAA4400F4F791 /* WayStepViewModel.swift */; };
 		B6F85B081E8FB85F00F4F791 /* StepsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B071E8FB85F00F4F791 /* StepsDataManager.swift */; };
+		B6F85B0F1E8FBCA600F4F791 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F85B0A1E8FBBB700F4F791 /* RealmSwift.framework */; };
+		B6F85B101E8FBCA600F4F791 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F85B0B1E8FBBB700F4F791 /* Realm.framework */; };
+		B6F85B121E8FBCC800F4F791 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B111E8FBCC800F4F791 /* Step.swift */; };
+		B6F85B141E8FBDE100F4F791 /* Opportunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B131E8FBDE100F4F791 /* Opportunity.swift */; };
+		B6F85B171E8FBEC400F4F791 /* StepType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F85B161E8FBEC400F4F791 /* StepType.swift */; };
 		C17E61E7ED63DBD3EF2B3A8C /* WayInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC670454B88116C95BF64D /* WayInteractorTests.swift */; };
 		C1ADF06457AFAAC49645020D /* WayInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2348FF0927717BD16D74EF76 /* WayInteractorOutput.swift */; };
 		C59B87B2115DCAF78FC74C57 /* WayConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC692B5A5F24A6309A1BCA7 /* WayConstants.swift */; };
@@ -80,6 +85,11 @@
 		B6F85B021E8FA97200F4F791 /* YourWayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourWayCell.swift; sourceTree = "<group>"; };
 		B6F85B041E8FAA4400F4F791 /* WayStepViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WayStepViewModel.swift; sourceTree = "<group>"; };
 		B6F85B071E8FB85F00F4F791 /* StepsDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsDataManager.swift; sourceTree = "<group>"; };
+		B6F85B0A1E8FBBB700F4F791 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		B6F85B0B1E8FBBB700F4F791 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		B6F85B111E8FBCC800F4F791 /* Step.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		B6F85B131E8FBDE100F4F791 /* Opportunity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Opportunity.swift; sourceTree = "<group>"; };
+		B6F85B161E8FBEC400F4F791 /* StepType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepType.swift; sourceTree = "<group>"; };
 		C57F0953E6E84438B1C8C209 /* WayViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayViewController.swift; sourceTree = "<group>"; };
 		EB53521FE72E324955361262 /* WayInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayInteractor.swift; sourceTree = "<group>"; };
 		F99F24DE63EAFB46406F57CD /* WayRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WayRouter.swift; sourceTree = "<group>"; };
@@ -90,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6F85B0F1E8FBCA600F4F791 /* RealmSwift.framework in Frameworks */,
+				B6F85B101E8FBCA600F4F791 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +212,7 @@
 				9A8BD9B81E8F8C2C00515A66 /* YourWay */,
 				9A8BD9CD1E8F8C2C00515A66 /* YourWayTests */,
 				9A8BD9B71E8F8C2C00515A66 /* Products */,
+				B6F85B091E8FBBB300F4F791 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -254,6 +267,8 @@
 		9A8BD9F51E8F8CF700515A66 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B6F85B151E8FBEB400F4F791 /* Types */,
+				B6F85B0E1E8FBBD100F4F791 /* Entities */,
 				B6F85B061E8FB83600F4F791 /* DataManagers */,
 				9A8BD9F81E8F95F900515A66 /* ViperTransitioning.swift */,
 				B6F85B021E8FA97200F4F791 /* YourWayCell.swift */,
@@ -283,6 +298,32 @@
 				B6F85B071E8FB85F00F4F791 /* StepsDataManager.swift */,
 			);
 			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		B6F85B091E8FBBB300F4F791 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6F85B0A1E8FBBB700F4F791 /* RealmSwift.framework */,
+				B6F85B0B1E8FBBB700F4F791 /* Realm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6F85B0E1E8FBBD100F4F791 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B6F85B111E8FBCC800F4F791 /* Step.swift */,
+				B6F85B131E8FBDE100F4F791 /* Opportunity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B6F85B151E8FBEB400F4F791 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				B6F85B161E8FBEC400F4F791 /* StepType.swift */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 		BF183BDBE7E27D2A2EED5647 /* Way */ = {
@@ -432,6 +473,7 @@
 				5E6396BD63FFFD81EC297146 /* WayViewController.swift in Sources */,
 				B6F85B051E8FAA4400F4F791 /* WayStepViewModel.swift in Sources */,
 				73193F2B799663005065E66B /* WayModuleInput.swift in Sources */,
+				B6F85B141E8FBDE100F4F791 /* Opportunity.swift in Sources */,
 				B6F85AFF1E8FA6FB00F4F791 /* WayViewManager.swift in Sources */,
 				B6F85B011E8FA95500F4F791 /* WayStepTableViewCell.swift in Sources */,
 				B6F85B081E8FB85F00F4F791 /* StepsDataManager.swift in Sources */,
@@ -442,6 +484,8 @@
 				B6F85B031E8FA97200F4F791 /* YourWayCell.swift in Sources */,
 				57E8574C5E9AE862C150BD07 /* WayRouterInput.swift in Sources */,
 				9FC3FFCB4EC62B0BB1F37FA9 /* WayRouter.swift in Sources */,
+				B6F85B121E8FBCC800F4F791 /* Step.swift in Sources */,
+				B6F85B171E8FBEC400F4F791 /* StepType.swift in Sources */,
 				62153D0869BC9FE354484E31 /* WayConfigurator.swift in Sources */,
 				26459D1E7A23297CD0077C55 /* WayInitializer.swift in Sources */,
 				C59B87B2115DCAF78FC74C57 /* WayConstants.swift in Sources */,
@@ -579,6 +623,10 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 553S8YDWZN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/YourWay/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.mpk.YourWay;
@@ -595,6 +643,10 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 553S8YDWZN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/YourWay/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.mpk.YourWay;

@@ -9,5 +9,5 @@
 import Foundation
 
 protocol WayInteractorOutput: class {
-
+    func received(steps: [Step])
 }

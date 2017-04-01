@@ -24,6 +24,8 @@ class WayModuleConfigurator {
         let interactor = WayInteractor()
         let viewManager = WayViewManager()
         
+        let stepsDataManagar = StepsDataManager()
+        
         viewController.moduleInput = presenter
         viewController.output = presenter
         viewController.viewManager = viewManager
@@ -35,6 +37,9 @@ class WayModuleConfigurator {
         presenter.interactor = interactor
         
         interactor.output = presenter
+        interactor.stepsDataManager = stepsDataManagar
+        
+        stepsDataManagar.output = interactor
     }
 
 }
