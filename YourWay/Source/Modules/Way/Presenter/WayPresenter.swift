@@ -73,7 +73,7 @@ extension WayPresenter: WayInteractorOutput {
         createViewModels(steps)
         let currentStep = steps.first!
         view.setup(viewModels: viewModels, firstImagePath: URL(string:currentStep.opportunities[0].backgroundURL)!, secondImagePath: URL(string: currentStep.opportunities[1].backgroundURL)!)
-        timer = Timer.scheduledTimer(withTimeInterval: 6, repeats: true) { (timer) in
+        timer = Timer.scheduledTimer(withTimeInterval: WayConstants.AnimationTiming.animationTime, repeats: true) { (timer) in
             self.view.updateBackground(reserveImageURL: URL(string: currentStep.opportunities[self.startIteration].backgroundURL)!)
             self.startIteration = (self.startIteration + 1) % currentStep.opportunities.count
         }

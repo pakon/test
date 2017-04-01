@@ -68,9 +68,14 @@ extension WayViewController: WayViewInput {
     
     func setup(viewModels: [WayStepViewModel], firstImagePath: URL, secondImagePath: URL) {
         viewManager.viewModels = viewModels
-        firstBackgroundImageView.kf.setImage(with: firstImagePath, placeholder: UIImage(named: "bg-placeholder")!)
+        let blur = BlurImageProcessor(blurRadius: WayConstants.Blur.radius)
+        firstBackgroundImageView.kf.setImage(with: firstImagePath,
+                                             placeholder: UIImage(named: "bg-placeholder")!,
+                                             options: [.processor(blur)])
         print(firstImagePath)
-        secondBackgroundImageView.kf.setImage(with: secondImagePath, placeholder: UIImage(named: "bg-placeholder")!)
+        secondBackgroundImageView.kf.setImage(with: secondImagePath,
+                                              placeholder: UIImage(named: "bg-placeholder")!,
+                                              options: [.processor(blur)])
         print(secondImagePath)
         wayTableView.reloadData()
     }
@@ -79,13 +84,18 @@ extension WayViewController: WayViewInput {
         
         let firstHideSecondShow: Bool = firstBackgroundImageView.alpha == 1
         
-        let duration = 1.5
+        let duration = WayConstants.AnimationTiming.fadeTime
+        
+        let blur = BlurImageProcessor(blurRadius: WayConstants.Blur.radius)
+        
         
         if (firstHideSecondShow) {
             UIView.transition(with: firstBackgroundImageView, duration: duration, options: [.transitionCrossDissolve], animations: {
                 self.firstBackgroundImageView.alpha = 0
             }, completion: { _ in
-                self.firstBackgroundImageView.kf.setImage(with: reserveImageURL, placeholder: UIImage(named: "bg-placeholder")!)
+                self.firstBackgroundImageView.kf.setImage(with: reserveImageURL,
+                                                          placeholder: UIImage(named: "bg-placeholder")!,
+                                                          options: [.processor(blur)])
             })
             
             UIView.transition(with: secondBackgroundImageView, duration: duration, options: [.transitionCrossDissolve], animations: {
@@ -95,7 +105,9 @@ extension WayViewController: WayViewInput {
             UIView.transition(with: secondBackgroundImageView, duration: duration, options: [.transitionCrossDissolve], animations: {
                 self.secondBackgroundImageView.alpha = 0
             }, completion: { _ in
-                self.secondBackgroundImageView.kf.setImage(with: reserveImageURL, placeholder: UIImage(named: "bg-placeholder")!)
+                self.secondBackgroundImageView.kf.setImage(with: reserveImageURL,
+                                                           placeholder: UIImage(named: "bg-placeholder")!,
+                                                           options: [.processor(blur)])
             })
             
             UIView.transition(with: firstBackgroundImageView, duration: duration, options: [.transitionCrossDissolve], animations: {
