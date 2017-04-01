@@ -10,10 +10,10 @@ class CarouselRouter: CarouselRouterInput {
 	
 	weak var transitionHandler: ViperModuleTransitionHandler!
     
-    func open(opportunity: Opportunity) {
+    func open(opportunity: Opportunity, backgroundImage: UIImage?) {
         transitionHandler.openModule(with: CarouselConstants.SegueIdentifier.opportunity).thenChainUsingClosure { input in
             if let input = input as? OpportunityModuleInput {
-                input.setup(opportunity: opportunity)
+                input.setup(opportunity: opportunity, backgroundImage: backgroundImage)
             }
             return nil
         }

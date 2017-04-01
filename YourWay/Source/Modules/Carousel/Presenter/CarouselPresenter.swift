@@ -56,8 +56,8 @@ extension CarouselPresenter: CarouselViewOutput {
         view.setupStateForViewWillDisappear()
     }
     
-    func cardDidChoose(_ number: Int) {
-        router.open(opportunity: actualOpportunities[number])
+    func cardDidChoose(_ number: Int, backgroundImage: UIImage?) {
+        router.open(opportunity: actualOpportunities[number], backgroundImage: backgroundImage)
     }
 }
 

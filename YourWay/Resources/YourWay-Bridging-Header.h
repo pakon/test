@@ -3,3 +3,5 @@
 //
 
 #import "iCarousel.h"
+#import "UIImage+BlurEffects.h"
+#import "UIImageView+BlurAnimation.h"

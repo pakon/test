@@ -7,5 +7,5 @@
 //
 
 protocol CarouselRouterInput {
-    func open(opportunity: Opportunity)
+    func open(opportunity: Opportunity, backgroundImage: UIImage?)
 }

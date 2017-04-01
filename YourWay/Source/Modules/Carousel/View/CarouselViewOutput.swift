@@ -12,5 +12,5 @@ protocol CarouselViewOutput {
     func viewWillAppear()
     func viewWillDisappear()
     
-    func cardDidChoose(_ number: Int)
+    func cardDidChoose(_ number: Int, backgroundImage: UIImage?)
 }

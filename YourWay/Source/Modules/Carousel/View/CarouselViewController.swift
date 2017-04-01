@@ -60,7 +60,7 @@ class CarouselViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func chooseButtonDidTap(_ sender: Any) {
-        output.cardDidChoose(carousel.currentItemIndex)
+        output.cardDidChoose(carousel.currentItemIndex, backgroundImage: viewModels[carousel.currentItemIndex].backgroundImage)
     }
     
     // MARK: - Private
@@ -83,7 +83,7 @@ class CarouselViewController: UIViewController {
             card.setup(viewModel: viewModel) { image in
                 DispatchQueue.main.async {
                     if let image = image {
-                        viewModel.backgroundImage = image//.blurred(radius: 50)
+                        viewModel.backgroundImage = image.blurred(radius: 100)
                         self.updateBackgroundColor()
                     }
                 }

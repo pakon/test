@@ -64,8 +64,15 @@ extension OpportunityViewController: OpportunityViewInput {
     }
     
     func setup(viewModel: OpportunityViewModel) {
-        let blur = BlurImageProcessor(blurRadius: 5)
-        backgroundImage.kf.setImage(with: viewModel.backgroundUrl, options: [.processor(blur)])
+        if let backgroundImage = viewModel.backgroundImage {
+            self.backgroundImage.image = backgroundImage.blurred(radius: 30)
+        } else {
+            ImageDownloader.default.downloadImage(with: viewModel.backgroundUrl, options: [], progressBlock: nil) {
+                (image, _, _, _) in
+                self.backgroundImage.image = image?.blurred(radius: 30)
+            }
+        }
+        
         iconImage.image = viewModel.iconImage
         titleLabel.text = viewModel.title
         navigationItem.title = viewModel.title
