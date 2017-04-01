@@ -1,0 +1,39 @@
+### Headers settings
+company: MPK LLC
+
+### Xcode project settings
+project_name: YourWay
+xcodeproj_path: YourWay.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: YourWay
+
+# The file path for new modules
+project_file_path: YourWay/Source/Modules
+
+# The Xcode group path to new modules
+project_group_path: YourWay/Source/Modules
+
+### Tests generation settings section
+# The tests target name
+test_target: YourWayTests
+
+# The file path for new tests
+test_file_path: YourWay/Tests/Unit
+
+# The Xcode group path to new tests
+test_group_path: YourWay/Tests/Unit
+
+### Dependencies settings section
+
+cartfile_path: Cartfile
+
+### Templates
+catalogs:
+- 'https://github.com/valentinpopkov/mpk_swift_viper'
+templates:
+- {name: swifty_viper_mcflurry}
+#- {name: local_template_name, local: 'absolute/file/path'}
+#- {name: remote_template_name, git: 'https://github.com/igrekde/remote_template'}
+#- {name: catalog_template_name}
