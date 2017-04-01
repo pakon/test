@@ -9,7 +9,21 @@
 import UIKit
 
 class CarouselCardViewController: UIViewController {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var cardText: UILabel!
+    
+    override func viewDidLoad() {
+        view.layer.cornerRadius = 5
+        
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowRadius = 6
+        view.layer.shadowOpacity = 1
+        view.layer.shadowPath = UIBezierPath(roundedRect: view.layer.bounds, cornerRadius: view.layer.cornerRadius).cgPath
+    }
+    
     func setup(viewModel: CarouselCardViewModel) {
-        view.backgroundColor = viewModel.color
+        imageView.image = viewModel.image
+        cardText.text = viewModel.text
     }
 }

@@ -15,11 +15,14 @@ class CarouselPresenter {
 
     // MARK: - Private
     fileprivate func createViewModels() -> [CarouselCardViewModel] {
-        let first = CarouselCardViewModel(UIColor.red)
-        let second = CarouselCardViewModel(UIColor.blue)
-        let third = CarouselCardViewModel(UIColor.yellow)
+        let first = CarouselCardViewModel(image: UIImage(named: "carousel-test-1")!,
+                                          backgroundImage: UIImage(named: "carousel-test-blur-1")!,
+                                          text: "Пробеги по гранд каньену")
+        let second = CarouselCardViewModel(image: UIImage(named: "carousel-test-2")!,
+                                           backgroundImage: UIImage(named: "carousel-test-blur-2")!,
+                                           text: "Проведи неделю в джунглях амазонки, где никогда не ступала нога человека. Покажи, что ты можешь больше, чем кажется!")
         
-        return [first, second, third]
+        return [first, second]
     }
 }
 

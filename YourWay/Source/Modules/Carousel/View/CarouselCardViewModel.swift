@@ -10,9 +10,13 @@ import Foundation
 
 class CarouselCardViewModel {
     
-    let color: UIColor
+    let image: UIImage
+    let backgroundImage: UIImage
+    let text: String
     
-    init(_ color: UIColor) {
-        self.color = color
+    init(image: UIImage, backgroundImage: UIImage, text: String) {
+        self.image = image
+        self.backgroundImage = backgroundImage
+        self.text = text
     }
 }

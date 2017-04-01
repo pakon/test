@@ -12,6 +12,8 @@ class CarouselViewController: UIViewController {
 
     // MARK: - Outlets
     @IBOutlet weak var carousel: iCarousel!
+    @IBOutlet weak var firstBackgroundImageView: UIImageView!
+    @IBOutlet weak var secondBackgroundImageView: UIImageView!
     
     // MARK: - Variables
     var output: CarouselViewOutput!
@@ -85,40 +87,22 @@ class CarouselViewController: UIViewController {
         let lower = carousel.scrollOffset.rounded(.down)
         let offset = carousel.scrollOffset - lower
         
-        let B = viewModels[max(Int(lower), 0)].color.lighterColor
-        let A = viewModels[min(Int(higher), viewModels.count - 1)].color.lighterColor
+        let topImage = viewModels[max(Int(lower), 0)].backgroundImage
+        let bottomImage = viewModels[min(Int(higher), viewModels.count - 1)].backgroundImage
         
-        let red = B.cgColor.components![0] * (1 - offset) + A.cgColor.components![0] * offset
-        let green = B.cgColor.components![1] * (1 - offset) + A.cgColor.components![1] * offset
-        let blue = B.cgColor.components![2] * (1 - offset) + A.cgColor.components![2] * offset
+        if firstBackgroundImageView.image != bottomImage {
+            firstBackgroundImageView.image = bottomImage
+        }
+        if secondBackgroundImageView.image != topImage {
+            secondBackgroundImageView.image = topImage
+        }
         
-        view.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1)
-    }
-}
-
-//TODO: Debug!
-extension UIColor {
-    
-    var lighterColor: UIColor {
-        return lighterColor(removeSaturation: 0.5, resultAlpha: -1)
-    }
-    
-    func lighterColor(removeSaturation val: CGFloat, resultAlpha alpha: CGFloat) -> UIColor {
-        var h: CGFloat = 0, s: CGFloat = 0
-        var b: CGFloat = 0, a: CGFloat = 0
-        
-        guard getHue(&h, saturation: &s, brightness: &b, alpha: &a)
-            else {return self}
-        
-        return UIColor(hue: h,
-                       saturation: max(s - val, 0.0),
-                       brightness: b,
-                       alpha: alpha == -1 ? a : alpha)
+        firstBackgroundImageView.alpha = offset
+        secondBackgroundImageView.alpha = 1 - offset
     }
 }
 
 // MARK: - CarouselViewInput
-
 extension CarouselViewController: CarouselViewInput {
     func setupInitialState() {
         setupCarousel()
