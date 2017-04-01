@@ -11,6 +11,14 @@ import UIKit
 @IBDesignable
 class YourWayButton: UIButton {
     
+    private var yellowView: UIView = UIView()
+    
+    override var frame: CGRect {
+        didSet {
+            yellowView.frame = bounds
+        }
+    }
+    
     private struct Const {
         static let cornerRadius: CGFloat = 10
     }
@@ -37,19 +45,27 @@ class YourWayButton: UIButton {
     
     private func setupDefaults() {
         if buttonType == .custom {
-            if backgroundImage(for: .normal) == nil {
-                setBackgroundImage(UIImage.imageFromColor(.yourWayYellow), for: .normal)
-            }
+            backgroundColor = UIColor.clear
             
             if titleColor(for: .normal) == UIButton(type: .custom).titleColor(for: .normal)! {
                 setTitleColor(UIColor.yourWayButtonTitle, for: .normal)
             }
+    
+            addSubview(yellowView)
+            yellowView.backgroundColor = UIColor.yourWayYellow
+            yellowView.isUserInteractionEnabled = false
+            yellowView.layer.masksToBounds = true
+            yellowView.layer.cornerRadius = Const.cornerRadius
+            yellowView.clipsToBounds = true
             
-            layer.cornerRadius = Const.cornerRadius
-            layer.masksToBounds = true
-            layer.shadowColor = UIColor(white: 0, alpha: 0.5).cgColor
-            layer.shadowRadius = 4
-            
+            layer.shadowColor = UIColor.black.cgColor
+            layer.shadowRadius = 10
+            layer.shadowOpacity = 0.5
+            layer.shadowOffset = CGSize()
+            layer.shouldRasterize = true;
+            layer.rasterizationScale = UIScreen.main.scale;
+            layer.masksToBounds = false
+            clipsToBounds = false
         }
     }
 }

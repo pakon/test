@@ -19,7 +19,6 @@ class WayStepTableViewCell: UITableViewCell, YourWayTableViewCellProtocol {
     
     override func awakeFromNib() {
         self.backgroundColor = UIColor.clear
-        openButton.layer.cornerRadius = 10
     }
 
     func setup(with viewModel: YourWayTableViewCellViewModel, indexPath: IndexPath) {

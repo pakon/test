@@ -19,6 +19,9 @@ class CarouselCardViewController: UIViewController {
     @IBOutlet weak var cardText: UILabel!
     @IBOutlet weak var gradientView: UIView!
     
+    static var placeholderImage: UIImage = UIImage(named: "bg-placeholder")!
+    static var blurredPlaceholderImage: UIImage = UIImage(named: "bg-placeholder")!.blurred(radius: 20)!
+    
     override func viewDidLoad() {
         view.layer.cornerRadius = Const.cornerRadius
         imageView.layer.cornerRadius = Const.cornerRadius
@@ -43,13 +46,12 @@ class CarouselCardViewController: UIViewController {
         gl.frame = gradientView.bounds
         gl.startPoint = CGPoint(x: 1.0, y: 0.0)
         gl.endPoint = CGPoint(x: 1.0, y: 1.0)
-//        gl.locations = [0.0, 1.0]
         gradientView.layer.addSublayer(gl)
     }
     
     func setup(viewModel: CarouselCardViewModel, downloadCompletion: @escaping (UIImage?) -> ()) {
         imageView.kf.setImage(with: viewModel.imageUrl,
-                              placeholder: nil,
+                              placeholder: CarouselCardViewController.placeholderImage,
                               options: [.transition(.fade(0.2)), .downloadPriority(viewModel.priority)])
         { (image, _, _, _) in
             downloadCompletion(image)

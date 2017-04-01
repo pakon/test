@@ -26,6 +26,10 @@ extension UIColor {
         return UIColor(red: 44, green: 44, blue: 44, a: 204)
     }
     
+    static var yourWayGradientGray: UIColor {
+        return UIColor(rgb: 0x5C5C5C)
+    }
+    
     convenience init(red: Int, green: Int, blue: Int, a: Int = 255) {
         assert(red >= 0 && red <= 255, "Invalid red component")
         assert(green >= 0 && green <= 255, "Invalid green component")

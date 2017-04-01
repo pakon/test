@@ -28,6 +28,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bhQ-vy-83S">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xP0-OT-cj1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4v-ZB-XhN" customClass="iCarousel">
                                 <rect key="frame" x="0.0" y="83.5" width="375" height="500"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -36,12 +40,13 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIc-cb-yCE" customClass="YourWayButton" customModule="YourWay" customModuleProvider="target">
-                                <rect key="frame" x="88" y="561" width="198" height="44"/>
+                                <rect key="frame" x="88.5" y="561" width="198" height="44"/>
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="BZ4-6G-d3J"/>
                                     <constraint firstAttribute="width" constant="198" id="O23-ip-GrJ"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <state key="normal" title="Выбрать">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -56,12 +61,16 @@
                             <constraint firstItem="bhQ-vy-83S" firstAttribute="top" secondItem="rhK-gj-zJW" secondAttribute="top" id="Dxj-Ab-woj"/>
                             <constraint firstAttribute="bottom" secondItem="wRi-UP-kev" secondAttribute="bottom" id="Rhd-eQ-uOI"/>
                             <constraint firstAttribute="bottom" secondItem="aIc-cb-yCE" secondAttribute="bottom" constant="62" id="S2R-kC-aJy"/>
+                            <constraint firstAttribute="trailing" secondItem="xP0-OT-cj1" secondAttribute="trailing" id="Sp6-Th-yJh"/>
                             <constraint firstAttribute="trailing" secondItem="F4v-ZB-XhN" secondAttribute="trailing" id="T2D-Yg-siY"/>
                             <constraint firstItem="wRi-UP-kev" firstAttribute="leading" secondItem="rhK-gj-zJW" secondAttribute="leading" id="bIh-RV-q2g"/>
+                            <constraint firstItem="xP0-OT-cj1" firstAttribute="leading" secondItem="rhK-gj-zJW" secondAttribute="leading" id="fzM-uh-bO9"/>
                             <constraint firstAttribute="bottom" secondItem="bhQ-vy-83S" secondAttribute="bottom" id="gI0-7U-dfL"/>
                             <constraint firstItem="aIc-cb-yCE" firstAttribute="centerX" secondItem="rhK-gj-zJW" secondAttribute="centerX" id="gVK-Hb-PHk"/>
+                            <constraint firstItem="xP0-OT-cj1" firstAttribute="height" secondItem="rhK-gj-zJW" secondAttribute="height" multiplier="0.5" id="iOE-I2-XQi"/>
                             <constraint firstItem="F4v-ZB-XhN" firstAttribute="centerY" secondItem="rhK-gj-zJW" secondAttribute="centerY" id="oD2-rq-a7p"/>
                             <constraint firstAttribute="trailing" secondItem="wRi-UP-kev" secondAttribute="trailing" id="pMx-LZ-r9S"/>
+                            <constraint firstItem="xP0-OT-cj1" firstAttribute="top" secondItem="rhK-gj-zJW" secondAttribute="top" id="qbp-Bp-iUr"/>
                             <constraint firstItem="wRi-UP-kev" firstAttribute="top" secondItem="rhK-gj-zJW" secondAttribute="top" id="rAo-z9-BAr"/>
                             <constraint firstItem="bhQ-vy-83S" firstAttribute="leading" secondItem="rhK-gj-zJW" secondAttribute="leading" id="yg4-P2-GKy"/>
                             <constraint firstItem="F4v-ZB-XhN" firstAttribute="leading" secondItem="rhK-gj-zJW" secondAttribute="leading" id="zb3-En-Ar7"/>
@@ -72,6 +81,7 @@
                         <outlet property="carousel" destination="F4v-ZB-XhN" id="xN7-Do-h5X"/>
                         <outlet property="chooseButton" destination="aIc-cb-yCE" id="WeG-RS-oKp"/>
                         <outlet property="firstBackgroundImageView" destination="wRi-UP-kev" id="KGj-DL-ljb"/>
+                        <outlet property="gradientView" destination="xP0-OT-cj1" id="lJH-A6-cax"/>
                         <outlet property="secondBackgroundImageView" destination="bhQ-vy-83S" id="LSr-be-ODy"/>
                         <segue destination="jSB-YP-oOd" kind="show" identifier="opportunity" id="tTB-tq-OkO"/>
                     </connections>
@@ -113,7 +123,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6z-CC-aj3">
-                                <rect key="frame" x="20" y="453" width="335" height="21.5"/>
+                                <rect key="frame" x="20" y="452.5" width="335" height="22"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>

@@ -15,6 +15,7 @@ class CarouselViewController: UIViewController {
     @IBOutlet weak var firstBackgroundImageView: UIImageView!
     @IBOutlet weak var secondBackgroundImageView: UIImageView!
     @IBOutlet weak var chooseButton: UIButton!
+    @IBOutlet weak var gradientView: UIView!
     
     // MARK: - Variables
     var output: CarouselViewOutput!
@@ -74,6 +75,16 @@ class CarouselViewController: UIViewController {
         carousel.bounces = false
     }
     
+    fileprivate func setupGradient() {
+        view.layoutIfNeeded()
+        let gl = CAGradientLayer()
+        gl.colors = [UIColor.yourWayGradientGray.cgColor, UIColor.clear.cgColor]
+        gl.frame = gradientView.bounds
+        gl.startPoint = CGPoint(x: 1.0, y: 0.0)
+        gl.endPoint = CGPoint(x: 1.0, y: 1.0)
+        gradientView.layer.addSublayer(gl)
+    }
+    
     fileprivate func createViewControllers() {
         var viewControllers: [CarouselCardViewController] = [];
         
@@ -104,27 +115,29 @@ class CarouselViewController: UIViewController {
         let topImage = viewModels[max(Int(lower), 0)].backgroundImage
         let bottomImage = viewModels[min(Int(higher), viewModels.count - 1)].backgroundImage
         
-        if firstBackgroundImageView.image != bottomImage {
-            if firstBackgroundImageView.image == nil {
-                UIView.transition(with: firstBackgroundImageView, duration: 0.2, options: [.transitionCrossDissolve], animations: { 
-                    self.firstBackgroundImageView.image = bottomImage
-                })
-            } else {
-                firstBackgroundImageView.image = bottomImage
-            }
-        }
-        if secondBackgroundImageView.image != topImage {
-            if secondBackgroundImageView.image == nil {
-                UIView.transition(with: secondBackgroundImageView, duration: 0.2, options: [.transitionCrossDissolve], animations: {
-                    self.secondBackgroundImageView.image = bottomImage
-                })
-            } else {
-                secondBackgroundImageView.image = topImage
-            }
-        }
+        setup(imageView: firstBackgroundImageView, image: bottomImage)
+        setup(imageView: secondBackgroundImageView, image: topImage)
         
         firstBackgroundImageView.alpha = offset
         secondBackgroundImageView.alpha = 1 - offset
+    }
+    
+    func setup(imageView: UIImageView, image: UIImage?) {
+        if image == nil {
+            if imageView.image != CarouselCardViewController.blurredPlaceholderImage {
+                UIView.transition(with: imageView, duration: 0.2, options: [.transitionCrossDissolve], animations: {
+                    imageView.image = CarouselCardViewController.blurredPlaceholderImage
+                })
+            }
+        } else if imageView.image != image {
+            if imageView.image == nil || imageView.image == CarouselCardViewController.blurredPlaceholderImage {
+                UIView.transition(with: imageView, duration: 0.2, options: [.transitionCrossDissolve], animations: {
+                    imageView.image = image
+                })
+            } else {
+                imageView.image = image
+            }
+        }
     }
     
     fileprivate func setupNavigationBar() {
@@ -145,6 +158,7 @@ class CarouselViewController: UIViewController {
 extension CarouselViewController: CarouselViewInput {
     func setupInitialState() {
         setupCarousel()
+        setupGradient()
         setupNavigationBar()
     }
 
@@ -172,20 +186,15 @@ extension CarouselViewController: iCarouselDelegate, iCarouselDataSource {
         switch option {
         case .wrap:
             return 0;
-            
         case .showBackfaces:
             return 0;
-            
         case .radius:
             return max(6 * (self.itemWidth + radiusIncrease) / CGFloat(M_PI),
                        12 * self.itemWidth / 2 / CGFloat(M_PI));
-            
         case .visibleItems:
             return 3;
-            
         case .arc:
             return min(CGFloat(M_PI / 6) * CGFloat(self.cardsViewControllers.count), 2 * CGFloat(M_PI));
-            
         default:
             return value;
         }

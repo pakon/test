@@ -98,8 +98,6 @@ extension AuthorizationViewController: AuthorizationViewInput {
         let backgroundTap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         view.addGestureRecognizer(backgroundTap)
         
-        logInButton.setBackgroundImage(UIImage.imageFromColor(.yourWayYellow), for: .normal)
-        
         errorLabel.textColor = .yourWayYellow
     }
 

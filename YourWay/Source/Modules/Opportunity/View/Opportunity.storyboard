@@ -44,6 +44,7 @@
                                     <constraint firstAttribute="width" constant="198" id="fAe-qC-2aT"/>
                                     <constraint firstAttribute="height" constant="44" id="rsr-8s-Ap7"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <state key="normal" title="Начать">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
