@@ -68,8 +68,10 @@ extension WayViewController: WayViewInput {
     
     func setup(viewModels: [WayStepViewModel], firstImagePath: URL, secondImagePath: URL) {
         viewManager.viewModels = viewModels
-        firstBackgroundImageView.kf.setImage(with: firstImagePath)
-        secondBackgroundImageView.kf.setImage(with: secondImagePath)
+        firstBackgroundImageView.kf.setImage(with: firstImagePath, placeholder: UIImage(named: "bg-placeholder")!)
+        print(firstImagePath)
+        secondBackgroundImageView.kf.setImage(with: secondImagePath, placeholder: UIImage(named: "bg-placeholder")!)
+        print(secondImagePath)
         wayTableView.reloadData()
     }
     

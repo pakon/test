@@ -68,6 +68,6 @@ extension WayPresenter: WayInteractorOutput {
     func received(steps: [Step]) {
         createViewModels(steps)
         let currentStep = steps.first!
-        view.setup(viewModels: viewModels, firstImagePath: URL(string:currentStep.opportunities[0].backgroundURL)!, secondImagePath: URL(string: currentStep.opportunities[1].backgroundURL)!)
+        view.setup(viewModels: viewModels, firstImagePath: URL(string:currentStep.opportunities[0].backgroundURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!, secondImagePath: URL(string: currentStep.opportunities[1].backgroundURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!)
     }
 }
