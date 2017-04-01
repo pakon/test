@@ -30,23 +30,6 @@ class CarouselPresenter {
     }
     var viewModels: [CarouselCardViewModel] = []
     var actualOpportunities: [Opportunity] = []
-
-    // MARK: - Private
-    fileprivate func createOpportunities() {
-        let first = Opportunity()
-        first.backgroundURL = "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/Nc5TR50D2kVVpq9/upload.png"
-        first.desc = "Пробеги по гранд каньену ОПИСАНИЕ"
-        first.category = Category(title: "test", iconAssetName: "icon_lock_open")
-        first.title = "Пробеги по гранд каньену"
-        
-        let second = Opportunity()
-        second.backgroundURL = "https://s3.amazonaws.com/uploads.hipchat.com/82114/593081/AjCempxi16caVRX/upload.png"
-        second.desc = "Проведи неделю в джунглях амазонки ОПИСАНИЕ"
-        second.category = Category(title: "test", iconAssetName: "icon_lock_open")
-        second.title = "Проведи неделю в джунглях амазонки"
-        
-        setup(opportunities: [first, second])
-    }
 }
 
 // MARK: - CarouselModuleInput
@@ -61,9 +44,6 @@ extension CarouselPresenter: CarouselModuleInput {
     
 extension CarouselPresenter: CarouselViewOutput {
     func viewDidLoad() {
-        //TODO: debug!
-        createOpportunities()
-        
         view.setupInitialState()
         view.show(viewModels: viewModels)
     }
