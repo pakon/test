@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="We5-if-gr9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Carousel View Controller-->
+        <scene sceneID="8y5-Uz-o1N">
+            <objects>
+                <viewController id="We5-if-gr9" customClass="CarouselViewController" customModule="YourWay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tIz-F2-OFP"/>
+                        <viewControllerLayoutGuide type="bottom" id="cbN-AR-2oY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rhK-gj-zJW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4v-ZB-XhN" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="83.5" width="375" height="500"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="W7I-i4-kHA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="F4v-ZB-XhN" secondAttribute="trailing" id="T2D-Yg-siY"/>
+                            <constraint firstItem="F4v-ZB-XhN" firstAttribute="centerY" secondItem="rhK-gj-zJW" secondAttribute="centerY" id="oD2-rq-a7p"/>
+                            <constraint firstItem="F4v-ZB-XhN" firstAttribute="leading" secondItem="rhK-gj-zJW" secondAttribute="leading" id="zb3-En-Ar7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="carousel" destination="F4v-ZB-XhN" id="xN7-Do-h5X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MrQ-Sf-isg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="avw-Gj-OsH" customClass="CarouselModuleInitializer" customModule="YourWay" customModuleProvider="target">
+                    <connections>
+                        <outlet property="carouselViewController" destination="We5-if-gr9" id="ckT-0g-ur9"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="449" y="-111"/>
+        </scene>
+        <!--Carousel Card View Controller-->
+        <scene sceneID="64m-HY-fgz">
+            <objects>
+                <viewController storyboardIdentifier="Card" id="JfW-fK-oRZ" customClass="CarouselCardViewController" customModule="YourWay" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lvk-hG-bwZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="SNq-qH-zfN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6O8-ba-WLs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CIu-yy-qRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1438" y="-111"/>
+        </scene>
+    </scenes>
+</document>
