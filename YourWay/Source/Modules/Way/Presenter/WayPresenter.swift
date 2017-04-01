@@ -16,7 +16,11 @@ class WayPresenter {
     var router: WayRouterInput!
     
     var viewModels:[WayStepViewModel] = []
-
+    
+    /// The index of current reserve opportunity for carouser animation. We setup view with 0 and 1
+    var startIteration = 2
+    
+    var timer: Timer? = nil
     // MARK: - Private
     
     func createViewModels(_ steps: [Step]) {
@@ -68,6 +72,11 @@ extension WayPresenter: WayInteractorOutput {
     func received(steps: [Step]) {
         createViewModels(steps)
         let currentStep = steps.first!
-        view.setup(viewModels: viewModels, firstImagePath: URL(string:currentStep.opportunities[0].backgroundURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!, secondImagePath: URL(string: currentStep.opportunities[1].backgroundURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!)
+        view.setup(viewModels: viewModels, firstImagePath: URL(string:currentStep.opportunities[0].backgroundURL)!, secondImagePath: URL(string: currentStep.opportunities[1].backgroundURL)!)
+        timer = Timer.scheduledTimer(withTimeInterval: 6, repeats: true) { (timer) in
+            self.view.updateBackground(reserveImageURL: URL(string: currentStep.opportunities[self.startIteration].backgroundURL)!)
+            self.startIteration = (self.startIteration + 1) % currentStep.opportunities.count
+        }
+
     }
 }

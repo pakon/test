@@ -14,5 +14,5 @@ protocol WayViewInput: class {
     
     func setup(viewModels: [WayStepViewModel], firstImagePath: URL, secondImagePath: URL)
     
-    func updateBackgroundColor()
+    func updateBackground(reserveImageURL: URL)
 }

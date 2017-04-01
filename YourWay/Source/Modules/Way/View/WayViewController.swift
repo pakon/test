@@ -75,29 +75,33 @@ extension WayViewController: WayViewInput {
         wayTableView.reloadData()
     }
     
-    func updateBackgroundColor() {
+    func updateBackground(reserveImageURL: URL) {
         
-//        if firstBackgroundImageView.image != bottomImage {
-//            if firstBackgroundImageView.image == nil {
-//                print("устанавливаю картинку 1 через транзишион")
-//                UIView.transition(with: firstBackgroundImageView, duration: 0.2, options: [.transitionCrossDissolve], animations: {
-//                    self.firstBackgroundImageView.image = bottomImage
-//                })
-//            } else {
-//                print("устанавливаю картинку 1")
-//                firstBackgroundImageView.image = bottomImage
-//            }
-//        }
-//        if secondBackgroundImageView.image != topImage {
-//            if secondBackgroundImageView.image == nil {
-//                print("устанавливаю картинку 2 через транзишион")
-//                UIView.transition(with: secondBackgroundImageView, duration: 0.2, options: [.transitionCrossDissolve], animations: {
-//                    self.secondBackgroundImageView.image = bottomImage
-//                })
-//            } else {
-//                print("устанавливаю картинку 2")
-//                secondBackgroundImageView.image = topImage
-//            }
-//        }
+        let firstHideSecondShow: Bool = firstBackgroundImageView.alpha == 1
+        
+        let duration = 1.5
+        
+        if (firstHideSecondShow) {
+            UIView.transition(with: firstBackgroundImageView, duration: duration, options: [.transitionCrossDissolve], animations: {
+                self.firstBackgroundImageView.alpha = 0
+            }, completion: { _ in
+                self.firstBackgroundImageView.kf.setImage(with: reserveImageURL, placeholder: UIImage(named: "bg-placeholder")!)
+            })
+            
+            UIView.transition(with: secondBackgroundImageView, duration: duration, options: [.transitionCrossDissolve], animations: {
+                self.secondBackgroundImageView.alpha = 1
+            })
+        } else {
+            UIView.transition(with: secondBackgroundImageView, duration: duration, options: [.transitionCrossDissolve], animations: {
+                self.secondBackgroundImageView.alpha = 0
+            }, completion: { _ in
+                self.secondBackgroundImageView.kf.setImage(with: reserveImageURL, placeholder: UIImage(named: "bg-placeholder")!)
+            })
+            
+            UIView.transition(with: firstBackgroundImageView, duration: duration, options: [.transitionCrossDissolve], animations: {
+                self.firstBackgroundImageView.alpha = 1
+            })
+        }
+        
     }
 }

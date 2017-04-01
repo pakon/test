@@ -41,7 +41,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carousel-test-1" translatesAutoresizingMaskIntoConstraints="NO" id="fpR-qn-eg2">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carousel-test-2" translatesAutoresizingMaskIntoConstraints="NO" id="sDk-Ul-3XW">
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carousel-test-2" translatesAutoresizingMaskIntoConstraints="NO" id="sDk-Ul-3XW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xN7-rZ-cIl">
@@ -63,7 +63,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBB-Mw-hR0">
-                                                    <rect key="frame" x="69" y="20" width="228.5" height="43"/>
+                                                    <rect key="frame" x="69" y="20" width="229" height="43"/>
                                                     <string key="text">Завтра откроется
 что-то совершенно новое</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
