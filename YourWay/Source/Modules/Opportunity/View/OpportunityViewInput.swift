@@ -11,4 +11,5 @@ protocol OpportunityViewInput: class {
     func setupInitialState()
     func setupStateForViewWillAppear()
     func setupStateForViewWillDisappear()
+    func setup(viewModel: OpportunityViewModel)
 }

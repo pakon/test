@@ -19,7 +19,9 @@ class OpportunityPresenter {
 // MARK: - OpportunityModuleInput
 
 extension OpportunityPresenter: OpportunityModuleInput {
-    
+    func setup(opportunity: Any) {
+        
+    }
 }
 
 // MARK: - OpportunityViewOutput
@@ -27,6 +29,8 @@ extension OpportunityPresenter: OpportunityModuleInput {
 extension OpportunityPresenter: OpportunityViewOutput {
     func viewDidLoad() {
         view.setupInitialState()
+        
+        view.setup(viewModel: OpportunityViewModel(backgroundImage: UIImage(named: "carousel-test-1")!, iconImage: UIImage(), title: "Время для OLOLO", description: "Длинное ничего не значащее описание. Длинное ничего не значащее описание. Длинное ничего не значащее описание. Длинное ничего не значащее описание."))
     }
 
     func viewWillAppear() {

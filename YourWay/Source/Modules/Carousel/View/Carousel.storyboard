@@ -34,7 +34,7 @@
                                     <constraint firstAttribute="height" constant="500" id="W7I-i4-kHA"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIc-cb-yCE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIc-cb-yCE" customClass="YourWayButton" customModule="YourWay" customModuleProvider="target">
                                 <rect key="frame" x="88" y="561" width="198" height="44"/>
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>

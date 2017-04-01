@@ -102,21 +102,8 @@ class CarouselViewController: UIViewController {
         secondBackgroundImageView.alpha = 1 - offset
     }
     
-    fileprivate func setupChooseButton() {
-        chooseButton.layer.cornerRadius = 10
-        chooseButton.layer.shadowColor = UIColor.black.cgColor
-        chooseButton.layer.shadowRadius = 10
-        chooseButton.layer.shadowOpacity = 0.5
-        chooseButton.layer.shadowOffset = CGSize(width: 0, height: 2)
-        chooseButton.layer.shadowPath = UIBezierPath(roundedRect: chooseButton.bounds, cornerRadius: chooseButton.layer.cornerRadius).cgPath
-    }
-    
     fileprivate func setupNavigationBar() {
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.isTranslucent = true
-        navigationController?.view.backgroundColor = .clear
-        navigationController?.navigationBar.backgroundColor = .clear
+        setBlurNavigationBar()
         
         let leftBarImage = UIImage(named:"back-icon")
         let leftBarItem = UIBarButtonItem(image: leftBarImage, style: .plain, target: navigationController!, action: #selector(UINavigationController.popViewController(animated:)))
@@ -132,7 +119,6 @@ class CarouselViewController: UIViewController {
 extension CarouselViewController: CarouselViewInput {
     func setupInitialState() {
         setupCarousel()
-        setupChooseButton()
         setupNavigationBar()
     }
 

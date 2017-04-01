@@ -11,7 +11,12 @@ import UIKit
 class OpportunityViewController: UIViewController {
 
     // MARK: - Outlets
-
+    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var iconImage: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var startButton: UIButton!
+    
     // MARK: - Variables
     var output: OpportunityViewOutput!
 
@@ -32,17 +37,36 @@ class OpportunityViewController: UIViewController {
     }
 
     // MARK: - Private
+    fileprivate func setupNavigationBar() {
+        setBlurNavigationBar()
+        
+        let leftBarImage = UIImage(named:"back-icon")
+        let leftBarItem = UIBarButtonItem(image: leftBarImage, style: .plain, target: navigationController!, action: #selector(UINavigationController.popViewController(animated:)))
+        leftBarItem.tintColor = UIColor.white
+        navigationItem.setLeftBarButton(leftBarItem, animated: false)
+        
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+    }
 }
 
 // MARK: - OpportunityViewInput
 
 extension OpportunityViewController: OpportunityViewInput {
     func setupInitialState() {
+        setupNavigationBar()
     }
 
     func setupStateForViewWillAppear() {
     }
 
     func setupStateForViewWillDisappear() {
+    }
+    
+    func setup(viewModel: OpportunityViewModel) {
+        backgroundImage.image = viewModel.backgroundImage
+        iconImage.image = viewModel.iconImage
+        titleLabel.text = viewModel.title
+        navigationItem.title = viewModel.title
+        descriptionLabel.text = viewModel.description
     }
 }
