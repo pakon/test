@@ -74,7 +74,12 @@ class CarouselViewController: UIViewController {
         for viewModel in viewModels {
             let card = UIStoryboard(name: "Carousel", bundle: nil).instantiateViewController(withIdentifier: "Card") as! CarouselCardViewController
             card.view.frame = CGRect(x: 0, y: 0, width: itemWidth, height: itemHeight);
-            card.setup(viewModel: viewModel)
+            card.setup(viewModel: viewModel) { image in
+                if let image = image {
+                     viewModel.backgroundImage = image.blurred(radius: 50)
+                    self.updateBackgroundColor()
+                }
+            }
             viewControllers.append(card)
         }
         self.cardsViewControllers = viewControllers;
@@ -92,10 +97,22 @@ class CarouselViewController: UIViewController {
         let bottomImage = viewModels[min(Int(higher), viewModels.count - 1)].backgroundImage
         
         if firstBackgroundImageView.image != bottomImage {
-            firstBackgroundImageView.image = bottomImage
+            if firstBackgroundImageView.image == nil {
+                UIView.transition(with: firstBackgroundImageView, duration: 0.2, options: [.transitionCrossDissolve], animations: { 
+                    self.firstBackgroundImageView.image = bottomImage
+                })
+            } else {
+                firstBackgroundImageView.image = bottomImage
+            }
         }
         if secondBackgroundImageView.image != topImage {
-            secondBackgroundImageView.image = topImage
+            if secondBackgroundImageView.image == nil {
+                UIView.transition(with: secondBackgroundImageView, duration: 0.2, options: [.transitionCrossDissolve], animations: {
+                    self.secondBackgroundImageView.image = bottomImage
+                })
+            } else {
+                secondBackgroundImageView.image = topImage
+            }
         }
         
         firstBackgroundImageView.alpha = offset
@@ -113,6 +130,8 @@ class CarouselViewController: UIViewController {
         navigationItem.title = "Твой выбор"
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
     }
+    
+    
 }
 
 // MARK: - CarouselViewInput

@@ -1,1 +1,3 @@
 github "realm/realm-cocoa" == 2.4.4
+github "onevcat/Kingfisher"
+github "KyoheiG3/DynamicBlurView"

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CarouselCardViewController: UIViewController {
     
@@ -22,14 +23,22 @@ class CarouselCardViewController: UIViewController {
         view.layer.shadowRadius = 10
         view.layer.shadowOpacity = 0.5
         view.layer.shadowOffset = CGSize()
+        view.layer.shouldRasterize = true;
+        view.layer.rasterizationScale = UIScreen.main.scale;
+        view.layer.masksToBounds = false
     }
     
-    override func viewDidLayoutSubviews() {
+    override func viewWillAppear(_ animated: Bool) {
         view.layer.shadowPath = UIBezierPath(roundedRect: view.bounds, cornerRadius: view.layer.cornerRadius).cgPath
     }
     
-    func setup(viewModel: CarouselCardViewModel) {
-        imageView.image = viewModel.image
+    func setup(viewModel: CarouselCardViewModel, downloadCompletion: @escaping (UIImage?) -> ()) {
+        imageView.kf.setImage(with: viewModel.imageUrl,
+                              placeholder: nil,
+                              options: [.transition(.fade(0.2)), .cacheMemoryOnly, .downloadPriority(viewModel.priority)])
+        { (image, _, _, _) in
+            downloadCompletion(image)
+        }
         cardText.text = viewModel.text
     }
 }

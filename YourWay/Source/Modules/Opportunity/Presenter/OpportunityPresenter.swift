@@ -14,13 +14,15 @@ class OpportunityPresenter {
     var router: OpportunityRouterInput!
 
     // MARK: - Private
+    var opportunity: Opportunity!
 }
 
 // MARK: - OpportunityModuleInput
 
 extension OpportunityPresenter: OpportunityModuleInput {
-    func setup(opportunity: Any) {
-        
+    
+    func setup(opportunity: Opportunity) {
+        self.opportunity = opportunity
     }
 }
 
@@ -30,7 +32,8 @@ extension OpportunityPresenter: OpportunityViewOutput {
     func viewDidLoad() {
         view.setupInitialState()
         
-        view.setup(viewModel: OpportunityViewModel(backgroundImage: UIImage(named: "carousel-test-1")!, iconImage: UIImage(), title: "Время для OLOLO", description: "Длинное ничего не значащее описание. Длинное ничего не значащее описание. Длинное ничего не значащее описание. Длинное ничего не значащее описание."))
+        view.setup(viewModel: OpportunityViewModel(opportunity: opportunity))
+        //view.setup(viewModel: OpportunityViewModel(backgroundImage: UIImage(named: "carousel-test-1")!, iconImage: UIImage(), title: "Время для OLOLO", description: "Длинное ничего не значащее описание. Длинное ничего не значащее описание. Длинное ничего не значащее описание. Длинное ничего не значащее описание."))
     }
 
     func viewWillAppear() {

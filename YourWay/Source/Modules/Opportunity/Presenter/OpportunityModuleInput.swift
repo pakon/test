@@ -7,5 +7,5 @@
 //
 
 protocol OpportunityModuleInput: ViperModuleInput {
-
+    func setup(opportunity: Opportunity)
 }

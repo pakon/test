@@ -89,6 +89,9 @@
 		FFD9B8AC1E8FD8D100DD14BD /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FD5421E8FCFF400A041BD /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FFD9B8AE1E8FD90200DD14BD /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FD5411E8FCFF400A041BD /* Realm.framework */; };
 		FFD9B8AF1E8FD90200DD14BD /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF0FD5421E8FCFF400A041BD /* RealmSwift.framework */; };
+		FFD9B8B21E8FDEF700DD14BD /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD9B8B01E8FDEF000DD14BD /* Kingfisher.framework */; };
+		FFD9B8B31E8FDEF700DD14BD /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFD9B8B01E8FDEF000DD14BD /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFD9B8B51E8FE70100DD14BD /* BlurredImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD9B8B41E8FE70100DD14BD /* BlurredImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +112,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FFD9B8AC1E8FD8D100DD14BD /* RealmSwift.framework in Embed Frameworks */,
+				FFD9B8B31E8FDEF700DD14BD /* Kingfisher.framework in Embed Frameworks */,
 				FFD9B8AA1E8FD8D100DD14BD /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -202,6 +206,8 @@
 		FF0FD53B1E8FC6C800A041BD /* BlurredNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredNavigationBar.swift; sourceTree = "<group>"; };
 		FF0FD5411E8FCFF400A041BD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		FF0FD5421E8FCFF400A041BD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		FFD9B8B01E8FDEF000DD14BD /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		FFD9B8B41E8FE70100DD14BD /* BlurredImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD9B8AE1E8FD90200DD14BD /* Realm.framework in Frameworks */,
+				FFD9B8B21E8FDEF700DD14BD /* Kingfisher.framework in Frameworks */,
 				FFD9B8AF1E8FD90200DD14BD /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +530,7 @@
 		B6F85B091E8FBBB300F4F791 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FFD9B8B01E8FDEF000DD14BD /* Kingfisher.framework */,
 				FF0FD5411E8FCFF400A041BD /* Realm.framework */,
 				FF0FD5421E8FCFF400A041BD /* RealmSwift.framework */,
 			);
@@ -604,6 +612,7 @@
 				FF0FD52A1E8F99B000A041BD /* iCarousel.m */,
 				FF0FD5391E8FC5D300A041BD /* YourWayButton.swift */,
 				FF0FD53B1E8FC6C800A041BD /* BlurredNavigationBar.swift */,
+				FFD9B8B41E8FE70100DD14BD /* BlurredImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -776,6 +785,7 @@
 				C1ADF06457AFAAC49645020D /* WayInteractorOutput.swift in Sources */,
 				5DBE4A378078FBA4448A1825 /* WayInteractor.swift in Sources */,
 				B6F85B031E8FA97200F4F791 /* YourWayCell.swift in Sources */,
+				FFD9B8B51E8FE70100DD14BD /* BlurredImage.swift in Sources */,
 				57E8574C5E9AE862C150BD07 /* WayRouterInput.swift in Sources */,
 				9FC3FFCB4EC62B0BB1F37FA9 /* WayRouter.swift in Sources */,
 				B6F85B121E8FBCC800F4F791 /* Step.swift in Sources */,

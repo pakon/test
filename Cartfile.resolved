@@ -1,1 +1,3 @@
+github "KyoheiG3/DynamicBlurView" "1.3.0"
+github "onevcat/Kingfisher" "3.6.1"
 github "realm/realm-cocoa" "v2.4.4"

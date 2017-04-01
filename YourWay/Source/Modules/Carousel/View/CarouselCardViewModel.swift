@@ -10,13 +10,22 @@ import Foundation
 
 class CarouselCardViewModel {
     
-    let image: UIImage
-    let backgroundImage: UIImage
+    let imageUrl: URL
     let text: String
+    let priority: Float
     
-    init(image: UIImage, backgroundImage: UIImage, text: String) {
-        self.image = image
-        self.backgroundImage = backgroundImage
+    var backgroundImage: UIImage?
+    
+    init(imageUrl: URL, text: String, priority: Float) {
+        self.imageUrl = imageUrl
         self.text = text
+        self.priority = priority
+    }
+    
+    convenience init?(opportunity: Opportunity, priority: Float = 1) {
+        guard let url = URL(string: opportunity.backgroundURL) else {
+            return nil
+        }
+        self.init(imageUrl: url, text: opportunity.title, priority: priority)
     }
 }
