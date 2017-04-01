@@ -13,7 +13,7 @@
         <!--Carousel View Controller-->
         <scene sceneID="8y5-Uz-o1N">
             <objects>
-                <viewController id="We5-if-gr9" customClass="CarouselViewController" customModule="YourWay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="We5-if-gr9" customClass="CarouselViewController" customModule="YourWay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tIz-F2-OFP"/>
                         <viewControllerLayoutGuide type="bottom" id="cbN-AR-2oY"/>
@@ -53,13 +53,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="bhQ-vy-83S" secondAttribute="trailing" id="8UQ-Op-GIG"/>
-                            <constraint firstItem="cbN-AR-2oY" firstAttribute="top" secondItem="wRi-UP-kev" secondAttribute="bottom" id="DJx-3G-QNw"/>
                             <constraint firstItem="bhQ-vy-83S" firstAttribute="top" secondItem="rhK-gj-zJW" secondAttribute="top" id="Dxj-Ab-woj"/>
-                            <constraint firstItem="cbN-AR-2oY" firstAttribute="top" secondItem="aIc-cb-yCE" secondAttribute="bottom" constant="62" id="JF6-48-f2o"/>
+                            <constraint firstAttribute="bottom" secondItem="wRi-UP-kev" secondAttribute="bottom" id="Rhd-eQ-uOI"/>
+                            <constraint firstAttribute="bottom" secondItem="aIc-cb-yCE" secondAttribute="bottom" constant="62" id="S2R-kC-aJy"/>
                             <constraint firstAttribute="trailing" secondItem="F4v-ZB-XhN" secondAttribute="trailing" id="T2D-Yg-siY"/>
                             <constraint firstItem="wRi-UP-kev" firstAttribute="leading" secondItem="rhK-gj-zJW" secondAttribute="leading" id="bIh-RV-q2g"/>
+                            <constraint firstAttribute="bottom" secondItem="bhQ-vy-83S" secondAttribute="bottom" id="gI0-7U-dfL"/>
                             <constraint firstItem="aIc-cb-yCE" firstAttribute="centerX" secondItem="rhK-gj-zJW" secondAttribute="centerX" id="gVK-Hb-PHk"/>
-                            <constraint firstItem="cbN-AR-2oY" firstAttribute="top" secondItem="bhQ-vy-83S" secondAttribute="bottom" id="gaq-4f-Yly"/>
                             <constraint firstItem="F4v-ZB-XhN" firstAttribute="centerY" secondItem="rhK-gj-zJW" secondAttribute="centerY" id="oD2-rq-a7p"/>
                             <constraint firstAttribute="trailing" secondItem="wRi-UP-kev" secondAttribute="trailing" id="pMx-LZ-r9S"/>
                             <constraint firstItem="wRi-UP-kev" firstAttribute="top" secondItem="rhK-gj-zJW" secondAttribute="top" id="rAo-z9-BAr"/>

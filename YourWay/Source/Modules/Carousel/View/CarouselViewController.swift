@@ -83,9 +83,7 @@ class CarouselViewController: UIViewController {
             card.setup(viewModel: viewModel) { image in
                 DispatchQueue.main.async {
                     if let image = image {
-                        print("Начинаю блюрить")
                         viewModel.backgroundImage = image//.blurred(radius: 50)
-                        print("Кончаю блюрить")
                         self.updateBackgroundColor()
                     }
                 }
@@ -108,23 +106,19 @@ class CarouselViewController: UIViewController {
         
         if firstBackgroundImageView.image != bottomImage {
             if firstBackgroundImageView.image == nil {
-                print("устанавливаю картинку 1 через транзишион")
                 UIView.transition(with: firstBackgroundImageView, duration: 0.2, options: [.transitionCrossDissolve], animations: { 
                     self.firstBackgroundImageView.image = bottomImage
                 })
             } else {
-                print("устанавливаю картинку 1")
                 firstBackgroundImageView.image = bottomImage
             }
         }
         if secondBackgroundImageView.image != topImage {
             if secondBackgroundImageView.image == nil {
-                print("устанавливаю картинку 2 через транзишион")
                 UIView.transition(with: secondBackgroundImageView, duration: 0.2, options: [.transitionCrossDissolve], animations: {
                     self.secondBackgroundImageView.image = bottomImage
                 })
             } else {
-                print("устанавливаю картинку 2")
                 secondBackgroundImageView.image = topImage
             }
         }
@@ -140,6 +134,7 @@ class CarouselViewController: UIViewController {
         let leftBarItem = UIBarButtonItem(image: leftBarImage, style: .plain, target: navigationController!, action: #selector(UINavigationController.popViewController(animated:)))
         leftBarItem.tintColor = UIColor.white
         navigationItem.setLeftBarButton(leftBarItem, animated: false)
+        navigationController?.navigationBar.tintColor = UIColor.white
         
         navigationItem.title = "Твой выбор"
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
